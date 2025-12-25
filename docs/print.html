@@ -3,13 +3,13 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Руководство по Anki</title>
+        <title>Руководство Anki</title>
         <meta name="robots" content="noindex">
 
 
         <!-- Custom HTML head -->
         
-        <meta name="description" content="">
+        <meta name="description" content="Руководство пользователя Anki. Anki — это программа для создания карточек, которая упрощает обучение.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -30,8 +30,12 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="css/misc.css">
+        <link rel="stylesheet" href="css/mdbook-admonish.css">
         <link rel="stylesheet" href="./mdbook-admonish.css">
 
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     </head>
     <body class="sidebar-visible no-js">
     <div id="body-container">
@@ -90,7 +94,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="intro.html">Введение</a></li><li class="chapter-item "><a href="background.html"><strong aria-hidden="true">1.</strong> Предыстория</a></li><li class="chapter-item "><a href="platform/intro.html"><strong aria-hidden="true">2.</strong> Особенности платформ</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/intro.html"><strong aria-hidden="true">2.1.</strong> Windows</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/installing.html"><strong aria-hidden="true">2.1.1.</strong> Установка и обновление</a></li><li class="chapter-item "><a href="platform/windows/installation-issues.html"><strong aria-hidden="true">2.1.2.</strong> Проблемы с установкой</a></li><li class="chapter-item "><a href="platform/windows/startup-issues.html"><strong aria-hidden="true">2.1.3.</strong> Проблемы с запуском</a></li><li class="chapter-item "><a href="platform/windows/display-issues.html"><strong aria-hidden="true">2.1.4.</strong> Проблемы с отображением</a></li><li class="chapter-item "><a href="platform/windows/copy-and-paste.html"><strong aria-hidden="true">2.1.5.</strong> Проблемы с копированием и вставкой</a></li><li class="chapter-item "><a href="platform/windows/text-size.html"><strong aria-hidden="true">2.1.6.</strong> Размер текста</a></li><li class="chapter-item "><a href="platform/windows/permission-problems.html"><strong aria-hidden="true">2.1.7.</strong> Проблемы с правами доступа</a></li></ol></li><li class="chapter-item "><a href="platform/mac/intro.html"><strong aria-hidden="true">2.2.</strong> macOS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/mac/installing.html"><strong aria-hidden="true">2.2.1.</strong> Установка и обновление</a></li><li class="chapter-item "><a href="platform/mac/display-issues.html"><strong aria-hidden="true">2.2.2.</strong> Проблемы с отображением</a></li></ol></li><li class="chapter-item "><a href="platform/linux/intro.html"><strong aria-hidden="true">2.3.</strong> Linux</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/linux/installing.html"><strong aria-hidden="true">2.3.1.</strong> Установка и обновление</a></li><li class="chapter-item "><a href="platform/linux/missing-libraries.html"><strong aria-hidden="true">2.3.2.</strong> Отсутствуют библиотеки</a></li><li class="chapter-item "><a href="platform/linux/display-issues.html"><strong aria-hidden="true">2.3.3.</strong> Проблемы с отображением</a></li><li class="chapter-item "><a href="platform/linux/blank-window.html"><strong aria-hidden="true">2.3.4.</strong> Пустое главное окно</a></li><li class="chapter-item "><a href="platform/linux/distro-packages.html"><strong aria-hidden="true">2.3.5.</strong> Пакеты дистрибутивов Linux</a></li><li class="chapter-item "><a href="platform/linux/gtk-theme.html"><strong aria-hidden="true">2.3.6.</strong> Неверная тема GTK</a></li><li class="chapter-item "><a href="platform/linux/wayland.html"><strong aria-hidden="true">2.3.7.</strong> Wayland (Вейленд)</a></li><li class="chapter-item "><a href="platform/linux/input-methods.html"><strong aria-hidden="true">2.3.8.</strong> Методы ввода</a></li></ol></li></ol></li><li class="chapter-item "><a href="getting-started.html"><strong aria-hidden="true">3.</strong> Начало работы</a></li><li class="chapter-item "><a href="getting-help.html"><strong aria-hidden="true">4.</strong> Получение помощи</a></li><li class="chapter-item "><a href="studying.html"><strong aria-hidden="true">5.</strong> Учёба</a></li><li class="chapter-item "><a href="editing.html"><strong aria-hidden="true">6.</strong> Добавление/Редактирование</a></li><li class="chapter-item "><a href="templates/intro.html"><strong aria-hidden="true">7.</strong> Шаблоны карточек</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="templates/fields.html"><strong aria-hidden="true">7.1.</strong> Замена полей</a></li><li class="chapter-item "><a href="templates/generation.html"><strong aria-hidden="true">7.2.</strong> Генерация карточек</a></li><li class="chapter-item "><a href="templates/styling.html"><strong aria-hidden="true">7.3.</strong> Стилизация и HTML</a></li><li class="chapter-item "><a href="templates/errors.html"><strong aria-hidden="true">7.4.</strong> Проверки и ошибки</a></li></ol></li><li class="chapter-item "><a href="preferences.html"><strong aria-hidden="true">8.</strong> Настройки</a></li><li class="chapter-item "><a href="deck-options.html"><strong aria-hidden="true">9.</strong> Параметры колоды</a></li><li class="chapter-item "><a href="syncing.html"><strong aria-hidden="true">10.</strong> Синхронизация с AnkiWeb</a></li><li class="chapter-item "><a href="profiles.html"><strong aria-hidden="true">11.</strong> Профили</a></li><li class="chapter-item "><a href="browsing.html"><strong aria-hidden="true">12.</strong> Список карточек</a></li><li class="chapter-item "><a href="filtered-decks.html"><strong aria-hidden="true">13.</strong> Отфильтрованные колоды</a></li><li class="chapter-item "><a href="searching.html"><strong aria-hidden="true">14.</strong> Поиск</a></li><li class="chapter-item "><a href="importing/intro.html"><strong aria-hidden="true">15.</strong> Импорт</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="importing/text-files.html"><strong aria-hidden="true">15.1.</strong> Текстовые файлы</a></li><li class="chapter-item "><a href="importing/packaged-decks.html"><strong aria-hidden="true">15.2.</strong> Комплект колод</a></li></ol></li><li class="chapter-item "><a href="exporting.html"><strong aria-hidden="true">16.</strong> Экспорт</a></li><li class="chapter-item "><a href="backups.html"><strong aria-hidden="true">17.</strong> Резервные копии</a></li><li class="chapter-item "><a href="files.html"><strong aria-hidden="true">18.</strong> Управление файлами</a></li><li class="chapter-item "><a href="stats.html"><strong aria-hidden="true">19.</strong> Статистика</a></li><li class="chapter-item "><a href="media.html"><strong aria-hidden="true">20.</strong> Медиафайлы</a></li><li class="chapter-item "><a href="math.html"><strong aria-hidden="true">21.</strong> Математика и символы</a></li><li class="chapter-item "><a href="leeches.html"><strong aria-hidden="true">22.</strong> Пиявки</a></li><li class="chapter-item "><a href="addons.html"><strong aria-hidden="true">23.</strong> Дополнения</a></li><li class="chapter-item "><a href="troubleshooting.html"><strong aria-hidden="true">24.</strong> Устранение неполадок</a></li><li class="chapter-item "><a href="sync-server.html"><strong aria-hidden="true">25.</strong> Сервер синхронизации</a></li><li class="chapter-item "><a href="misc.html"><strong aria-hidden="true">26.</strong> Разное</a></li><li class="chapter-item affix "><a href="contrib.html">Ваш вклад</a></li><li class="chapter-item affix "><a href="faqs.html">Часто задаваемые вопросы</a></li><li class="chapter-item affix "><a href="resources.html">Ресурсы</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="intro.html">+Введение</a></li><li class="chapter-item "><a href="background.html"><strong aria-hidden="true">1.</strong> +Предыстория</a></li><li class="chapter-item "><a href="platform/intro.html"><strong aria-hidden="true">2.</strong> Особенности платформ</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/intro.html"><strong aria-hidden="true">2.1.</strong> Windows</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/windows/installing.html"><strong aria-hidden="true">2.1.1.</strong> Установка и обновление</a></li><li class="chapter-item "><a href="platform/windows/installation-issues.html"><strong aria-hidden="true">2.1.2.</strong> Проблемы с установкой</a></li><li class="chapter-item "><a href="platform/windows/startup-issues.html"><strong aria-hidden="true">2.1.3.</strong> Проблемы с запуском</a></li><li class="chapter-item "><a href="platform/windows/display-issues.html"><strong aria-hidden="true">2.1.4.</strong> Проблемы с отображением</a></li><li class="chapter-item "><a href="platform/windows/copy-and-paste.html"><strong aria-hidden="true">2.1.5.</strong> Проблемы с копированием и вставкой</a></li><li class="chapter-item "><a href="platform/windows/text-size.html"><strong aria-hidden="true">2.1.6.</strong> Размер текста</a></li><li class="chapter-item "><a href="platform/windows/permission-problems.html"><strong aria-hidden="true">2.1.7.</strong> Проблемы с правами доступа</a></li></ol></li><li class="chapter-item "><a href="platform/mac/intro.html"><strong aria-hidden="true">2.2.</strong> macOS</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/mac/installing.html"><strong aria-hidden="true">2.2.1.</strong> Установка и обновление</a></li><li class="chapter-item "><a href="platform/mac/display-issues.html"><strong aria-hidden="true">2.2.2.</strong> Проблемы с отображением</a></li></ol></li><li class="chapter-item "><a href="platform/linux/intro.html"><strong aria-hidden="true">2.3.</strong> Linux</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="platform/linux/installing.html"><strong aria-hidden="true">2.3.1.</strong> Установка и обновление</a></li><li class="chapter-item "><a href="platform/linux/missing-libraries.html"><strong aria-hidden="true">2.3.2.</strong> Отсутствуют библиотеки</a></li><li class="chapter-item "><a href="platform/linux/display-issues.html"><strong aria-hidden="true">2.3.3.</strong> Проблемы с отображением</a></li><li class="chapter-item "><a href="platform/linux/blank-window.html"><strong aria-hidden="true">2.3.4.</strong> Пустое главное окно</a></li><li class="chapter-item "><a href="platform/linux/distro-packages.html"><strong aria-hidden="true">2.3.5.</strong> Пакеты дистрибутивов Linux</a></li><li class="chapter-item "><a href="platform/linux/gtk-theme.html"><strong aria-hidden="true">2.3.6.</strong> Неверная тема GTK</a></li><li class="chapter-item "><a href="platform/linux/wayland.html"><strong aria-hidden="true">2.3.7.</strong> Wayland (Вейленд)</a></li><li class="chapter-item "><a href="platform/linux/input-methods.html"><strong aria-hidden="true">2.3.8.</strong> Методы ввода</a></li></ol></li></ol></li><li class="chapter-item "><a href="getting-started.html"><strong aria-hidden="true">3.</strong> Начало работы</a></li><li class="chapter-item "><a href="getting-help.html"><strong aria-hidden="true">4.</strong> +Получение помощи</a></li><li class="chapter-item "><a href="studying.html"><strong aria-hidden="true">5.</strong> Учёба</a></li><li class="chapter-item "><a href="editing.html"><strong aria-hidden="true">6.</strong> Добавление/Редактирование</a></li><li class="chapter-item "><a href="templates/intro.html"><strong aria-hidden="true">7.</strong> Шаблоны карточек</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="templates/fields.html"><strong aria-hidden="true">7.1.</strong> Замена полей</a></li><li class="chapter-item "><a href="templates/generation.html"><strong aria-hidden="true">7.2.</strong> Генерация карточек</a></li><li class="chapter-item "><a href="templates/styling.html"><strong aria-hidden="true">7.3.</strong> Стилизация и HTML</a></li><li class="chapter-item "><a href="templates/errors.html"><strong aria-hidden="true">7.4.</strong> Проверки и ошибки</a></li></ol></li><li class="chapter-item "><a href="preferences.html"><strong aria-hidden="true">8.</strong> Настройки</a></li><li class="chapter-item "><a href="deck-options.html"><strong aria-hidden="true">9.</strong> Параметры колоды</a></li><li class="chapter-item "><a href="syncing.html"><strong aria-hidden="true">10.</strong> Синхронизация с AnkiWeb</a></li><li class="chapter-item "><a href="profiles.html"><strong aria-hidden="true">11.</strong> Профили</a></li><li class="chapter-item "><a href="browsing.html"><strong aria-hidden="true">12.</strong> Список карточек</a></li><li class="chapter-item "><a href="filtered-decks.html"><strong aria-hidden="true">13.</strong> Отфильтрованные колоды</a></li><li class="chapter-item "><a href="searching.html"><strong aria-hidden="true">14.</strong> Поиск</a></li><li class="chapter-item "><a href="importing/intro.html"><strong aria-hidden="true">15.</strong> Импорт</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="importing/text-files.html"><strong aria-hidden="true">15.1.</strong> Текстовые файлы</a></li><li class="chapter-item "><a href="importing/packaged-decks.html"><strong aria-hidden="true">15.2.</strong> Комплект колод</a></li></ol></li><li class="chapter-item "><a href="exporting.html"><strong aria-hidden="true">16.</strong> Экспорт</a></li><li class="chapter-item "><a href="backups.html"><strong aria-hidden="true">17.</strong> Резервные копии</a></li><li class="chapter-item "><a href="files.html"><strong aria-hidden="true">18.</strong> Управление файлами</a></li><li class="chapter-item "><a href="stats.html"><strong aria-hidden="true">19.</strong> Статистика</a></li><li class="chapter-item "><a href="media.html"><strong aria-hidden="true">20.</strong> Медиафайлы</a></li><li class="chapter-item "><a href="math.html"><strong aria-hidden="true">21.</strong> Математика и символы</a></li><li class="chapter-item "><a href="leeches.html"><strong aria-hidden="true">22.</strong> +Приставучие карточки</a></li><li class="chapter-item "><a href="addons.html"><strong aria-hidden="true">23.</strong> +Дополнения</a></li><li class="chapter-item "><a href="troubleshooting.html"><strong aria-hidden="true">24.</strong> +Устранение неполадок</a></li><li class="chapter-item "><a href="sync-server.html"><strong aria-hidden="true">25.</strong> Сервер синхронизации</a></li><li class="chapter-item "><a href="misc.html"><strong aria-hidden="true">26.</strong> Разное</a></li><li class="chapter-item affix "><a href="contrib.html">+Ваш вклад</a></li><li class="chapter-item affix "><a href="faqs.html">+Часто задаваемые вопросы</a></li><li class="chapter-item affix "><a href="resources.html">+Ресурсы</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -125,31 +129,31 @@
                                 <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Показать оглавление" aria-label=""sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                        <button id="theme-toggle" class="icon-button" type="button" title="Изменить тему" aria-label="Изменить тему" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light - светлая</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust - ржавчина</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal - уголь</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy - морская</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu - темная Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Поиск. (гор.кл. S)" aria-label="Переключить строку поиска" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Руководство по Anki</h1>
+                    <h1 class="menu-title">Руководство Anki</h1>
 
                     <div class="right-buttons">
-                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                        <a href="print.html" title="Распечатать эту книгу" aria-label="Распечатать эту книгу">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        <a href="https://github.com/AndreyKaiu/anki-manual-ru" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/AndreyKaiu/anki-manual-ru/issues" title="Сообщить об ошибке... (GitHub)" aria-label="Сообщить об ошибке... (GitHub)">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
@@ -158,7 +162,7 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Найти в этой книге ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -178,28 +182,27 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<h2 id="mobile-clients"><a class="header" href="#mobile-clients">Mobile Clients</a></h2>
-<p>This is the manual for the computer version of Anki. Separate manuals are available for the mobile clients:</p>
+                        <h1 id="Введение"><a class="header" href="#Введение">Введение</a></h1>
+<h2 id="Переводы"><a class="header" href="#Переводы">Переводы</a></h2>
+<p>Переводы данного руководства не всегда могут быть актуальными, так как выполняются волонтерами. Это перевод руководства от 26 ноября 2025 г.</p>
+<p>Доступны переводы: <a href="https://web.archive.org/web/20250228144632/https://apps.ankiweb.net/docs/manual.id.html">Bahasa Indonesia</a> — <a href="https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki">Deutsch</a> — <a href="https://web.archive.org/web/20250130154657/https://apps.ankiweb.net/docs/manual.es.html">Español</a> — <a href="https://web.archive.org/web/20250209100830/https://apps.ankiweb.net/docs/manual.fr.html">Français</a> — <a href="https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm">Italiano</a> — <a href="https://platynowy.github.io/anki-manual/">Polski</a> <a href="https://mizerablebr.github.io/anki-manual/">Português Brasileiro</a> — <a href="https://alexeygorelov.github.io/anki-manual-ru/">Русский язык</a> — <a href="https://astropsy999.github.io/anki-manual/">Українська</a> — <a href="https://abdnh.github.io/anki-manual/">العربية</a> — <a href="https://web.archive.org/web/20250328102629/http://ankidroid.ir/anki.pdf">فارسى</a> — <a href="http://wikiwiki.jp/rage2050/">日本語</a> — <a href="https://open-spaced-repetition.github.io/anki-manual-zh-CN/">简体中文</a>.</p>
+<p>Если вы хотите помочь перевести руководство на другой язык, пожалуйста, ознакомьтесь с <a href="https://translating.ankiweb.net/anki/manual.html">документацией по переводу</a>. Если найдете ошибки в этом переводе, то опишете проблему <a href="https://github.com/AndreyKaiu/anki-manual-ru/issues">тут</a>.</p>
+<h2 id="Мобильные-клиенты"><a class="header" href="#Мобильные-клиенты">Мобильные клиенты</a></h2>
+<p>Это руководство для компьютерной версии Anki. Для мобильных приложений доступны отдельные руководства:</p>
 <ul>
-<li><a href="https://docs.ankidroid.org/">AnkiDroid Manual</a> (Android)- <a href="https://docs.ankimobile.net/">AnkiMobile Manual</a> (iPhone/iPad)</li>
+<li><a href="https://docs.ankidroid.org/">Руководство по AnkiDroid</a> (Android)</li>
+<li><a href="https://docs.ankimobile.net/">Руководство по AnkiMobile</a> (iPhone/iPad)</li>
 </ul>
-<h2 id="quickstart"><a class="header" href="#quickstart">Quickstart</a></h2>
-<p>In a hurry? Jump straight to <a href="getting-started.html">Getting Started</a>.</p>
-<h2 id="getting-help"><a class="header" href="#getting-help">Getting Help</a></h2>
-<p>Looking for help? Please see <a href="./getting-help.html">Getting Help</a>.</p>
-<h2 id="translations"><a class="header" href="#translations">Translations</a></h2>
-<p>Volunteers have contributed translations of this manual. Thetranslations may not always be up to date.</p>
-<ul>
-<li><a href="https://web.archive.org/web/20250228144632/https://apps.ankiweb.net/docs/manual.id.html">Bahasa Indonesia</a>- <a href="https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki">Deutsch</a>- <a href="https://web.archive.org/web/20250130154657/https://apps.ankiweb.net/docs/manual.es.html">Español</a>- <a href="https://web.archive.org/web/20250209100830/https://apps.ankiweb.net/docs/manual.fr.html">Français</a>- <a href="https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm">Italiano</a>- <a href="https://platynowy.github.io/anki-manual/">Polski</a>- <a href="https://mizerablebr.github.io/anki-manual/">Português Brasileiro</a>- <a href="https://alexeygorelov.github.io/anki-manual-ru/">русский язык</a>- <a href="https://astropsy999.github.io/anki-manual/">Українська</a>- <a href="https://abdnh.github.io/anki-manual/">العربية</a>- <a href="https://web.archive.org/web/20250328102629/http://ankidroid.ir/anki.pdf">فارسى</a>- <a href="http://wikiwiki.jp/rage2050/">日本語</a>- <a href="https://open-spaced-repetition.github.io/anki-manual-zh-CN/">简体中文</a></li>
-</ul>
-<p>If you would like to help translate the manual into a different language,please see the <a href="https://translating.ankiweb.net/anki/manual.html">translation docs</a>.</p>
-<h2 id="legacy-documentation"><a class="header" href="#legacy-documentation">Legacy Documentation</a></h2>
-<p>Not on the latest version of Anki? Find archives of this manual at the <a href="https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/">Internet Archive</a>.</p>
-<p>For information on old scheduler versions, see <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">this FAQ</a>.</p>
+<h2 id="Быстрый-старт"><a class="header" href="#Быстрый-старт">Быстрый старт</a></h2>
+<p>Спешите? Перейдите сразу к <a href="getting-started.html">Начало работы</a>.</p>
+<h2 id="Получение-помощи"><a class="header" href="#Получение-помощи">Получение помощи</a></h2>
+<p>Ищете помощь? Пожалуйста, ознакомьтесь с информацией в разделе <a href="./getting-help.html">Получение помощи</a>.</p>
+<h2 id="Устаревшая-документация"><a class="header" href="#Устаревшая-документация">Устаревшая документация</a></h2>
+<p>Не используете последнюю версию Anki? Архив этого руководства можно найти в <a href="https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/">Интернет-архиве</a>.</p>
+<p>Для получения информации о старых версиях планировщика см. <a href="https://faqs.ankiweb.net/the-anki-2.1-scheduler.html">этот раздел часто задаваемых вопросов</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="Предыстория"><a class="header" href="#Предыстория">Предыстория</a></h1>
 <ul>
-<li><a href="background.html#%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D0%B2%D0%BE%D1%81%D0%BF%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B9">Активная проверка воспоминаний</a></li>
+<li><a href="background.html#%D0%90%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%B8%D0%BF%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0%D0%BD%D0%B8%D0%B5">Активное припоминание</a></li>
 <li><a href="background.html#%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B9-%D0%B8%D0%BB%D0%B8-%D0%BF%D0%BE%D1%82%D0%B5%D1%80%D1%8F%D0%B5%D1%88%D1%8C">Используй или потеряешь</a></li>
 <li><a href="background.html#%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D0%B5">Интервальное повторение</a></li>
 <li><a href="background.html#%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-anki">Почему Anki?</a></li>
@@ -211,7 +214,7 @@
 <p>изучение языка</p>
 </li>
 <li>
-<p>подготовка к экзаменам по медицине и юриспруденции.</p>
+<p>подготовка к экзаменам по медицине и юриспруденции</p>
 </li>
 <li>
 <p>запоминание имен и лиц людей</p>
@@ -226,13 +229,13 @@
 <p>даже отработка гитарных аккордов!</p>
 </li>
 </ul>
-<p>В основе Anki лежат две простые концепции: <strong>активная проверка воспоминаний</strong> и <strong>интервальное повторение</strong>. Большинство учащихся не знакомы с ними, несмотря на то, что они хорошо описаны в научной литературе. Понимание принципов работы этих концепций сделает вас более эффективным учеником.</p>
-<h2 id="Активная-проверка-воспоминаний"><a class="header" href="#Активная-проверка-воспоминаний">Активная проверка воспоминаний</a></h2>
-<p><em>Активная проверка воспоминаний</em> подразумевает, что вам задают вопрос, и вы пытаетесь вспомнить ответ. Это отличается от <em>пассивного изучения</em>, когда мы читаем, смотрим или слушаем что-то, не останавливаясь, чтобы обдумать, знаем ли мы ответ. Исследования показали, что активное воспроизведение информации гораздо эффективнее способствует формированию прочной памяти, чем пассивное изучение. Этому есть две причины:</p>
+<p>В основе Anki лежат две простые концепции: <strong>активное припоминание</strong> и <strong>интервальное повторение</strong>. Большинство учащихся не знакомы с ними, несмотря на то, что они хорошо описаны в научной литературе. Понимание принципов работы этих концепций сделает вас более эффективным учеником.</p>
+<h2 id="Активное-припоминание"><a class="header" href="#Активное-припоминание">Активное припоминание</a></h2>
+<p><em>Активное припоминание</em> (Active recall testing) подразумевает, что вам задают вопрос, и вы пытаетесь вспомнить ответ. Это отличается от <em>пассивного изучения</em>, когда мы читаем, смотрим или слушаем что-то, не останавливаясь, чтобы обдумать, знаем ли мы ответ. Исследования показали, что активное припоминание гораздо эффективнее способствует формированию прочной памяти, чем пассивное изучение. Этому есть две причины:</p>
 <p>— Акт воспоминания <em>укрепляет</em> память, увеличивая шансы на то, что мы сможем вспомнить это снова.</p>
 <p>— Если мы не можем ответить на вопрос, это означает, что нам нужно вернуться к материалу, чтобы повторить или изучить его глубже (возможно надо подобрать какие-то ассоциации, методики лучшего запоминания, найти новые связи с уже изученным материалом).</p>
-<p>Вы наверняка сталкивались с активной проверкой воспоминаний в школьные годы даже не осознавая этого. Когда учителя задавали вопросы после прочтения главы или давали проверочную работу, они делали это не просто, чтобы увидеть, поняли вы материал или нет. Проверяя вас, они увеличивали шанс, что вы вспомните это в будущем.</p>
-<p>Хороший способ интегрировать активную проверку воспоминаний в вашу учёбу — использовать <em>карточки</em>.  На традиционных бумажных (картонных) карточках вы пишите вопрос на одной стороне, а ответ — на другой. Не переворачивать карточку до тех пор, пока не подумаете над ответом, позволяет вам запоминать более эффективно чем простое просматривание материала. Но не стоит тратить время и вспоминать одну карту более 10 секунд, так как ваша цель состоит в том, чтобы добиться мгновенного вспоминания, то есть довести знания до автоматизма (сформировать навык).</p>
+<p>Вы наверняка сталкивались с методом активного припоминания в школьные годы даже не осознавая этого. Когда учителя задавали вопросы после прочтения главы или давали проверочную работу, они делали это не просто, чтобы увидеть, поняли вы материал или нет. Проверяя вас, они увеличивали шанс, что вы вспомните это в будущем.</p>
+<p>Хороший способ интегрировать активное припоминание в вашу учёбу — использовать <em>карточки</em>.  На традиционных бумажных (картонных) карточках вы пишите вопрос на одной стороне, а ответ — на другой. Если вы будете не сразу переворачивать карточку, а хоть немного подумаете над ответом (вы активны), то это позволит вам запоминать более эффективно чем просто, когда вы просматриваете материал (вы пассивны). Но не стоит тратить время и вспоминать одну карту более 10 секунд, так как ваша цель состоит в том, чтобы добиться мгновенного вспоминания, то есть необходимо довести знания до уровня автоматизма (сформировать навык).</p>
 <h2 id="Используй-или-потеряешь"><a class="header" href="#Используй-или-потеряешь">Используй или потеряешь</a></h2>
 <p>Наш мозг — это эффективный механизм, и он быстро забывает информацию, которая кажется бесполезной. Вероятно, вы не помните, что ели на ужин в понедельник две недели назад, потому что эта информация обычно не полезна. Однако, если в тот день вы были в замечательном ресторане и последние две недели рассказывали всем, как там было здорово, вы, скорее всего, все еще будете помнить это в мельчайших деталях.</p>
 <p>Принцип работы мозга «используй или потеряешь» применим ко всему, что мы изучаем. Если вы потратите полдня на запоминание научных терминов, а затем две недели не будете думать об этом материале, вы, вероятно, забудете большую его часть. На самом деле, исследования показывают, что мы забываем около 75% изученного материала в течение 48 часов. Это может показаться довольно удручающим, когда вам нужно усвоить большой объем информации!</p>
@@ -247,7 +250,7 @@
 <h2 id="Почему-anki"><a class="header" href="#Почему-anki">Почему Anki?</a></h2>
 <p>Несмотря на то, что SuperMemo оказал огромное влияние на эту область, программа не лишена проблем. Её часто критиковали за наличие ошибок и сложность в использовании. Очень длительно она работала только на компьютерах под управлением Windows и только в последнее время они стали развиваться, внядрять ИИ ассистента и прочее. Но главная проблема не в этом, а в том, что SuperMemo проприетарное программное обеспечение, а это значит, что конечные пользователи не могут расширять его функционал или получать доступ к исходным данным. И хотя очень старые версии были выпущены бесплатно, они довольно ограничены для современного использования.</p>
 <p>Anki решает эти проблемы. Для многих платформ доступны бесплатные клиенты Anki, поэтому учащиеся и преподаватели с ограниченными финансовыми возможностями не останутся без внимания. Anki — это программное обеспечение с открытым исходным кодом, имеющее уже обширную библиотеку дополнений, созданных пользователями. Оно является многоплатформенным, работая на Windows, macOS, Linux/FreeBSD и некоторых мобильных устройствах. И оно значительно проще в использовании, чем SuperMemo.</p>
-<p>Система интервального повторения Anki основана на более старой версии алгоритма SuperMemo, называемой <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm">SM-2</a>. Недавно в качестве альтернативы устаревшему алгоритму SM-2 был интегрирован новый алгоритм <a href="https://docs.ankiweb.net/deck-options.html?highlight=FSRS#fsrs">FSRS</a>.</p>
+<p>Система интервального повторения Anki основана на более старой версии алгоритма SuperMemo, называемой <a href="https://faqs.ankiweb.net/what-spaced-repetition-algorithm">SM-2</a>. Недавно в качестве альтернативы устаревшему алгоритму SM-2 был интегрирован новый алгоритм <a href="./deck-options.html#fsrs">FSRS</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="platform-notes"><a class="header" href="#platform-notes">Platform Notes</a></h1>
 <p>This section explains the way Anki is installed, and the possible problems you may encounter, depending on your OS:</p>
 <ul>
@@ -1059,59 +1062,45 @@ someone has shared a deck of ideas from ABC, that’s a great way to save
 some time. And for simple subjects that are basically a list of facts,
 such as capital city names or country flags, you probably don’t need any
 external material. However, for complex subjects, shared decks should be used as a <em>supplement</em> to external material, not as a <em>replacement</em> for it.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="getting-help-1"><a class="header" href="#getting-help-1">Getting help</a></h1>
-<h2 id="asking-good-questions"><a class="header" href="#asking-good-questions">Asking good questions</a></h2>
-<p>With the exception of AnkiMobile, Anki and its support are provided free of
-charge, by people who generously volunteer their time. Please bear this in mind
-when posting - if you are rude and demanding, or have made no effort to solve
-the problem on your own, people are less likely to want to help you.</p>
-<p>Please start by trying to resolve the issue on your own:</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Получение-помощи-1"><a class="header" href="#Получение-помощи-1">Получение помощи</a></h1>
+<h2 id="Задавайте-правильные-вопросы"><a class="header" href="#Задавайте-правильные-вопросы">Задавайте правильные вопросы</a></h2>
+<p>За исключением AnkiMobile, разработка Anki и его поддержка предоставляются бесплатно людьми, которые щедро жертвуют своим временем на добровольной основе. Пожалуйста, помните об этом при публикации сообщений — если вы будете грубы и требовательны или не предпримете никаких попыток решить проблему самостоятельно, люди с меньшей вероятностью захотят вам помочь.</p>
+<p>Пожалуйста, начните с попытки решить проблему самостоятельно:</p>
 <ul>
-<li>Read the <a href="./getting-started.html">getting started</a> section
-of the manual, and check out the intro videos.</li>
-<li>If you've encountered a bug, please follow <a href="./troubleshooting.html">these steps</a>.</li>
-<li>Use the search button on this page to search frequently asked questions.</li>
-<li>Use the search button in the manual.</li>
-<li>Use the search button on the forums.</li>
-<li>Google the issue.</li>
+<li>Прочитайте раздел <a href="./getting-started.html">Начало работы</a> руководства и посмотрите <a href="https://youtu.be/Y1DAW42Zu7Y?list=PLZfqPxaVkKoZgBcZoe4J02LIguRRbAGDs">вводные видеоролики</a>.</li>
+<li>Если вы обнаружили ошибку, пожалуйста, выполните <a href="./troubleshooting.html">следующие шаги</a>.</li>
+<li>Воспользуйтесь кнопкой поиска <a href="https://faqs.ankiweb.net/">на этой странице</a>, чтобы найти ответы на часто задаваемые вопросы.</li>
+<li>Воспользуйтесь кнопкой поиска в руководстве.</li>
+<li>Воспользуйтесь кнопкой поиска на форумах.</li>
+<li>Найдите решение проблемы в Google.</li>
 </ul>
-<p>If you have tried the above and are still stuck, it's time to ask for help.
-When writing a post, please explain the problem you are having clearly, and in detail.</p>
-<p>Please avoid vague questions like:</p>
+<p>Если вы попробовали все вышеперечисленное, но проблема не решена, пора обратиться за помощью.
+При написании сообщения, пожалуйста, четко и подробно опишите возникшую у вас проблему.</p>
+<p>Пожалуйста, избегайте расплывчатых вопросов, таких как:</p>
 <blockquote>
-<p>&quot;My Anki doesn't work, what should I do?&quot;</p>
+<p>«Моя программа Anki не работает, что мне делать?»</p>
 </blockquote>
-<p>Instead, please provide as much detail as you can. For example:</p>
+<p>Вместо этого, пожалуйста, предоставьте как можно больше подробностей. Например:</p>
 <blockquote>
-<p>&quot;When I double-click on the Anki icon, an error message pops up. I tried
-searching for the error on Google, but couldn't find anything useful. I have
-copied and pasted the error message to the bottom of my post. I followed the
-steps on the &quot;When problems occur&quot; page, but the error message does not go
-away. What should I do?&quot;</p>
+<p>«При двойном щелчке по значку Anki появляется сообщение об ошибке. Я пытался найти информацию об ошибке в Google, но ничего полезного не нашел. Я скопировал и вставил сообщение об ошибке в конец своего сообщения. Я следовал инструкциям на странице «При возникновении проблем», но сообщение об ошибке не исчезает. Что мне делать?»</p>
 </blockquote>
-<p>This is a much better question. It tells us:</p>
+<p>Это гораздо лучший вопрос. Он нам говорит:</p>
 <ul>
-<li>What you have tried.</li>
-<li>What steps you are taking when the problem happens.</li>
-<li>What problems/errors you are getting when things go wrong.</li>
+<li>Что вы уже пробовали.</li>
+<li>Какие шаги вы предпринимаете, когда возникает проблема.</li>
+<li>С какими проблемами/ошибками вы сталкиваетесь, когда что-то идет не так.</li>
 </ul>
-<p>Knowing these things makes it much easier to answer your question.</p>
-<p>The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.</p>
-<h2 id="anki-desktop-the-computer-version-and-ankiweb"><a class="header" href="#anki-desktop-the-computer-version-and-ankiweb">Anki Desktop (the computer version) and AnkiWeb</a></h2>
-<p>After reading the above section, please post on the
-<a href="https://forums.ankiweb.net">user forums</a> for assistance.</p>
-<p>The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.</p>
-<h2 id="ankidroid-android-devices"><a class="header" href="#ankidroid-android-devices">AnkiDroid (Android devices)</a></h2>
-<p>Please see <a href="https://docs.ankidroid.org/help.html">AnkiDroid's support page</a>.</p>
+<p>Зная это, гораздо проще ответить на ваш вопрос.</p>
+<p>На пользовательских форумах используется другая система авторизации, отличная от <a href="https://ankiweb.net/">AnkiWeb</a>, поэтому, если вы делаете это впервые, пожалуйста, создайте там свою учетную запись.</p>
+<h2 id="anki-desktop-компьютерная-версия-и-ankiweb"><a class="header" href="#anki-desktop-компьютерная-версия-и-ankiweb">Anki Desktop (компьютерная версия) и AnkiWeb</a></h2>
+<p>После прочтения вышеизложенного, пожалуйста, обратитесь за помощью на <a href="https://forums.ankiweb.net">пользовательские форумы</a>.</p>
+<p>На пользовательских форумах используется другая система авторизации, отличная от <a href="https://ankiweb.net/">AnkiWeb</a>, поэтому, если вы делаете это впервые, пожалуйста, создайте там свою учетную запись.</p>
+<h2 id="ankidroid-для-устройств-android"><a class="header" href="#ankidroid-для-устройств-android">AnkiDroid (для устройств Android)</a></h2>
+<p>Пожалуйста, ознакомьтесь со <a href="https://docs.ankidroid.org/help.html">страницей поддержки AnkiDroid</a>.</p>
 <h2 id="ankimobile-iphoneipad"><a class="header" href="#ankimobile-iphoneipad">AnkiMobile (iPhone/iPad)</a></h2>
-<p>Please see <a href="https://docs.ankimobile.net/support.html">AnkiMobile's support page</a>.</p>
-<h2 id="private-questions"><a class="header" href="#private-questions">Private questions</a></h2>
-<p>For security reports and business enquiries, you can post a private ticket
-<a href="https://anki.tenderapp.com/discussions/private">here</a>. If you have a question
-about Anki, AnkiWeb or AnkiDroid, please use the <a href="https://forums.ankiweb.net">user forums</a>
-instead.</p>
+<p>Пожалуйста, ознакомьтесь со <a href="https://docs.ankimobile.net/support.html">страницей поддержки AnkiMobile</a>.</p>
+<h2 id="Личные-вопросы"><a class="header" href="#Личные-вопросы">Личные вопросы</a></h2>
+<p>Сообщить о проблемах с безопасностью или обратится к нам с деловым запросом <a href="https://anki.tenderapp.com/discussions/private">можно тут</a>. Если у вас есть вопрос об Anki, AnkiWeb или AnkiDroid, пожалуйста, используйте <a href="https://forums.ankiweb.net">пользовательские форумы</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="studying"><a class="header" href="#studying">Studying</a></h1>
 <ul>
 <li><a href="studying.html#decks">Decks</a></li>
@@ -6173,116 +6162,63 @@ error but don’t think you’ve used one, please double-check any comments
 you have in your headers, templates, and cards.) If you need to use
 these commands, please add them to a system package and import that
 package as described in the previous section.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="leeches-1"><a class="header" href="#leeches-1">Leeches</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Приставучие-карточки"><a class="header" href="#Приставучие-карточки">Приставучие карточки</a></h1>
 <ul>
-<li><a href="leeches.html#editing">Editing</a></li>
-<li><a href="leeches.html#deleting">Deleting</a></li>
-<li><a href="leeches.html#waiting">Waiting</a></li>
+<li><a href="leeches.html#%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Редактирование</a></li>
+<li><a href="leeches.html#%D0%A3%D0%B4%D0%B0%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5">Удаление</a></li>
+<li><a href="leeches.html#%D0%9E%D0%B6%D0%B8%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5">Ожидание</a></li>
 </ul>
-<p>Leeches are cards that you keep forgetting. Because they require so
-many reviews, they take up a lot more of your time, compared to other cards.</p>
-<p>Anki can help you identify leeches. Each time a review card &quot;lapses&quot; (is 
-failed while it is in review mode), a counter increases. When this counter
-reaches 8, Anki tags the note as a leech and suspends the card. The 
-threshold, and whether to suspend or not, can be adjusted in the
-<a href="deck-options.html">deck options</a>.</p>
-<p>If you keep failing that card, Anki will continue to alert you about the 
-leech periodically. These warnings occur at half the initial leech 
-threshold. For example, if you set the warning at 8 lapses, future 
-warnings will happen every 4 lapses (at 12, 16, and so on).</p>
-<p>Once a leech is found, there are several ways to handle it.</p>
-<h2 id="editing-2"><a class="header" href="#editing-2">Editing</a></h2>
-<p>The most efficient method to deal with leeches is to change how the
-information is presented. Maybe your cards have too much information, or 
-you’re trying to memorize something without fully understanding it. Often, 
-it helps to follow the <a href="https://supermemo.guru/wiki/20_rules_of_knowledge_formulation">20 rules of formulating 
-knowledge</a>,
-proposed by Dr Piotr Wozniak, the creator of SuperMemo. Some cards can 
-benefit from a mnemonic. Even some well-written cards may need a boost in 
-coherence, e.g. by adding cards for related concepts. However, it takes a 
-lot of experience to know how to formulate the material properly, break it 
-down into smallest possible components, and use mnemonic techniques.</p>
-<h2 id="deleting"><a class="header" href="#deleting">Deleting</a></h2>
-<p>If the material you’re struggling with isn't important enough to justify 
-the time spent, you can simply delete the card. By selectively deleting
-difficult and obscure items, you can spend more time learning other 
-material, making studying more enjoyable. If you think the card might be 
-useful for future reference, you can leave it suspended.</p>
-<h2 id="waiting"><a class="header" href="#waiting">Waiting</a></h2>
-<p>Some leeches are caused by &quot;interference&quot;. For example, an English
-learner may have recently learned the words &quot;disappoint&quot; and &quot;disappear&quot;.
-As they look similar, the learner may find themselves confusing the two
-when trying to answer. In such situations, it’s often helpful to
-concentrate on one idea at a time. Once that idea is firmly ingrained in 
-your mind, you can then start learning the other idea. So, in these
-situations, you might want to leave one of the words suspended until you
-have learned the other one well, and then unsuspend it.</p>
-<p>For a more detailed discussion, you can refer to the article &quot;<a href="https://controlaltbackspace.org/leech/">Dealing 
-with Leeches</a>&quot;, written by Soren 
-Bjornstad.</p>
+<p>Приставучие карточки (leech - пиявки) — это карты, которые вы постоянно забываете. Поскольку они требуют большого количества повторений, они занимают гораздо больше вашего времени по сравнению с другими картами.</p>
+<p>Anki может помочь вам выявить «пиявки». Каждый раз, когда карточка для повторения забыта (lapses - провалена, не проходит проверку, находясь в режиме повторения), счетчик увеличивается. Когда этот счетчик достигает 8, Anki помечает заметку тегом «leech» и приостанавливает ее. Пороговое значение, а также необходимость приостановки или нет, можно настроить в <a href="deck-options.html">параметрах колоды</a>.</p>
+<p>Если вы постоянно не справляетесь с этой карточкой, Anki будет периодически предупреждать вас «Карточка была приставучей». Эти предупреждения появляются при достижении половины начального порога «Порог для приставучих». Например, если вы установите предупреждение на 8 забытий, последующие предупреждения будут появляться каждые 4 забытия (на 12, 16 и так далее).</p>
+<p>После обнаружения «пиявки» существует несколько способов решения проблемы.</p>
+<h2 id="Редактирование"><a class="header" href="#Редактирование">Редактирование</a></h2>
+<p>Наиболее эффективный способ борьбы с приставучими карточками — изменить способ представления информации. Возможно, ваши карточки содержат слишком много информации, или вы пытаетесь запомнить что-то, что не до конца понимаете. Часто помогает следование <a href="https://supermemo.guru/wiki/20_rules_of_knowledge_formulation">20 правилам формулирования знаний</a>, предложенным доктором Петром Возняком, создателем SuperMemo. Некоторые карточки могут выиграть от использования мнемонических приемов. Даже хорошо составленные карточки могут нуждаться в повышении связности, например, путем добавления карточек со связанными понятиями. Однако требуется большой опыт, чтобы знать, как правильно формулировать материал, разбивать его на мельчайшие компоненты и использовать мнемонические приемы.</p>
+<h2 id="Удаление"><a class="header" href="#Удаление">Удаление</a></h2>
+<p>Если материал, с которым у вас возникают трудности, не настолько важен, чтобы оправдать затраченное время, вы можете просто удалить карточку. Выборочное удаление сложных и малоизвестных элементов позволит вам больше времени уделять изучению другого материала, сделав учебу более приятной. Если вы считаете, что карточка может пригодиться в будущем, вы можете сделать её исключённой (suspended — приостановить).</p>
+<h2 id="Ожидание"><a class="header" href="#Ожидание">Ожидание</a></h2>
+<p>Некоторые «пиявки» возникают из-за «интерференции» (наложение, взаимные помехи). Например, изучающий английский язык мог недавно выучить слова «disappoint» и «disappear». Поскольку они похожи, учащийся может путать их, пытаясь ответить. В таких ситуациях часто полезно сосредоточиться на одном понятии за раз. Как только эта понятие прочно закрепится в вашем сознании, вы можете начать изучать другое понятие. Поэтому в таких ситуациях вы можете одно из слов исключить (будет ожидать), пока хорошо не выучите другое, а затем «включить» его.</p>
+<p>Более подробное обсуждение вы можете найти в статье <a href="https://controlaltbackspace.org/leech/">«Dealing
+with Leeches (Борьба с пиявками)»</a>, написанной Сореном Бьорнстадом.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="Дополнения"><a class="header" href="#Дополнения">Дополнения</a></h1>
 <p>Возможности Anki можно расширить с помощью дополнений (аддонов). Дополнения могут предоставлять такие функции, как дополнительная поддержка определенных языков, дополнительный контроль над планированием и так далее.</p>
 <p>Чтобы просмотреть список доступных дополнений, выберите <strong>Инструменты &gt; Дополнения</strong>, затем нажмите <strong>Загрузить дополнения</strong>.
 В качестве альтернативы откройте <a href="https://ankiweb.net/shared/addons">ankiweb.net/shared/addons</a> в веб-браузере. </p>
 <p>Если вы загрузили дополнение (аддон), которое не работает должным образом, или если вы случайно допустили ошибку при редактировании дополнения, то используйте пункт меню <strong>Удалить</strong> и после этого желательно перезагрузить программу Anki.</p>
 <p>Дополнения используют и изменяют произвольные части кодовой базы Anki, поэтому в некоторых случаях обновление Anki может нарушить совместимость со старыми дополнениями. Если одно из ваших дополнений перестает работать после обновления Anki, пожалуйста, сообщите об этом автору дополнения. Если вы используете это дополнение, вам придётся продолжать использовать более старую версию Anki, пока дополнение не обновится.</p>
-<p>На большинстве страниц дополнений на AnkiWeb есть кнопка <strong>Contact Author</strong> (Связаться с автором), и многие авторы указывают свой адрес электронной почты в дополнении, поэтому, если вам  нужно связаться с автором, то посмотрите в самое начало файла дополнения «<strong>init</strong>.py».
-Чтобы узнать, как писать собственные дополнения, пожалуйста, ознакомьтесь с <a href="https://addon-docs.ankiweb.net">руководством по написанию дополнений</a>.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h1>
-<p>If you encounter a problem with Anki, please try the following steps in order:</p>
-<h3 id="1-restart-anki"><a class="header" href="#1-restart-anki">1. Restart Anki</a></h3>
-<p>Please close Anki, then start it again.</p>
-<p>If you are unable to close Anki because of an error message, you can either
-terminate Anki using your task manager, or restart your computer. Anki saves
-periodically, so you should not lose more than a few minutes of work in most
-circumstances.</p>
-<p>If the problem does not occur again, you can skip the following steps.</p>
-<h3 id="2-check-add-ons"><a class="header" href="#2-check-add-ons">2. Check add-ons</a></h3>
-<p>Please close Anki, then open it in safe mode by holding down the
-<kbd>Shift</kbd> key while starting Anki. Keep holding <kbd>Shift</kbd> down
-until the on-screen message informs you that Anki has started in safe mode.
-If you're on Linux and that didn't work, run 'anki --safemode'.</p>
-<p>If the problem goes away, that indicates an add-on is causing the problem.
-Remove any add-ons you don't need, and disable half of the others. If the
-problem continues, try the other half. Repeat the process until you've figured
-out which add-on is causing the problem. Then please report the issue to the
-add-on author, using the Copy Debug Info button, and pasting that into the
-report.</p>
-<h3 id="3-check-your-anki-version"><a class="header" href="#3-check-your-anki-version">3. Check your Anki version</a></h3>
-<p>You can find the version you're using in the <strong>Help → About</strong> or <strong>Anki →
-About</strong> menu. If the version you're using is not the latest version published on
-<a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>, please close Anki, install the latest version, and
-then start Anki again to see if the problem has gone away.</p>
-<p>If you're using Linux, please make sure you can reproduce the error using the
-packaged version on the Anki website, as distros often distribute <a href="platform/linux/distro-packages.html">broken versions</a>.</p>
-<h3 id="4-check-your-database"><a class="header" href="#4-check-your-database">4. Check your database</a></h3>
-<p>After restarting Anki, please try the <strong>Tools → Check Database</strong> menu item to
-make sure your collection doesn't have any problems.</p>
-<h3 id="5-restart-your-computer"><a class="header" href="#5-restart-your-computer">5. Restart your computer</a></h3>
-<p>Sometimes restarting your computer may help.</p>
-<h3 id="6-change-the-video-driver"><a class="header" href="#6-change-the-video-driver">6. Change the Video Driver</a></h3>
-<p>Crashes and display issues can be caused by the video driver. Changing to a
-different video driver may help. Make sure you try all the driver options and
-restart Anki after each change.</p>
-<p>If you're using Anki version 23.10 or above, the easiest way is to open
-<strong>Tools → Preferences</strong> (or <strong>Anki → Preferences</strong> if you're on a Mac) and
-change the driver from the dropdown menu.</p>
-<p>If you are on an older Anki version or if you cannot access the preferences for
-some reason, you can use the command-line instructions instead and manually
-change the gldriver file:</p>
+<p>На большинстве страниц дополнений на AnkiWeb есть кнопка <strong>Contact Author</strong> (Связаться с автором), и многие авторы указывают свой адрес электронной почты в дополнении, поэтому, если вам  нужно связаться с автором, то посмотрите в самое начало файла дополнения «__init__.py».</p>
+<p>Чтобы узнать, как писать собственные дополнения, пожалуйста, ознакомьтесь с <a href="https://addon-docs.ankiweb.net">руководством по написанию дополнений</a>.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Устранение-неполадок"><a class="header" href="#Устранение-неполадок">Устранение неполадок</a></h1>
+<p>Если вы столкнулись с проблемой в Anki, пожалуйста, выполните следующие шаги по порядку:</p>
+<h3 id="1-Перезапустите-anki"><a class="header" href="#1-Перезапустите-anki">1. Перезапустите Anki</a></h3>
+<p>Закройте Anki, а затем запустите его снова.</p>
+<p>Если вы не можете закрыть Anki из-за сообщения об ошибке, вы можете либо завершить процесс Anki через диспетчер задач вашей системы, либо перезагрузить компьютер. Anki сохраняет данные периодически, поэтому в большинстве случаев вы потеряете не более нескольких минут работы.</p>
+<p>Если проблема больше не возникает, вы можете пропустить следующие шаги.</p>
+<h3 id="2-Проверьте-дополнения-add-ons"><a class="header" href="#2-Проверьте-дополнения-add-ons">2. Проверьте дополнения (add-ons)</a></h3>
+<p>Закройте Anki, а затем откройте его в безопасном режиме, удерживая нажатой клавишу <kbd>Shift</kbd> во время запуска Anki. Удерживайте <kbd>Shift</kbd>, пока на экране не появится сообщение о том, что Anki запущен в безопасном режиме.
+Если вы используете Linux и это не сработало, выполните команду «anki --safemode».</p>
+<p>Если проблема исчезнет, это указывает на то, что её вызывает одно из дополнений.</p>
+<p>Удалите все дополнения, которые вам не нужны, и отключите половину из оставшихся. Если проблема сохранится, отключите другую половину. Повторяйте этот процесс, пока не определите, какое именно расширение вызывает проблему. Затем, пожалуйста, сообщите о проблеме автору этого расширения, используя кнопку «Копировать отладочную информацию» и вставив полученные данные в отчёт.</p>
+<h3 id="3-Проверьте-версию-anki"><a class="header" href="#3-Проверьте-версию-anki">3. Проверьте версию Anki</a></h3>
+<p>Вы можете найти используемую вами версию в меню <strong>Справка → Об Anki</strong> (для Mac: <strong>Anki → Об Anki</strong>). Если ваша версия не является последней, опубликованной на <a href="https://apps.ankiweb.net">https://apps.ankiweb.net</a>, пожалуйста, закройте Anki, установите последнюю версию и запустите Anki снова, чтобы проверить, исчезла ли проблема.</p>
+<p>Если вы используете Linux, убедитесь, что можете воспроизвести ошибку, используя официальную сборку с сайта Anki, так как дистрибутивы Linux часто распространяют <a href="platform/linux/distro-packages.html">неисправные версии</a>.</p>
+<h3 id="4-Проверьте-вашу-базу-данных"><a class="header" href="#4-Проверьте-вашу-базу-данных">4. Проверьте вашу базу данных</a></h3>
+<p>После перезапуска Anki попробуйте воспользоваться пунктом меню <strong>Инструменты → Проверить базу данных</strong>, чтобы убедиться в отсутствии проблем с вашей коллекцией.</p>
+<h3 id="5-Перезагрузите-компьютер"><a class="header" href="#5-Перезагрузите-компьютер">5. Перезагрузите компьютер</a></h3>
+<p>Иногда перезагрузка компьютера может помочь.</p>
+<h3 id="6-Измените-видеодрайвер"><a class="header" href="#6-Измените-видеодрайвер">6. Измените видеодрайвер</a></h3>
+<p>Сбои и проблемы с отображением могут быть вызваны видеодрайвером. Смена на другой драйвер может помочь. Убедитесь, что вы попробовали все доступные варианты драйверов и перезапускали Anki после каждого изменения.</p>
+<p>Если вы используете Anki версии 23.10 или новее, самый простой способ — открыть <strong>Инструменты → Настройки</strong> (или <strong>Anki → Настройки</strong>, если вы на Mac) и изменить драйвер в выпадающем меню.</p>
+<p>Если у вас более старая версия Anki или если по какой-то причине вы не можете получить доступ к настройкам, вы можете вместо этого использовать инструкции для командной строки и вручную создать (изменить) файл «gldriver»:</p>
 <ul>
-<li><a href="https://docs.ankiweb.net/platform/windows/display-issues.html">Windows</a></li>
-<li><a href="https://docs.ankiweb.net/platform/mac/display-issues.html">Mac</a></li>
-<li><a href="https://docs.ankiweb.net/platform/linux/display-issues.html">Linux</a></li>
+<li><a href="platform/windows/display-issues.html">Windows</a></li>
+<li><a href="platform/mac/display-issues.html">Mac</a></li>
+<li><a href="platform/linux/display-issues.html">Linux</a></li>
 </ul>
-<h3 id="7-reset-window-sizes"><a class="header" href="#7-reset-window-sizes">7. Reset window sizes</a></h3>
-<p>Sometimes pressing <strong>reset window sizes</strong> button in the preferences screen
-immediately after starting Anki will help.</p>
-<h3 id="8-if-the-problem-remains"><a class="header" href="#8-if-the-problem-remains">8. If the problem remains</a></h3>
-<p>If you've confirmed you are using the latest Anki version, and are still
-receiving errors even with add-ons disabled,
-please <a href="./getting-help.html">report the problem</a>, including the next error you
-receive in your post.</p>
+<h3 id="7-Сбросьте-размеры-окон"><a class="header" href="#7-Сбросьте-размеры-окон">7. Сбросьте размеры окон</a></h3>
+<p>Иногда может помочь нажатие кнопки <strong>Сбросить размеры окон</strong> на экране настроек сразу после запуска Anki.</p>
+<h3 id="8-Если-проблема-сохраняется"><a class="header" href="#8-Если-проблема-сохраняется">8. Если проблема сохраняется</a></h3>
+<p>Если вы подтвердили, что используете последнюю версию Anki, и всё ещё получаете ошибки даже при отключённых расширениях (удерживали нажатой клавишу <kbd>Shift</kbd>), пожалуйста, <a href="./getting-help.html">сообщите о проблеме</a>, включив в своё сообщение текст полученной ошибки.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="self-hosted-sync-server-1"><a class="header" href="#self-hosted-sync-server-1">Self-Hosted Sync Server</a></h1>
 <p>Advanced users who cannot or do not wish to use AnkiWeb can use a self-hosted
 sync server instead.</p>
@@ -6442,71 +6378,37 @@ person.</p>
 try to print the result rather than doing what you asked it to. If you
 are getting unexpected errors, please make sure you’re not holding down
 the <kbd>Shift</kbd> key.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="contributing"><a class="header" href="#contributing">Contributing</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Ваш-вклад"><a class="header" href="#Ваш-вклад">Ваш вклад</a></h1>
 <ul>
-<li><a href="contrib.html#sharing-decks-publicly">Sharing Decks Publicly</a></li>
-<li><a href="contrib.html#sharing-decks-privately">Sharing Decks Privately</a></li>
-<li><a href="contrib.html#sharing-add-ons">Sharing Add-ons</a></li>
-<li><a href="contrib.html#translating-anki">Translating Anki</a></li>
-<li><a href="contrib.html#contributing-code">Contributing Code</a></li>
+<li><a href="contrib.html#%D0%9F%D1%83%D0%B1%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D0%BA%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0%D0%BC">Публичный доступ к колодам</a></li>
+<li><a href="contrib.html#%D0%9F%D1%80%D0%B8%D0%B2%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF-%D0%BA-%D0%BA%D0%BE%D0%BB%D0%BE%D0%B4%D0%B0%D0%BC">Приватный доступ к колодам</a></li>
+<li><a href="contrib.html#%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BC%D0%BE%D0%B4%D1%83%D0%BB%D0%B8-%D0%B4%D0%BB%D1%8F-%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD%D0%B0">Дополнительные модули для обмена</a></li>
+<li><a href="contrib.html#%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-anki">Перевод Anki</a></li>
+<li><a href="contrib.html#%D0%92%D0%BA%D0%BB%D0%B0%D0%B4-%D0%B2-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D1%83-%D0%BA%D0%BE%D0%B4%D0%B0">Вклад в разработку кода</a></li>
 </ul>
-<h2 id="sharing-decks-publicly"><a class="header" href="#sharing-decks-publicly">Sharing Decks Publicly</a></h2>
-<p>To share decks with the general public, <a href="syncing.html">synchronize</a> them
-with AnkiWeb, then log into AnkiWeb and click on &quot;Share&quot; from the menu
-next to the deck you wish to share.</p>
-<p>If you shared a deck previously (including with previous versions of
-Anki), you can update it by clicking &quot;Share&quot; as above. Updating a shared
-deck will not reset the download counts or ratings. You can delete a
-shared deck that you have uploaded using the Delete button on the shared
-deck's page.</p>
-<p>When updating a deck, AnkiWeb expects the deck to be at the same
-location as before. If you shared a deck when it was called &quot;Korean
-Verbs&quot; for example, and then renamed it to &quot;Korean::Korean Verbs&quot;,
-resharing will not be able to update the existing copy. If you have
-forgotten the original name, you can guess it by downloading the
-deck on AnkiWeb and importing it (File &gt; Import) in a new profile
-(File &gt; Switch profile &gt; Add). Then you can copy the exact name of the
-deck when it was first shared. If this doesn't work, please contact
-support.</p>
-<p>When you update a shared deck, users who downloaded the deck previously
-will not automatically receive updates. If they download the deck again
-and re-import it, newly added material will be imported without altering
-their existing study progress, provided neither you nor the user has
-altered the note type since the first import.</p>
-<h2 id="sharing-decks-privately"><a class="header" href="#sharing-decks-privately">Sharing Decks Privately</a></h2>
-<p>If you’d like to share decks with a limited group of people (such as a
-study group or class) rather than the general public, you can do so by
-sharing them outside of AnkiWeb.</p>
-<p>To share a deck privately, go to the File menu and choose Export. Select
-a single deck (not &quot;All Decks&quot;), and turn off &quot;include scheduling
-information&quot;. This will produce an .apkg file which you can share with
-others.</p>
-<p>You can share the .apkg file by emailing it to people, placing it on a
-website or shared folder, or using a free file sharing service like
-Dropbox or Google Drive and sending people a link.</p>
-<p>Both the computer version and mobile clients make it easy to import from
-an apkg file simply by clicking or tapping on it. AnkiWeb does not have
-the ability to import apkg files however, so the recipients of your deck
-will need to have the computer version or Anki on their mobile device.</p>
-<p>When a user imports an .apkg file, cards that already exist in their
-collection will be ignored and any new cards will be added. As long as
-they use the same note type, modified cards will also be updated. To
-prevent data loss, cards that have been deleted in the new apkg file
-will not be deleted in the user’s collection, so if you need to delete
-cards from users' decks for whatever reason, you will need to contact
-them about it.</p>
-<h2 id="sharing-add-ons"><a class="header" href="#sharing-add-ons">Sharing Add-ons</a></h2>
-<p>Please see <a href="https://addon-docs.ankiweb.net/sharing.html">https://addon-docs.ankiweb.net/sharing.html</a></p>
-<h2 id="translating-anki"><a class="header" href="#translating-anki">Translating Anki</a></h2>
-<p>Please see <a href="https://translating.ankiweb.net">https://translating.ankiweb.net</a></p>
-<h2 id="contributing-code"><a class="header" href="#contributing-code">Contributing Code</a></h2>
-<p>Anki's source code is available at <a href="https://github.com/ankitects/anki">https://github.com/ankitects/anki</a></p>
-<p>Before contributing, please see <a href="https://github.com/ankitects/anki/blob/main/docs/contributing.md">contributing.md</a>.</p>
+<h2 id="Публичный-доступ-к-колодам"><a class="header" href="#Публичный-доступ-к-колодам">Публичный доступ к колодам</a></h2>
+<p>Чтобы поделиться колодами с широкой публикой, <a href="syncing.html">синхронизируйте</a> их с AnkiWeb, затем войдите в <a href="https://ankiweb.net/">AnkiWeb</a> и нажмите «Share» (Поделиться) в меню рядом с колодой, которой вы хотите поделиться.</p>
+<p>Если вы ранее делились колодой (в том числе с предыдущими версиями Anki), вы можете обновить ее, нажав кнопку «Share» (Поделиться), как описано выше. Обновление общей колоды не сбросит количество загрузок или рейтинг. Вы можете удалить загруженную вами общую колоду, используя кнопку «Remove» (Удалить) на странице общей колоды.</p>
+<p>При обновлении колоды AnkiWeb ожидает, что колода будет находиться в том же месте, что и раньше. Если вы поделились колодой, когда она называлась, например, &quot;Korean Verbs&quot;, а затем переименовали её в &quot;Korean::Korean Verbs&quot;, повторная публикация не сможет обновить существующую копию. Если вы забыли исходное название, вы можете попытаться его узнать, скачав колоду с AnkiWeb и импортировав её (Файл &gt; Импортировать) в новый профиль (Файл &gt; Сменить профиль &gt; Добавить). Затем вы можете скопировать точное название колоды. Если это не сработает, пожалуйста, свяжитесь со службой поддержки.</p>
+<p>При обновлении общего набора карточек пользователи, которые ранее его скачивали, не получат автоматических обновлений. Если они скачают набор карточек снова и импортируют его повторно, новые материалы будут импортированы без изменения их текущего прогресса обучения, при условии, что ни вы, ни пользователь не изменили тип записей с момента первого импорта.</p>
+<h2 id="Приватный-доступ-к-колодам"><a class="header" href="#Приватный-доступ-к-колодам">Приватный доступ к колодам</a></h2>
+<p>Если вы хотите поделиться колодами с ограниченной группой людей (например, с учебной группой или классом), а не со всеми желающими, вы можете сделать это, поделившись ими вне AnkiWeb.</p>
+<p>Чтобы поделиться колодой в приватном режиме, перейдите в меню «Файл» и выберите «Экспортировать». Выберите в поле «Формат экспорта» пункт «Пакет колод Anki», а в поле «Содержит» выберите одну колоду (не «Все колоды») и отключите параметр «Вместе с расписанием». Если у вас особые настройки колод и вы хотите ими поделиться, то установите флажок у параметра «Включить преднастройки колод». В результате будет создан файл .apkg, которым вы сможете поделиться с другими.</p>
+<p>Вы можете поделиться файлом .apkg, отправив его по электронной почте, разместив на веб-сайте или в общей папке, или воспользовавшись бесплатным сервисом обмена файлами, таким как <a href="https://www.dropbox.com">Dropbox</a> или <a href="https://drive.google.com/">Google Drive</a>, и отправить людям ссылку.</p>
+<p>Как в компьютерной версии, так и в мобильном приложении импорт файлов apkg осуществляется простым щелчком или касанием. Однако AnkiWeb не поддерживает импорт файлов apkg, поэтому получателям вашей колоды потребуется установить компьютерную версию или Anki на свои мобильные устройства.</p>
+<p>Когда пользователь импортирует файл .apkg, уже существующие в его коллекции карточки будут проигнорированы, а все новые будут добавлены. Если используются карточки того же типа, измененные карточки также будут обновлены. Во избежание потери данных, карточки, удаленные в новом файле apkg, не будут удалены из коллекции пользователя, поэтому, если вам необходимо удалить карточки из колод пользователей по какой-либо причине, вам нужно будет связаться с ними по этому поводу.</p>
+<h2 id="Дополнительные-модули-для-обмена"><a class="header" href="#Дополнительные-модули-для-обмена">Дополнительные модули для обмена</a></h2>
+<p>Пожалуйста, ознакомьтесь с информацией по ссылке <a href="https://addon-docs.ankiweb.net/sharing.html">https://addon-docs.ankiweb.net/sharing.html</a>.</p>
+<h2 id="Перевод-anki"><a class="header" href="#Перевод-anki">Перевод Anki</a></h2>
+<p>Пожалуйста, ознакомьтесь с информацией по ссылке <a href="https://translating.ankiweb.net">https://translating.ankiweb.net</a>.</p>
+<h2 id="Вклад-в-разработку-кода"><a class="header" href="#Вклад-в-разработку-кода">Вклад в разработку кода</a></h2>
+<p>Исходный код Anki доступен по адресу <a href="https://github.com/ankitects/anki">https://github.com/ankitects/anki</a></p>
+<p>Перед тем как вносить свой вклад, пожалуйста, ознакомьтесь с файлом <a href="https://github.com/ankitects/anki/blob/main/docs/contributing.md">contributing.md</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="Часто-задаваемые-вопросы"><a class="header" href="#Часто-задаваемые-вопросы">Часто задаваемые вопросы</a></h1>
 <p>Пожалуйста, перейдите на страницу <a href="https://faqs.ankiweb.net">https://faqs.ankiweb.net</a></p>
 <p>(Для перевода страницы с англ. языка вам надо будет кликнуть правой кнопкой мыши и выбрать пункт меню «Перевести на русский»)</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="Ресурсы"><a class="header" href="#Ресурсы">Ресурсы</a></h1>
-<p>Здесь вы найдете руководства, шаблоны, пользовательские планировщики и другие ресурсы: <a href="https://forums.ankiweb.net/t/collection-of-anki-resources/60044">этот список ресурсов</a>.</p>
+<p>Руководства, шаблоны, пользовательские планировщики и другие ресурсы вы найдете в <a href="https://forums.ankiweb.net/t/collection-of-anki-resources/60044">этом списке ресурсов</a>.</p>
 <p>(Для перевода страницы с англ. языка вам надо будет кликнуть правой кнопкой мыши и выбрать пункт меню «Перевести на русский»)</p>
 
                     </main>
@@ -6546,7 +6448,9 @@ them about it.</p>
 
         <script>
         window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
+            MathJax.Hub.Register.StartupHook('End', function() {
+                window.setTimeout(window.print, 100);
+            });
         });
         </script>
 

@@ -3,7 +3,7 @@ authors = ["Ankitects Pty Ltd and contributors"]
 description = "Руководство пользователя Anki. Anki — это программа для создания карточек, которая упрощает обучение."
 language = "ru"
 src = "src"
-title = "Руководство по Anki"
+title = "Руководство Anki"
 
 [build]
 create-missing = true
@@ -17,26 +17,26 @@ command = "mdbook-admonish"
 assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
 
 [output.html]
-git-repository-url = "https://github.com/AndreyKaiu/anki-manual-ru"
+git-repository-url = "https://github.com/AndreyKaiu/anki-manual-ru/issues"
 cname = "docs.ankiweb.net"
 additional-css = ["css/misc.css", "css/mdbook-admonish.css", "./mdbook-admonish.css"]
 smart-punctuation = true
 mathjax-support = true
 
-[output.linkcheck]
-optional = true
-warning-policy = "warn"
-follow-web-links = true
-exclude = [
-  'microsoft.com',
-  'twitter.com',
-  'stackexchange.com',
-  'stackoverflow.com',
-  'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
-  'support.google.com',
-  'wikiwiki.jp',
-  'web.archive.org',
-]
+# [output.linkcheck]
+# optional = true
+# warning-policy = "warn"
+# follow-web-links = true
+# exclude = [
+#   'microsoft.com',
+#   'twitter.com',
+#   'stackexchange.com',
+#   'stackoverflow.com',
+#   'https://github.com/open-spaced-repetition/fsrs4anki#add-on-compatibility',
+#   'support.google.com',
+#   'wikiwiki.jp',
+#   'web.archive.org',
+# ]
 
 [output.html.fold]
 enable = true

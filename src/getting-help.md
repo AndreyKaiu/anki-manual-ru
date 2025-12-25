@@ -1,67 +1,53 @@
-# Getting help
+# Получение помощи
 
-## Asking good questions
+## Задавайте правильные вопросы
 
-With the exception of AnkiMobile, Anki and its support are provided free of
-charge, by people who generously volunteer their time. Please bear this in mind
-when posting - if you are rude and demanding, or have made no effort to solve
-the problem on your own, people are less likely to want to help you.
+За исключением AnkiMobile, разработка Anki и его поддержка предоставляются бесплатно людьми, которые щедро жертвуют своим временем на добровольной основе. Пожалуйста, помните об этом при публикации сообщений — если вы будете грубы и требовательны или не предпримете никаких попыток решить проблему самостоятельно, люди с меньшей вероятностью захотят вам помочь.
 
-Please start by trying to resolve the issue on your own:
+Пожалуйста, начните с попытки решить проблему самостоятельно:
 
-- Read the [getting started](./getting-started.md) section
-  of the manual, and check out the intro videos.
-- If you've encountered a bug, please follow [these steps](./troubleshooting.md).
-- Use the search button on this page to search frequently asked questions.
-- Use the search button in the manual.
-- Use the search button on the forums.
-- Google the issue.
+- Прочитайте раздел [Начало работы](./getting-started.md) руководства и посмотрите [вводные видеоролики](https://youtu.be/Y1DAW42Zu7Y?list=PLZfqPxaVkKoZgBcZoe4J02LIguRRbAGDs).
+- Если вы обнаружили ошибку, пожалуйста, выполните [следующие шаги](./troubleshooting.md).
+- Воспользуйтесь кнопкой поиска [на этой странице](https://faqs.ankiweb.net/), чтобы найти ответы на часто задаваемые вопросы.
+- Воспользуйтесь кнопкой поиска в руководстве.
+- Воспользуйтесь кнопкой поиска на форумах.
+- Найдите решение проблемы в Google.
 
-If you have tried the above and are still stuck, it's time to ask for help.
-When writing a post, please explain the problem you are having clearly, and in detail.
+Если вы попробовали все вышеперечисленное, но проблема не решена, пора обратиться за помощью.
+При написании сообщения, пожалуйста, четко и подробно опишите возникшую у вас проблему.
 
-Please avoid vague questions like:
+Пожалуйста, избегайте расплывчатых вопросов, таких как:
 
-> "My Anki doesn't work, what should I do?"
+>  «Моя программа Anki не работает, что мне делать?»
 
-Instead, please provide as much detail as you can. For example:
+Вместо этого, пожалуйста, предоставьте как можно больше подробностей. Например:
 
-> "When I double-click on the Anki icon, an error message pops up. I tried
-> searching for the error on Google, but couldn't find anything useful. I have
-> copied and pasted the error message to the bottom of my post. I followed the
-> steps on the "When problems occur" page, but the error message does not go
-> away. What should I do?"
+> «При двойном щелчке по значку Anki появляется сообщение об ошибке. Я пытался найти информацию об ошибке в Google, но ничего полезного не нашел. Я скопировал и вставил сообщение об ошибке в конец своего сообщения. Я следовал инструкциям на странице «При возникновении проблем», но сообщение об ошибке не исчезает. Что мне делать?»
 
-This is a much better question. It tells us:
+Это гораздо лучший вопрос. Он нам говорит:
 
-- What you have tried.
-- What steps you are taking when the problem happens.
-- What problems/errors you are getting when things go wrong.
+- Что вы уже пробовали.
+- Какие шаги вы предпринимаете, когда возникает проблема.
+- С какими проблемами/ошибками вы сталкиваетесь, когда что-то идет не так.
 
-Knowing these things makes it much easier to answer your question.
+Зная это, гораздо проще ответить на ваш вопрос.
 
-The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.
+На пользовательских форумах используется другая система авторизации, отличная от [AnkiWeb](https://ankiweb.net/), поэтому, если вы делаете это впервые, пожалуйста, создайте там свою учетную запись.
 
-## Anki Desktop (the computer version) and AnkiWeb
+## Anki Desktop (компьютерная версия) и AnkiWeb
 
-After reading the above section, please post on the
-[user forums](https://forums.ankiweb.net) for assistance.
+После прочтения вышеизложенного, пожалуйста, обратитесь за помощью на [пользовательские форумы](https://forums.ankiweb.net).
 
-The user forums use a different login to AnkiWeb, so please create an
-account there if it's your first time.
+На пользовательских форумах используется другая система авторизации, отличная от [AnkiWeb](https://ankiweb.net/), поэтому, если вы делаете это впервые, пожалуйста, создайте там свою учетную запись.
 
-## AnkiDroid (Android devices)
+## AnkiDroid (для устройств Android)
 
-Please see [AnkiDroid's support page](https://docs.ankidroid.org/help.html).
+Пожалуйста, ознакомьтесь со [страницей поддержки AnkiDroid](https://docs.ankidroid.org/help.html).
 
 ## AnkiMobile (iPhone/iPad)
 
-Please see [AnkiMobile's support page](https://docs.ankimobile.net/support.html).
+Пожалуйста, ознакомьтесь со [страницей поддержки AnkiMobile](https://docs.ankimobile.net/support.html).
 
-## Private questions
+## Личные вопросы
 
-For security reports and business enquiries, you can post a private ticket
-[here](https://anki.tenderapp.com/discussions/private). If you have a question
-about Anki, AnkiWeb or AnkiDroid, please use the [user forums](https://forums.ankiweb.net)
-instead.
+Сообщить о проблемах с безопасностью или обратится к нам с деловым запросом [можно тут](https://anki.tenderapp.com/discussions/private). Если у вас есть вопрос об Anki, AnkiWeb или AnkiDroid, пожалуйста, используйте [пользовательские форумы](https://forums.ankiweb.net).

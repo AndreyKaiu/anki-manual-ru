@@ -1,44 +1,30 @@
-# Introduction
+# Введение
 
-## Mobile Clients
+## Переводы
 
-This is the manual for the computer version of Anki. Separate manuals are available for the mobile clients:
+Переводы данного руководства не всегда могут быть актуальными, так как выполняются волонтерами. Это перевод руководства от 26 ноября 2025 г.
 
-- [AnkiDroid Manual](https://docs.ankidroid.org/) (Android)
-- [AnkiMobile Manual](https://docs.ankimobile.net/) (iPhone/iPad)
+Доступны переводы: [Bahasa Indonesia](https://web.archive.org/web/20250228144632/https://apps.ankiweb.net/docs/manual.id.html) — [Deutsch](https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki) — [Español](https://web.archive.org/web/20250130154657/https://apps.ankiweb.net/docs/manual.es.html) — [Français](https://web.archive.org/web/20250209100830/https://apps.ankiweb.net/docs/manual.fr.html) — [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm) — [Polski](https://platynowy.github.io/anki-manual/) [Português Brasileiro](https://mizerablebr.github.io/anki-manual/) — [Русский язык](https://alexeygorelov.github.io/anki-manual-ru/) — [Українська](https://astropsy999.github.io/anki-manual/) — [العربية](https://abdnh.github.io/anki-manual/) — [فارسى](https://web.archive.org/web/20250328102629/http://ankidroid.ir/anki.pdf) — [日本語](http://wikiwiki.jp/rage2050/) — [简体中文](https://open-spaced-repetition.github.io/anki-manual-zh-CN/).
 
-## Quickstart
+Если вы хотите помочь перевести руководство на другой язык, пожалуйста, ознакомьтесь с [документацией по переводу](https://translating.ankiweb.net/anki/manual.html). Если найдете ошибки в этом переводе, то опишете проблему [тут](https://github.com/AndreyKaiu/anki-manual-ru/issues).
 
-In a hurry? Jump straight to [Getting Started](getting-started.md).
+## Мобильные клиенты
 
-## Getting Help
+Это руководство для компьютерной версии Anki. Для мобильных приложений доступны отдельные руководства:
 
-Looking for help? Please see [Getting Help](./getting-help.md).
+- [Руководство по AnkiDroid](https://docs.ankidroid.org/) (Android)
+- [Руководство по AnkiMobile](https://docs.ankimobile.net/) (iPhone/iPad)
 
-## Translations
+## Быстрый старт
 
-Volunteers have contributed translations of this manual. The
-translations may not always be up to date.
+Спешите? Перейдите сразу к [Начало работы](getting-started.md).
 
-- [Bahasa Indonesia](https://web.archive.org/web/20250228144632/https://apps.ankiweb.net/docs/manual.id.html)
-- [Deutsch](https://web.archive.org/web/20240413080739/https://www.dennisproksch.de/anki)
-- [Español](https://web.archive.org/web/20250130154657/https://apps.ankiweb.net/docs/manual.es.html)
-- [Français](https://web.archive.org/web/20250209100830/https://apps.ankiweb.net/docs/manual.fr.html)
-- [Italiano](https://web.archive.org/web/20160423223801/http://192.167.9.6/Anki_ITA/Manual_ITA.htm)
-- [Polski](https://platynowy.github.io/anki-manual/)
-- [Português Brasileiro](https://mizerablebr.github.io/anki-manual/)
-- [русский язык](https://alexeygorelov.github.io/anki-manual-ru/)
-- [Українська](https://astropsy999.github.io/anki-manual/)
-- [العربية](https://abdnh.github.io/anki-manual/)
-- [فارسى](https://web.archive.org/web/20250328102629/http://ankidroid.ir/anki.pdf)
-- [日本語](http://wikiwiki.jp/rage2050/)
-- [简体中文](https://open-spaced-repetition.github.io/anki-manual-zh-CN/)
+## Получение помощи
 
-If you would like to help translate the manual into a different language,
-please see the [translation docs](https://translating.ankiweb.net/anki/manual.html).
+Ищете помощь? Пожалуйста, ознакомьтесь с информацией в разделе [Получение помощи](./getting-help.md).
 
-## Legacy Documentation
+## Устаревшая документация
 
-Not on the latest version of Anki? Find archives of this manual at the [Internet Archive](https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/).
+Не используете последнюю версию Anki? Архив этого руководства можно найти в [Интернет-архиве](https://web.archive.org/web/20240829022941/https://docs.ankiweb.net/).
 
-For information on old scheduler versions, see [this FAQ](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).
+Для получения информации о старых версиях планировщика см. [этот раздел часто задаваемых вопросов](https://faqs.ankiweb.net/the-anki-2.1-scheduler.html).

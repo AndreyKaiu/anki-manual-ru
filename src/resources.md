@@ -1,3 +1,5 @@
-# Resources
+# Ресурсы
 
-You can find guides, templates, custom schedulers and other resources in [this resource list](https://forums.ankiweb.net/t/collection-of-anki-resources/60044).
+Руководства, шаблоны, пользовательские планировщики и другие ресурсы вы найдете в [этом списке ресурсов](https://forums.ankiweb.net/t/collection-of-anki-resources/60044).
+
+(Для перевода страницы с англ. языка вам надо будет кликнуть правой кнопкой мыши и выбрать пункт меню «Перевести на русский»)
