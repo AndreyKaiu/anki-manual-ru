@@ -1,5 +1,5 @@
 Перевод руководства Anki только начат. Смотрите пункты меню обозначенные знаком плюс на странице: 
-[AndreyKaiu.github.io/anki-manual-ru/](AndreyKaiu.github.io/anki-manual-ru/)
+[AndreyKaiu.github.io/anki-manual-ru/](https://andreykaiu.github.io/anki-manual-ru/)
 
 # Anki Manual
 
