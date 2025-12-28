@@ -1,83 +1,63 @@
-# Backups
+# Резервные копии
 
 <!-- toc -->
 
-## Automatic backups
+## Автоматические резервные копии
 
-Anki will create automatic backups of your card data. These include the text
-on your cards and your scheduling information, but do not include sounds or
-image files.
+Anki будет создавать автоматические резервные копии ваших данных карточек. Они включают текст на ваших карточках и информацию о расписании, но не включают звуковые или графические файлы.
 
-Automatic backups can be useful to recover from mistakes, but you should not
-rely solely on them. Because they are stored on your local device, they will not
-protect you if your device breaks or is stolen. We recommend you combine them with
-[manual backups](#manual-colpkg-backups).
+Автоматические резервные копии могут быть полезны для восстановления после ошибок, но вы не должны полагаться исключительно на них. Поскольку они хранятся на вашем локальном устройстве, они не защитят вас, если ваше устройство сломается или будет украдено. Мы рекомендуем сочетать их с [ручными резервными копиями](#manual-colpkg-backups).
 
-### Restoring
+### Восстановление
 
-To restore from an automatic backup:
+Чтобы восстановить из автоматической резервной копии:
 
-- Open Anki, and choose Switch Profile from the File menu.
-- Click on the "Open Backup" button.
-- Select the backup you wish to restore from.
+*   Откройте Anki и выберите «Сменить профиль» в меню «Файл».
+*   Нажмите кнопку «Открыть резервную копию».
+*   Выберите резервную копию, из которой вы хотите восстановиться.
 
 ```admonish warning
-When restoring from a backup, any changes made since the backup was created will be lost.
+При восстановлении из резервной копии все изменения, внесенные после создания резервной копии, будут потеряны.
 ```
 
-Anki disables automatic syncing and backups when you restore from a backup. Once you're
-happy that you've restored the correct backup, close and re-open Anki to return to normal.
+Anki отключает автоматическую синхронизацию и создание резервных копий при восстановлении из резервной копии. После того как вы убедились, что восстановили правильную копию, закройте и снова откройте Anki, чтобы вернуться к обычному режиму.
 
-### Creating
+### Создание
 
-Backups are created periodically. You can configure the time between backups
-in the [preferences](preferences.md) screen. The default is 30 minutes.
+Резервные копии создаются периодически. Вы можете настроить время между резервными копиями на [экране настроек](preferences.md). По умолчанию это 30 минут.
 
-Certain operations will trigger a backup, even if the configured time has not
-elapsed yet:
+Определённые операции запустят создание резервной копии, даже если настроенное время ещё не истекло:
 
-- A one-way sync download
-- Importing a .colpkg file using File>Import
-- Tools>Check Database
+- Односторонняя синхронизация (скачивание)
+- Импорт файла .colpkg с помощью "Файл" > "Импортировать"
+- "Инструменты" > "Проверить базу данных"
 
-After backups are two days old, Anki will start removing some of the older ones.
-You can control how many daily, weekly and monthly backups you'd like to keep.
+После того как резервным копиям исполнится два дня, Anki начнёт удалять некоторые из более старых. Вы можете контролировать, сколько ежедневных, еженедельных и ежемесячных резервных копий вы хотите сохранять.
 
-Backups created with 2.1.50 will not be importable into older Anki versions.
+Резервные копии, созданные в версии 2.1.50, не будут импортироваться в более старые версии Anki.
 
-## Manual colpkg backups
+## Ручные резервные копии (colpkg)
 
-### Restoring
+### Восстановление
 
-You can restore from a manual backup by using File>Import.
+Вы можете восстановиться из ручной резервной копии с помощью "Файл" > "Импортировать".
 
-### Creating
+### Создание
 
-In Anki 2.1.50+, you can use File>Create Backup to trigger an immediate backup. This
-functions like regular automatic backups, and does not include media files.
+В Anki 2.1.50+ вы можете использовать "Файл" > "Создать резервную копию" для немедленного создания резервной копии. Это работает как обычные автоматические резервные копии и не включает медиафайлы.
 
-To create a backup that includes your sounds and images:
+Чтобы создать резервную копию, которая включает ваши звуки и изображения:
 
-- Select Export from the File menu.
-- Ensure "Anki collection package (.colpkg)" is selected.
-- Enable the "include media" option.
+- Выберите «Экспортировать» в меню «Файл».
+- Убедитесь, что выбран «Пакет коллекции Anki (.colpkg)».
+- Включите опцию «Вместе с медиафайлами».
 
-This will create a .colpkg file that contains all of your cards and any sounds/images they
-use. We recommend you store the file somewhere safe, like a different device, or a cloud-based
-file storage service like Dropbox or Google Drive.
+Это создаст файл .colpkg, который содержит все ваши карточки и любые используемые ими звуки/изображения. Мы рекомендуем сохранить этот файл в безопасном месте, например, на другом устройстве или в облачном сервисе хранения файлов, таком как Dropbox или Google Drive.
 
 ## AnkiWeb
 
-[Synchronising](./syncing.md) your collection with AnkiWeb provides some level of protection
-against your device being lost or stolen. If you need to restore your collection from AnkiWeb,
-you can force a one-way sync in the preferences screen, or sync from a new device, and then choose
-"Download".
+[Синхронизация](./syncing.md) вашей коллекции с AnkiWeb обеспечивает определённый уровень защиты от потери или кражи вашего устройства. Если вам нужно восстановить вашу коллекцию из AnkiWeb, вы можете принудительно выполнить одностороннюю синхронизацию на экране настроек или синхронизироваться с нового устройства, а затем выбрать «Скачать».
 
-## Deletion log
+## Журнал удаления
 
-Anki logs deleted notes to a text file called deleted.txt in your
-profile folder. These notes are in a text format that can be read by
-File&gt;Import, though please note the import feature only supports a
-single note type at one time, so if you have deleted notes from
-different note types, you'll need to split the file into separate files
-for each note type first.
+Anki записывает удалённые записи в текстовый файл с именем deleted.txt в папке вашего профиля. Эти записи находятся в текстовом формате, который можно прочитать с помощью "Файл" > "Импортировать", однако обратите внимание, что функция импорта поддерживает только один тип записи за раз, поэтому если вы удалили записи разных типов, вам сначала нужно будет разделить файл на отдельные файлы для каждого типа записи.

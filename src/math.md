@@ -1,53 +1,41 @@
-# Math and Symbols
+# Математика и символы
 
 <!-- toc -->
 
 ## MathJax
 
-[MathJax](https://www.mathjax.org) is a modern, browser-based
-typesetting system, useful for mathematical and chemical equations. It
-does not require the installation of any extra software, so it is easy
-to use, and it is recommended for most users.
+[MathJax](https://www.mathjax.org) — это современная система вёрстки на основе браузера, полезная для математических и химических уравнений. Она не требует установки какого-либо дополнительного программного обеспечения, поэтому её легко использовать, и она рекомендуется большинству пользователей.
 
-MathJax is supported out of the box on Anki 2.1+, AnkiMobile, and
-AnkiDroid 2.9+.
+MathJax поддерживается «из коробки» в Anki 2.1+, AnkiMobile и AnkiDroid 2.9+.
 
-To try it out:
+Чтобы попробовать:
 
-1. Type the following in a field:
+1. Введите в поле:
 
        \sqrt{x}
 
-2. Select the text you just typed.
+2. Выделите только что введённый текст.
 
-3. Click the rightmost button in the editor, and choose "MathJax
-   inline" from the menu. Anki will change the text so it reads:
+3. Нажмите на самую правую кнопку в редакторе (если нет дополнений, а так это кнопка fx-Уравнения) и выберите в меню «MathJax в строке». Anki изменит текст (в текущей версии: ```<anki-mathjax>\sqrt{x}</anki-mathjax>```, но показывается сразу корень) следующим образом:
 
        \(\sqrt{x}\)
 
-4. Click the **Cards...** button. You’ll see a preview of how the
-   equation will appear when the card is reviewed.
+
+4. Нажмите кнопку **Карточки...** (можно и кнопку **Просмотреть**). Вы увидите предварительный просмотр того, как уравнение будет выглядеть при повторении карточки.
 
     $$
     \sqrt{x}
     $$
-Anki’s MathJax support expects content in TeX format. If you’re not
-familiar with TeX formatting, please see [this cheatsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-Please note that point 1 does not apply in Anki - Anki uses `\(` and
-`\)` for inline equations, and `\[` and `\]` for display equations.
+Поддержка MathJax в Anki ожидает содержимое в формате TeX. Если вы не знакомы с форматированием TeX, пожалуйста, ознакомьтесь с [этой шпаргалкой](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+Обратите внимание, что пункт 1 не применяется в Anki — Anki использует `\(` и `\)` для встроенных уравнений (в тексте) и `\[` и `\]` для вынесенных уравнений (тут: с выключкой или выравнивание по центру на отдельной строке). (В текущей версии: `\(` и `\)` автоматически заменятся на `<anki-mathjax>` и `</anki-mathjax>`, а вынесенное на отдельной строке будет: `<anki-mathjax block="true">` и `</anki-mathjax>`. Cейчас пользователю сразу показывается формула и если кликнуть по ней, то будет отображено меню из 3 пунктов: "MathJax в строке", "MathJax с выключкой", "Удалить")
 
-If you want to use newlines in a MathJax expression, please use
-<kbd>Shift</kbd>+<kbd>Enter</kbd> instead of just <kbd>Enter</kbd>, as a normal newline will prevent
-MathJax from working correctly.
+Если вы хотите использовать переносы строк в выражении MathJax, пожалуйста, используйте <kbd>Shift</kbd>+<kbd>Enter</kbd> вместо просто <kbd>Enter</kbd>, так как обычный перенос строки помешает MathJax работать корректно. (В текущей версии не наблюдается это).
 
-Anki includes built in support for mhchem for rendering chemical
-equations. Please see the "chemical equations" section and the following
-sections for more information:
-<https://mhchem.github.io/MathJax-mhchem/>
+Anki включает встроенную поддержку MathJax-mhchem для отображения химических уравнений. Простой пример: введите в поле текст "H2O" и выделите его; нажмите кнопку "fx" и активируйте пункт меню "MathJax для химии". Вы увидете формулу воды, а скрытый текст в редакторе HTML будет такой: `<anki-mathjax>\ce{H2O}</anki-mathjax>`. Для получения дополнительной информации смотрите раздел «Chemical Equations» на странице <https://mhchem.github.io/MathJax-mhchem/>.
 
-### Customize MathJax
+### Настройка MathJax
 
-Anki's bundled MathJax support is loaded before card content, so if you wish to customise MathJax you'll have to do so in a specific way. An example is provided here.
+Поддержка MathJax, встроенная в Anki, загружается до содержимого карточки, поэтому если вы хотите настроить MathJax, вам придётся делать это определённым образом. Пример приведён здесь.
 
 ```javascript
 <script>
@@ -61,143 +49,99 @@ if (typeof is_already_run == 'undefined') {
 </script>
 ```
 
-Note that Anki has special logic for cloze deletions that might not work if you change the standard delimiters for MathJax equations.
+Обратите внимание, что в Anki используется специальная логика для заполнения пропусков (cloze deletions), которая может не работать, если вы измените стандартные разделители для уравнений MathJax.
 
 ## LaTeX
 
-LaTeX is a powerful typesetting system, useful for entering mathematical
-formulas, chemical formulas, musical notation and so on. Anki provides
-some support for LaTeX, allowing you to enter LaTeX code in your notes.
-When you review a card, Anki will call LaTeX and display the generated
-image instead.
+LaTeX — это мощная система вёрстки, полезная для ввода математических формул, химических формул, нотной записи и так далее. Anki обеспечивает некоторую поддержку LaTeX, позволяя вводить код LaTeX в ваших записях. Когда вы повторяете карточку, Anki вызовет LaTeX и отобразит сгенерированное изображение вместо кода.
 
-LaTeX is more work to set up, and images can only be generated with the
-computer version of Anki - though once generated, the images can be
-displayed by mobile clients. Because of the extra complexity LaTeX
-brings, it is only recommended for users that need more features than
-MathJax provides.
+LaTeX требует больше усилий для настройки, и изображения могут быть сгенерированы только с помощью компьютерной версии Anki — хотя после генерации изображения могут отображаться мобильными клиентами. Из-за дополнительной сложности, которую вносит LaTeX, он рекомендуется только для пользователей, которым требуется больше возможностей, чем предоставляет MathJax.
 
-### Security Warning
+### Предупреждение безопасности
 
-LaTeX code can contain malicious commands that can read or write non-Anki
-data on your computer. For this reason, recent Anki versions will refuse to
-generate LaTeX images by default.
+Код LaTeX может содержать вредоносные команды, которые могут читать или записывать данные, не относящиеся к Anki, на вашем компьютере. По этой причине последние версии Anki по умолчанию отказываются генерировать изображения LaTeX.
 
-If you wish to use LaTeX on your own cards, you will need to enable the **Generate LaTeX images** option in the preferences screen.
+Если вы хотите использовать LaTeX на своих карточках, вам необходимо включить опцию **Создание изображений LaTeX (риск безопасности)** на экране настроек (в меню: "Инструменты" → "Настройки" → "Учёба").
 
-**We strongly recommend you do not enable this option if you use shared decks, or think
-you will import shared decks in the future, as you are potentially giving any shared
-deck author access to your computer**.
+**Мы настоятельно рекомендуем не включать эту опцию, если вы используете общие колоды или думаете, что будете импортировать общие колоды в будущем, так как вы потенциально даёте любому автору общей колоды доступ к вашему компьютеру.**.
 
-You do not need to enable this option for shared decks. If a shared deck author has
-correctly generated all the images prior to them sharing the deck, the images should
-already be available.
+Вам не нужно включать эту опцию для общих колод. Если автор общей колоды корректно сгенерировал все изображения до того, как поделился колодой, изображения уже должны быть доступны
 
-### Assumed Knowledge
+### Предполагаемые знания
 
-Anki’s LaTeX support is not turn-key: it is assumed that you know how to
-use LaTeX already, and that you have it installed. If you have no
-experience with LaTeX, please consult one of the many guides available
-on the internet. If you are having trouble with markup, please ask on a
-LaTeX forum.
+Поддержка LaTeX в Anki не является готовым решением: предполагается, что вы уже знаете, как использовать LaTeX, и что он у вас установлен. Если у вас нет опыта работы с LaTeX, обратитесь к одному из многочисленных руководств, доступных в интернете. Если у вас возникли проблемы с разметкой, пожалуйста, спросите на форуме LaTeX.
 
-To install LaTeX, on Windows use MiKTeX; on macOS use MacTeX, and on Linux
-use your distro’s package manager. Dvipng must also be installed.
+Для установки LaTeX на Windows используйте MiKTeX; на macOS используйте MacTeX, а в Linux используйте менеджер пакетов вашего дистрибутива. Dvipng также должен быть установлен.
 
-On Windows, go to Settings in MikTeX’s maintenance window, and make sure
-"Install missing packages on the fly" is set to "Always", not to "Ask me
-first". If you continue to have difficulties, one user reported that
-running Anki as an administrator until all the packages were fetched
-helped.
+В Windows зайдите в Settings (Настройки) в окне обслуживания MikTeX и убедитесь, что «Install missing packages on the fly» (Устанавливать отсутствующие пакеты на лету) установлено в «Always» (Всегда), а не в «Ask me first» (Спросить меня сначала). Если после этого у вас будут проблемы, то попробуйте совет одного пользователя: запуск Anki от имени администратора до тех пор, пока не будут получены все пакеты.
 
-On macOS, LaTeX has only been tested with MacTeX and BasicTeX. If you use
-BasicTeX, you need to install dvipng separately, with the following
-command:
+В macOS LaTeX тестировался только с MacTeX и BasicTeX. Если вы используете BasicTeX, вам необходимо установить dvipng отдельно, с помощью следующей команды:
 
     sudo tlmgr update --self; sudo tlmgr install dvipng
 
-The command may not be on the path, so you may need to provide the full
-path, e.g /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
+Команда может отсутствовать в переменной PATH, поэтому вам может потребоваться указать полный путь, например, /usr/local/texlive/2014basic/bin/x86_64-darwin/tlmgr.
 
-If you are not using the above LaTeX packages, you will need to use the
-[edit LaTeX](https://ankiweb.net/shared/info/937148547) add-on to specify
-the full path to latex and dvipng.
+Если вы не используете указанные выше пакеты LaTeX, вам нужно будет использовать дополнение [edit LaTeX](https://ankiweb.net/shared/info/937148547), чтобы указать полный путь к latex и dvipng.
 
-### Web/Mobile
+### Веб-версия/Мобильные устройства
 
-When you review a card with LaTeX on it, Anki will generate an image for
-that LaTeX and place the image in your collection’s media folder for
-future use. The web & mobile clients will display these images if they
-already exist, but can not generate the images on their own.
+Когда вы повторяете карточку с LaTeX, Anki сгенерирует для этого LaTeX изображение и поместит его в папку медиафайлов вашей коллекции для будущего использования. Веб- и мобильные клиенты будут отображать эти изображения, если они уже существуют, но не могут генерировать изображения самостоятельно.
 
-To avoid having to review all your cards at least once before you can
-study on the other clients, Anki can generate the images in bulk for
-you. To generate all the images, please go to Tools&gt;Check Media.
-After that, syncing should upload the generated media to AnkiWeb and the
-other clients.
+Чтобы избежать необходимости повторять все ваши карточки хотя бы один раз перед изучением на других клиентах, Anki может генерировать изображения для вас оптом. Чтобы сгенерировать все изображения, перейдите в Инструменты > Проверить медиафайлы. После этого синхронизация должна загрузить сгенерированные медиафайлы на AnkiWeb и другие клиенты.
 
-### Example
+### Пример
 
-The most general way to input LaTeX content is to surround it with
-\[latex\]\[/latex\] tags. There’s a shortcut button for this documented
-in the [editor](editing.md) section.
+Наиболее распространенный способ ввода контента LaTeX — это заключение его в теги \[latex\]\[/latex\]. Для этого есть соответствующая кнопка ("fx"), описанная в разделе [редактора](editing.md) .
 
-\[latex\] tags must be used inside a field - placing them in the card
-template will [cause problems](templates/fields.md).
+Теги \[latex\] необходимо использовать внутри поля — размещение их в шаблоне карточки [вызовет проблемы](templates/fields.md) .
 
-For example, entering the following on the front of an Anki flashcard:
+Например, ввод следующего на лицевой стороне карточки Anki:
 
     Does [latex]\begin{math}\sum_{k = 1}^{\infty}\frac{1}{k}\end{math}[/latex] converge?
 
-will produce this when the flashcard is viewed:
+даст следующий результат при просмотре карточки:
 
 ![convergence question](math/convergence_question.png)
 
-The formula in the example above is called a "text formula", because it
-is displayed right within the non-mathematical text. In contrast, the
-following example shows a "displayed formula":
+Формула в приведённом выше примере называется «текстовой формулой», потому что она отображается прямо внутри нематематического текста. В отличие от этого, следующий пример показывает «отображаемую формулу»:
 
     Does the sum below converge?
 
-    [latex]\begin{displaymath}\sum_{k = 1}^{\infty}\frac{1}{k}\end{displaymath}[/latex]
+    [latex]\begin{displaymath}\sum_{k = 1}^{\infty}\frac{1}{k}\end{displaymath}[latex]
 
 ![convergence question 2](math/convergence_question_2.png)
 
-"Text formulas" and "display formulas" are the most common type of LaTeX
-expressions, so Anki provides abbreviated versions of them. Expressions
-of the form:
+«Текстовые формулы» и «отображаемые формулы» — наиболее распространённый тип выражений LaTeX, поэтому Anki предоставляет их сокращённые версии. Выражения вида:
 
     [latex]\begin{math}...\end{math}[/latex]
 
-can be shortened to
+могут быть сокращены до
 
     [$]...[/$]
 
-and expressions of the form
+а выражения вида
 
     [latex]\begin{displaymath}...\end{displaymath}[/latex]
 
-can be shortened to
+могут быть сокращены до
 
     [$$]...[/$$]
 
-For example, the two LaTeX snippets shown before are equivalent to
+Например, два приведённых ранее фрагмента LaTeX эквивалентны
 
     Does [$]\sum_{k = 1}^{\infty}\frac{1}{k}[/$] converge?
 
-and
+и
 
     Does the sum below converge?
 
     [$$]\sum_{k = 1}^{\infty}\frac{1}{k}[/$$]
 
-respectively.
+соответственно.
 
-### Packages
+### Пакеты
 
-Anki allows you to customize the LaTeX preamble so you can import custom
-packages for chemistry, music and so on. For example, imagine you find
-an example file for chemtex on the internet:
+Anki позволяет вам настраивать преамбулу LaTeX, чтобы вы могли импортировать пользовательские пакеты для химии, музыки и т.д. Например, представьте, что вы нашли пример файла для chemtex в интернете:
 
     \documentclass[a4paper,12pt]{report}
     \usepackage{chemtex}
@@ -217,16 +161,8 @@ an example file for chemtex on the internet:
 
     \end{document}
 
-Firstly, follow the documentation of the package and MiKTeX/MacTeX in
-order to install the package. To check the package is working, you’ll
-want to put code like the above into a .latex file and test if you can
-compile it from the command line. Once you’ve confirmed that the package
-is available and working, we can integrate it with Anki.
-
-To use the package with Anki, click "Add" in the main window, then click
-the note type selection button. Click the "Manage" button, then select
-the note type you plan to use and click "Options". The LaTeX header and
-footer are shown. The header will look something like:
+Во-первых, следуйте документации пакета и MiKTeX/MacTeX, чтобы установить пакет. Чтобы проверить, работает ли пакет, вам нужно будет поместить код, подобный приведённому выше, в файл .latex и проверить, можете ли вы скомпилировать его из командной строки. После того, как вы подтвердите, что пакет доступен и работает, мы можем интегрировать его с Anki.
+Чтобы использовать пакет с Anki, нажмите «Добавить» (Add) в главном окне, затем нажмите кнопку выбора типа записи. Нажмите кнопку «Править», затем выберите тип записи, который вы планируете использовать, и нажмите «Настройки». Отображаются заголовок и нижний колонтитул LaTeX (подвал). Заголовок будет выглядеть примерно так:
 
     \documentclass[12pt]{article}
     \special{papersize=3in,5in}
@@ -235,8 +171,7 @@ footer are shown. The header will look something like:
     \setlength{\parindent}{0in}
     \begin{document}
 
-To use chemtex, you’d add the usepackage line in the earlier example, so
-it looks like:
+Чтобы использовать chemtex, вы добавите строку usepackage из предыдущего примера, чтобы это выглядело так:
 
     \documentclass[12pt]{article}
     \special{papersize=3in,5in}
@@ -246,71 +181,45 @@ it looks like:
     \setlength{\parindent}{0in}
     \begin{document}
 
-After that, you should be able to include lines like the following in
-your Anki cards:
+После этого вы сможете включать такие строки в свои карточки Anki:
 
     [latex]\ethene{H}{H$_3$C}{CH$_3$}{Br}[/latex]
 
-### Template Conflicts
+### Конфликты с шаблонами
 
-As of Anki 2.1.20 / AnkiMobile 2.0.56 / AnkiDroid 2.13, this workaround is no
-longer required, as `{{field}}` text inside fields no longer causes problems. If
-you need to support older versions and want to keep using this syntax, please
-make sure you place the `{{=<% %>=}}` string at the very top of your front and
-back template, as recent Anki versions will not recognize it anywhere but the
-start.
+Начиная с Anki 2.1.20 / AnkiMobile 2.0.56 / AnkiDroid 2.13, это обходное решение больше не требуется, так как текст `{{field}}` внутри полей больше не вызывает проблем. Если вам нужно поддерживать старые версии и вы хотите продолжать использовать этот синтаксис, убедитесь, что вы помещаете строку `{{=<% %>=}}` в самое начало шаблона лицевой и оборотной стороны, так как более новые версии Anki не распознают её где-либо, кроме начала.
 
-For older versions:
+Для старых версий:
 
-It’s not uncommon for {{ and }} to pop up in LaTeX code when writing
-mathematical equations. To ensure that your LaTeX equations don’t
-conflict with Anki’s field replacements, it’s possible to change the
-separator to something else.
+Нередко {{ и }} появляются в коде LaTeX при написании математических уравнений. Чтобы гарантировать, что ваши уравнения LaTeX не конфликтуют с заменой полей в Anki, можно изменить разделитель на что-то другое.
 
-For example, if you have a template:
+Например, если у вас есть шаблон:
 
     {{latex field}}
 
-Changing it to the following will make it unlikely that the LaTeX will
-conflict:
+Изменение его на следующее сделает маловероятным конфликт с LaTeX:
 
     {{=<% %>=}}
     <%latex field%>
 
-### Cloze Conflicts
+### Конфликты с пропусками (cloze)
 
-Cloze deletions are terminated with `}}`, which can conflict with a `}}`
-appearing in your LaTeX. To prevent LaTeX from being interpreted as a closing
-cloze marker, you can put a space between any double closing braces that do not
-indicate the end of the cloze, so
+Пропуска завершаются `}}`, что может конфликтовать с `}}`, появляющимся в вашем LaTeX. Чтобы предотвратить интерпретацию LaTeX как закрывающего маркера скрытого удаления, вы можете поставить пробел между любыми двойными закрывающими фигурными скобками, которые не указывают на конец скрытого удаления, поэтому
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz}}[/$] blah blah blah.}}
 
-will not work, but
+не будет работать, но
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz} }[/$] blah blah blah.}}
 
-will (and LaTeX ignores spaces in math mode, so your equation will
-render the same). If you want to avoid adding the extra space into the
-rendered text (for example, when you are making Cloze cards for learning
-programming languages), another option is to use a HTML comment when
-editing the card in HTML mode:
+будет (а LaTeX игнорирует пробелы в математическом режиме, поэтому ваше уравнение будет отображаться так же). Если вы хотите избежать добавления лишнего пробела в отображаемый текст (например, при создании карточек со скрытыми удалениями для изучения языков программирования), другой вариант — использовать HTML-комментарий `<!-- -->` при редактировании карточки в режиме HTML:
 
     {{c1::[$]\frac{foo}{\frac{bar}{baz}<!-- -->}[/$] blah blah blah.}}
 
-You may use either workaround if you need to use the `::` character
-sequence within the Cloze-deleted text. The first card generated for the
-following note text will read `[type] in C++ is a type-safe union`:
+Вы можете использовать любое из этих обходных решений, если вам нужно использовать последовательность символов `::` внутри текста с пропусками. Первая сгенерированная карточка для следующего текста записи будет читаться как `[type] in C++ is a type-safe union`:
 
     {{c1::std:<!-- -->:variant::~type~}} in C++ is a {{c2::type-safe union}}
 
-### Unsafe Commands
+### Небезопасные команды
 
-Anki prohibits certain commands like \\input or \\def from being used on
-cards or in templates, because allowing them could allow malicious
-shared decks to damage your system. (To be on the safe side, these
-commands are prohibited even in comments, so if you’re getting this
-error but don’t think you’ve used one, please double-check any comments
-you have in your headers, templates, and cards.) If you need to use
-these commands, please add them to a system package and import that
-package as described in the previous section.
+Anki запрещает использование определённых команд, таких как \\input или \\def, на карточках или в шаблонах, потому что их разрешение может позволить вредоносным общим колодам повредить вашу систему. (Для безопасности эти команды запрещены даже в комментариях, поэтому, если вы получаете эту ошибку, но думаете, что не использовали их, перепроверьте любые комментарии в ваших заголовках, шаблонах и карточках.) Если вам нужно использовать эти команды, пожалуйста, добавьте их в системный пакет и импортируйте этот пакет, как описано в предыдущем разделе.
