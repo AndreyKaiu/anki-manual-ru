@@ -1,290 +1,171 @@
-# Card Info, Graphs and Statistics
+# Информация о карточках, графики и статистика
 
 <!-- toc -->
 
-## Card Info
+## Информация о карточке
 
-You can display information about a card by using the Cards&gt;Info menu item,
-by right-clicking on the card and then selecting **Info**, or by pressing
-<kbd>I</kbd> on the study screen.
+Вы можете отобразить информацию о карточке, используя пункт меню Карточки > Информация,
+щелкнув правой кнопкой мыши на карточке и выбрав **Информация...**, или нажав
+<kbd>I</kbd> на экране изучения.
 
 ![Card Info](media/card_info.png)
 
-A few notes:
+Несколько примечаний:
 
-**Position**\
-It shows the order the card will appear
-in relative to other new cards. The position can be changed in the
-browser. Once a card has been studied, the position is not used, unless
-the card is manually reset to new again.
+**Позиция**\
+Показывает порядок, в котором карточка будет появляться по отношению к другим новым карточкам. Позицию можно изменить в браузере. После того как карточка была изучена, позиция не используется, если карточка не была вручную сброшена в статус "новая" снова.
 
-**Interval**\
-The delay from one review to the next. Times are abbreviated; "0s, 1m,
-3h, 4d, 5mo, 6y" refers to seconds, minutes, hours, days, months and
-years respectively.
+**Интервал**\
+Задержка от одного повторения до следующего. Время указывается в сокращенной форме: "0s, 1m, 3h, 4d, 5mo, 6y" означает секунд, минут, часов, дней, месяцев и лет соответственно.
 
-**Ease**\
-The approximate amount the interval will grow when you answer a review
-card with the "Good" button.
+**Легкость**\
+Приблизительная величина, на которую увеличится интервал, когда вы ответите на карточку для повторения кнопкой "Хорошо".
 
-The bottom section shows the review history for the card. Rating denotes
-the button (1 = Again, 4 = Easy). When cards are manually rescheduled using
-the "reset" or "set due date" actions, the type will be listed as Manual
-and the rating as 0.
+В нижней части показана история повторений для карточки. Оценка означает нажатую кнопку (1 = Снова, 4 = Легко). Когда карточки переносятся вручную с помощью действий "Сбросить" или "Задать срок", тип будет указан как "Ручной", а оценка как 0.
 
-## Statistics
+## Статистика
 
-The statistics window is accessed by clicking on **Stats** button at the
-top of the main window, or by pressing <kbd>T</kbd>.
+Окно статистики открывается нажатием кнопки **Статистика** в верхней части главного окна или нажатием <kbd>T</kbd>.
 
 ![Statistics screen](media/Statistics.png)
 
-## Selecting Decks / Collection
+## Выбор колод / коллекции
 
-### Deck
+### Колода
 
-By default, the statistics window will show statistics from the currently selected deck and any
-subdecks it may contain, but you can select any deck from your collection by typing its name in the
-text box at the top of the screen or (from Anki 2.1.61), by using the deck selector at the bottom.
+По умолчанию окно статистики покажет статистику для текущей выбранной колоды и любых вложенных в нее подколод, но вы можете выбрать любую колоду из вашей коллекции, введя ее имя в текстовое поле в верхней части экрана или (начиная с Anki 2.1.61) используя селектор колод внизу.
 
-### Collection
+### Коллекция
 
-If you select this checkbox, statistics will be shown for your entire collection. You can also display graphs
-for arbitrary searches by adding filters in the search box at the top (2.1.28+).
+Если вы установите этот флажок, статистика будет показана для всей вашей коллекции. Вы также можете отображать графики для произвольных поисков, добавляя фильтры в поле поиска вверху (2.1.28+).
 
-### History
+### История
 
-By default, Anki shows you statistics for the last 12 months.
-You can change this to all history scope or deck life scope at the top. (The
-"today" section at the top remains of course unaffected by this selection.)
+По умолчанию Anki показывает вам статистику за последние 12 месяцев. Вы можете изменить это на "вся история" или время жизни колоды указанной вверху. (Раздел "Сегодня", конечно же, не зависит от этого выбора.)
 
-### More
+### Дополнительно
 
-- Clicking on "Save PDF" at the bottom will save a PDF document of the statistics to a file
-  on your desktop to make it easy to share your statistics with others.
+- Нажатие на кнопку "Сохранить в формате PDF" сохранит всё статистику в PDF-документ, чтобы легко можно было поделиться своей статистикой с другими.
 
-- When you delete notes, their review history is maintained in Anki. It
-  will not be included when looking at statistics for a specific deck (as
-  Anki has no way of knowing which deck the deleted cards belonged to),
-  but will be included when you look at statistics for the whole
-  collection.
+- Когда вы удаляете записи, их история повторений сохраняется в Anki. Она не будет включаться при просмотре статистики для конкретной колоды (поскольку Anki не может определить, к какой колоде принадлежали удаленные карточки), но будет включаться при просмотре статистики для всей коллекции.
 
-- Anki 2.1.28+ introduced redesigned graphs. The old graphs are still
-  accessible with a <kbd>Shift</kbd>-click on the Stats button.
+- Anki 2.1.28+ представил переработанные графики. Старые графики все еще доступны при нажатии на кнопку "Статистика" с зажатой клавишей <kbd>Shift</kbd>.
 
-## Today
+## Сегодня
 
-At the top of the statistics window is a brief list of textual
-statistics about the reviews that you have completed today. A “review”
-in this context is "one answering of a card", so a card might count as
-multiple reviews if it needed to be seen multiple times, and a learning
-card answered also counts as a “review.” A couple of the stats whose
-meaning may not be immediately obvious:
+В верхней части окна статистики находится краткий список текстовой статистики о повторениях, которые вы завершили сегодня. "Повторение" в этом контексте означает "один ответ на карточку", поэтому одна карточка может считаться несколькими повторениями, если ее нужно было увидеть несколько раз, и ответ на карточку в процессе изучения также считается "повторением". Несколько статистических показателей, значение которых может быть не сразу очевидным:
 
-### Again Count
-This is the number of reviews that you have failed (i.e., pressed Again
-on). The correct percentage listed afterwards is the number of cards you
-did "not" fail divided by the total number of cards you studied.
+### Количество "Снова"
+Это количество повторений, которые вы провалили (т.е. нажали "Снова"). Процент правильных ответов, указанный далее, — это количество карточек, которые вы смогли вспомнить (т.е. не нажали "Снова"), разделенное на общее количество изученных вами карточек.
 
-### Learn, Review, Relearn, Filtered
-The number of reviews that were learning cards, review cards, relearning
-cards, or studied in a filtered deck when not due.
+### Изучаемые, Повторяемые, Переучиваемые, Фильтрованные
+Количество повторений, которые приходились на изучаемые, повторяемые, переучиваемые карты, а так же изученные в фильтрованной колоде, когда срок повторения ещё не наступил.
 
-The stats for the current day are not a good overall indicator of your
-learning progress; everyone has bad days and good days, and seeing that
-you got a lower percentage correct on a particular day should not be
-cause for concern. The remainder of the stats, which take longer periods
-of time into account, will give more useful information if you wish to
-try to change your study habits or scheduling settings based on your
-performance.
+Статистика за текущий день не является хорошим общим показателем вашего прогресса в обучении; у всех бывают плохие и хорошие дни, и то, что в какой-то конкретный день у вас оказался более низкий процент правильных ответов, не должно вызывать беспокойства. Остальная часть статистики, которая учитывает более длительные промежутки времени, даст более полезную информацию, если вы хотите попробовать изменить свои учебные привычки или настройки расписания на основе своей успеваемости.
 
-The “today” statistics are unaffected by the time period selected at the
-bottom of the window.
+Статистика «Сегодня» не зависит от выбранного пользователем периода времени.
 
-## The Graphs
+## Графики
 
-### Future Due
-This graph shows an estimated number of reviews that will be due on a
-given day in the future if you learn no new cards and fail no cards. The
-bars and the left axis show the number of cards due on each day if you
-study all cards each day, while the gray shaded region and the right axis show
-the number of cards due on that day if you don’t study at all until then.
-Note that the forecast graph does not count reviews that are currently
-overdue, so if you have a large backlog, the overdue cards will not be
-displayed.
+### Прогноз повторений
+Этот график показывает предполагаемое количество повторений, которые будут назначены на определённый день в будущем, если вы не будете изучать новые карточки и не будете ошибаться в ответах. Столбцы и левая ось показывают количество карточек, подлежащих повторению в каждый день, если вы изучаете все карточки ежедневно, тогда как серая заштрихованная область и правая ось показывают количество карточек, которые будут назначены на этот день, если вы вообще не будете заниматься до этого момента. Обратите внимание, что прогнозный график не учитывает карточки с просроченным повторением, поэтому если у вас есть большой «хвост» просроченных карточек, они отображаться не будут.
 
-Daily load is an estimate of the average number of cards to be reviewed daily.
-If you don't have a backlog, daily load should be approximately equal to
-your number of due cards.
+Ежедневная нагрузка — это оценка среднего количества карточек, которые нужно повторять каждый день. Если у вас нет просроченных карточек, ежедневная нагрузка должна быть приблизительно равна количеству карточек, назначенных к повторению.
 
-It is calculated as follows:
+Она рассчитывается следующим образом:
 
 $$
 \frac{1}{I_1} + \frac{1}{I_2} + \frac{1}{I_3} + \dots + \frac{1}{I_n}
 $$
 
-Here, \\(I_n\\) is the interval of
-the n-th card. If the interval is less than one day, the summation term is 1. This
-prevents cards with short intervals from unrealistically skewing the value of daily load.
+Здесь \\(I_n\\) — это интервал n-й карточки. Если интервал меньше одного дня, соответствующий член суммы принимается равным 1. Это предотвращает нереалистичное искажение значения ежедневной нагрузки карточками с короткими интервалами.
 
-Example: you have a card with an interval of 10 days and a card with an interval of 50 days.
-Daily load = \\(\frac{1}{10} + \frac{1}{50} = 0.12\\), meaning that, _on average_, you will have 0.12 due cards per day.
+Пример: у вас есть карточка с интервалом 10 дней и карточка с интервалом 50 дней. Ежедневная нагрузка = \\(\frac{1}{10} + \frac{1}{50} = 0.12\\), то есть, _в среднем_, у вас будет 0.12 карточки в день, назначенной к повторению.
 
-### Calendar
-This graph shows past card review activity. Hovering the mouse over a specific item
-allows you to view the number of revisions made that day. Click on a day of the
-week to make that the starting day.
+### Календарь
+Этот график показывает прошлую активность повторений карточек. Наведение курсора мыши на конкретный элемент позволяет увидеть количество повторений, выполненных в этот день. Щёлкните по дню недели, чтобы сделать его начальным днём.
 
-### Reviews
-This graph counts the number of card reviews you have done. The bars may
-correspond to days, weeks, or months, depending on the time period
-you’ve selected at the bottom of the screen. The differently colored
-blocks show how many of the cards you answered on each day were
-[mature](getting-started.md#card-states), young, relearning, or learning cards.
-There is also a separate group for cards answered in a filtered/cram
-deck while they were not due. The gray shaded region and the right axis show
-the cumulative total for each type of review as time progresses across the
-graph (so at 0 days, it would display the number for the entire time
-period displayed on the graph).
+### Повторения
+Этот график показывает количество выполненных вами повторений карточек. Столбцы могут соответствовать дням, неделям или месяцам в зависимости от выбранного периода времени внизу экрана. Блоки разного цвета показывают, сколько из карточек, на которые вы отвечали в каждый день, были [давно изученными](getting-started.md#card-states), свежеизученными, переучиваемые или на изучении. Также существует отдельная группа для карточек, на которые был дан ответ в фильтрованной/зубрёжной колоде, когда срок их повторения ещё не наступил. Серая заштрихованная область и правая ось показывают накопительный итог для каждого типа повторений по мере продвижения по графику во времени (так, при 0 днях будет отображаться значение за весь период, показанный на графике).
 
-### Card Counts
-This pie chart shows what percentage of your deck or collection consists
-of mature, unseen, young/learn, and suspended cards. If you wish to
-calculate a more precise percentage, the key shows the exact number of
-cards in each section, and the total number of cards is displayed to the
-side.
+### Количество карточек
+Эта круговая диаграмма показывает, какой процент вашей колоды или коллекции составляют давно изученные, ещё не изученные (новые), свежеизученные/изучаемые и приостановленные карточки. Если вы хотите рассчитать более точный процент, легенда показывает точное количество карточек в каждом разделе, а общее количество карточек отображается сбоку.
 
-### Review Time
-This graph works exactly like Review Count, except that it deals with
-the amount of time you spent on each card rather than the number of
-cards answered.
+### Время повторения
+Этот график работает точно так же, как график количества повторений, за исключением того, что он показывает количество времени, которое вы потратили на каждую карточку, а не количество отвеченных карточек.
 
-### Review Intervals
-This graph displays the number of cards that have a given interval (the
-delay between two reviews). The gray shaded region and the right axis tell you
-what percentage of your cards have an interval of less than or equal to the
-time below that point. The time scope has a different effect on this
-graph than other graphs: rather than changing which cards or period of
-studying is included, it limits how far out the intervals are displayed
-to (so 14-month intervals are not displayed at all on a 1-year graph).
+### Интервалы повторений
+Этот график показывает количество карточек с определённым интервалом (задержкой между двумя повторениями). Серая заштрихованная область и правая ось показывают, какой процент ваших карточек имеет интервал, меньший или равный значению времени ниже этой точки. Выбранный временной диапазон влияет на этот график иначе, чем на другие: вместо изменения набора карточек или периода обучения, он ограничивает максимальную отображаемую длину интервалов (поэтому интервалы в 14 месяцев вообще не отображаются на графике за 1 год).
 
-### Card Ease
-This graph shows the number of cards that have a specific ease factor.
-Average ease of the selected deck / collection is also displayed here.
+### Лёгкость карточки
+Этот график показывает количество карточек с определённым коэффициентом лёгкости. Здесь также отображается средняя лёгкость выбранной колоды / коллекции.
 
-### Card Stability
-Only shown if FSRS is enabled. Stability is defined as the amount of time required
-for the probability of recall to decrease from 100% to 90%.
+### Стабильность карточки
+Отображается только при включённом FSRS. Стабильность определяется как количество времени, необходимое для снижения вероятности вспоминания со 100% до 90%.
 
-### Card Difficulty
-Only shown if FSRS is enabled. Difficulty determines how quickly a card's interval grows
-after each review.
+### Сложность карточки
+Отображается только при включённом FSRS. Сложность определяет, насколько быстро растёт интервал карточки после каждого повторения.
 
-### Card Retrievability
-Only shown if FSRS is enabled. "Retrievability" is synonymous with "probability of recall".
+### Вспоминаемость карточки
+Отображается только при включённом FSRS. "Вспоминаемость" является синонимом "Вероятность вспоминания".
 
-Estimated total knowledge is the total number of cards you are likely to currently remember,
-calculated by multiplying average retrievability by the number of cards that have been
-reviewed at least once.
+Оценочный общий объём знаний — это общее количество карточек, которые вы, вероятно, помните в данный момент; оно рассчитывается путём умножения средней вспоминаемости на количество карточек, которые были повторены хотя бы один раз.
+### По часам
+Этот график показывает процент от общего числа повторений, которые вы прошли, в заданные часы.
+1. ось x (внизу): Время суток (по конкретному часу).
+2. ось y (справа): Количество изученных карточек.
+3. вторичная ось y (слева): Процент успешности.
 
-### Hourly Breakdown
-This graph shows the percentage of total reviews you have passed during given
-hours.
-1. x-axis (bottom): Time of day (at given hour).
-2. y-axis (right): Amount of cards studied.
-3. secondary y-axis (left): Success rate in percent.
+Таким образом, синие столбцы показывают количество повторений, выполненных вами в этот час (чтобы вы понимали, насколько значимы результаты). Серая заштрихованная область показывает процент от общего числа повторений, которые вы прошли (то есть не нажали _Снова_) в этот час.
 
-The blue bars thus show you the number of reviews you’ve made at that hour (so
-that you know how significant the results are). The gray shaded region shows
-the percentage of the total reviews you have passed (i.e., not pressed _Again_
-on) at that hour.
-
-### Answer Buttons
-This graph shows how many times you’ve chosen the Again, Hard, Good, or
-Easy button while studying learning/new, young, and
-[mature](getting-started.md#card-states) cards. Anki also displays the percentage
-of correct reviews for each type of card.
+### Кнопки ответа
+Этот график показывает, сколько раз вы выбирали кнопки "Снова", "Трудно", "Хорошо" или "Легко" при изучении карточек. Anki также отображает процент правильных повторений для каждого типа карточек.
 
 
-### True Retention Table
+### Таблица "Настоящее усвоение"
 
-This table shows your retention across different cards and different time frames.
-A card is defined as "mature" if its interval is ≥21 days. Only one review per day - the first one - counts.
-Again counts as "Fail"; Hard, Good, and Easy count as "Pass".
-This table can be used to check how well [Anki's spaced repetition algorithm](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html) is working for you.
+Эта таблица показывает ваше усвоение для разных карточек и разных временных промежутков. Карточка считается «давно изученная», если её интервал ≥21 дня. Учитывается только одно повторение в день — первое. «Снова» считается как «Забыто»; «Тяжело», «Хорошо» и «Легко» считаются как «Вспомнено». Эту таблицу можно использовать, чтобы проверить, насколько хорошо для вас работает [алгоритм интервального повторения Анки](https://faqs.ankiweb.net/what-spaced-repetition-algorithm.html).
 
-If you are using FSRS, your true retention is expected to be close to your [desired retention](deck-options.md#desired-retention).
-Please keep in mind that data for a single day is noisy, so it's better to look at monthly data. If your true retention doesn't match your desired retention very well, here are some general recommendations:
+Если вы используете FSRS, ожидается, что ваше истинное усвоение будет близко к вашему [желаемому усвоению](deck-options.md#desired-retention). Пожалуйста, имейте в виду, что данные за один день являются искажёнными, поэтому лучше смотреть на месячные данные. Если ваше истинное усвоение плохо соответствует желаемому усвоению, вот несколько общих рекомендаций:
 
-1) Optimize your FSRS parameters.
-2) Use different presets with their own parameters for different material.
-3) Suspend/reformulate [leeches](leeches.md).
-4) Make sure you are [using the answer buttons as intended](studying.md#answer-buttons).
+1) Оптимизируйте параметры FSRS.
+2) Используйте разные предустановки с собственными параметрами для разного материала.
+3) Приостановите / переформулируйте (сделать исключённой / измените способ представления информации) [приставучих карточек (пиявок)](leeches.md).
+4) Убедитесь, что вы [используете кнопки ответа так, как задумано](studying.md#answer-buttons).
 
+## Ручной анализ
 
-## Manual Analysis
+Если вам интересно получать из статистики информацию, отличную от той, которую предоставляет Anki, можно получить доступ к данным напрямую. Из-за связанной с этим сложности мы не можем оказывать какую-либо поддержку в этом вопросе.
 
-If you’re interested in getting information from your statistics other
-than what Anki provides, it is possible to access the data directly.
-Because of the complexity involved, this is not something we can provide
-any support for.
+Один из вариантов — [написать дополнение](addons.md), которое добавит ещё один график или больше деталей в окно статистики. На AnkiWeb уже есть несколько подобных дополнений, описание которых можно посмотреть, чтобы получить представление о том, как это работает.
 
-One option is to [write an add-on](addons.md) that adds another graph or
-more details to the statistics window. There are several add-ons of this
-sort on AnkiWeb already, which you can look at to get an idea of how it
-works.
+Более мощный, но и более сложный вариант — извлечь журнал повторений напрямую из базы данных Anki и проанализировать его во внешней программе. Anki использует формат базы данных под названием SQLite. Существует множество инструментов для работы с базами данных SQLite; одним из самых простых для начала является [SQLite Browser](http://sqlitebrowser.org/), который позволит вам просматривать базу данных, а также экспортировать таблицы в формате CSV для импорта в другую программу.
 
-A more powerful and more complex option is to extract the review log
-information directly from Anki’s database and analyze it in an external
-program. Anki uses a database format called SQLite. There are many tools
-available for working with SQLite databases; one of the easiest to start
-with is called [SQLite Browser](http://sqlitebrowser.org/), which will
-allow you to look around the database as well as export a CSV version of
-tables for import into another program.
-
-The most important table for statistics is the "revlog" table, which
-stores an entry for each review that you conduct. The columns are as
-follows:
+Самой важной для статистики является таблица "revlog", которая хранит запись для каждого выполненного вами повторения. Столбцы имеют следующее значение:
 
 **id**\
-The time at which the review was conducted, as the number of
-milliseconds that had passed since midnight UTC on January 1, 1970.
-(This is sometimes known as "Unix epoch time", especially when in
-straight seconds instead of milliseconds.)
+Время, в которое было выполнено повторение, в виде количества миллисекунд, прошедших с полуночи UTC 1 января 1970 года. (Это иногда называют «Unix epoch time», особенно когда используется представление в секундах, а не в миллисекундах.)
 
 **cid**\
-The ID of the card that was reviewed. You can look up this value in the
-id field of the "cards" table to get more information about the card,
-although note that the card could have changed between when the revlog
-entry was recorded and when you are looking it up. It is also the
-millisecond timestamp of the card’s creation time.
+Идентификатор карточки, которая была повторена. Вы можете найти это значение в поле id таблицы "cards", чтобы получить больше информации о карточке, однако учтите, что карточка могла измениться между моментом записи в revlog и моментом, когда вы её просматриваете. Это также миллисекундная временная метка времени создания карточки.
 
 **usn**\
-This column is used to keep track of the sync state of reviews and
-provides no useful information for analysis.
+Этот столбец используется для отслеживания состояния синхронизации повторений и не предоставляет полезной информации для анализа.
 
 **ease**\
-Which button you pressed at the end of the review (1 for Again, 4 for
-Easy).
+Какая кнопка была нажата в конце повторения (1 — Снова (Again), 4 — Легко (Easy)).
 
 **ivl**\
-The new interval that the card was pushed to after the review. Positive
-values are in days; negative values are in seconds (for learning cards).
+Новый интервал, на который была переведена карточка после повторения. Положительные значения указываются в днях; отрицательные значения — в секундах (для карточек в изучении).
 
 **lastIvl**\
-The interval the card had before the review. Cards introduced for the
-first time have a last interval equal to the Again delay.
+Интервал, который был у карточки до повторения. Карточки, впервые добавленные в колоду, имеют предыдущий интервал, равный шагу для «Снова» (задержке Again).
 
 **factor**\
-The new ease factor of the card in permille (parts per thousand). If the
-ease factor is 2500, the card’s interval will be multiplied by 2.5 the
-next time you press Good.
+Новый коэффициент лёгкости карточки в промилле (тысячных долях). Если коэффициент лёгкости равен 2500, интервал карточки будет умножен на 2.5 при следующем нажатии кнопки «Хорошо» (Good).
 
 **time**\
-The amount of time (in milliseconds) you spent on the question and
-answer sides of the card before selecting an ease button.
+Количество времени (в миллисекундах), которое вы потратили на просмотр стороны вопроса и стороны ответа карточки, перед выбором кнопки оценки.
 
 **type**\
-This is 0 for learning cards, 1 for review cards, 2 for relearning cards,
-and 3 for early "cram" cards (cards being studied in a filtered deck when they
-are not due).
+Значение 0 — для карточек в изучении, 1 — для карточек на повторении, 2 — для переучиваемых карточек и 3 — для ранних «зазубриваемых» карточек (карточек, изучаемых в фильтрованной колоде, когда срок повторения ещё не наступил).
