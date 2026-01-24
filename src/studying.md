@@ -53,7 +53,7 @@ you a little while to recall the answer, but as a general rule if you
 can’t answer within about 10 seconds, it’s probably better to move on
 and show the answer than keep struggling to remember.
 
-## Answer Buttons
+## Кнопки ответа
 
 After the answer is shown, compare the answer you thought of
 with the answer that is shown and select any of the following buttons.

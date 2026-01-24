@@ -246,7 +246,7 @@ they can be found in a submenu of the context menu.
 This menu exists to provide keyboard shortcuts to jump to various
 parts of the browser, and to go up and down the card list.
 
-## Find and Replace
+## Найти и заменить
 
 This dialog allows for replacing text on notes. As described above, it is available
 from the toolbar and the table's context menu.

@@ -412,7 +412,7 @@ FSRS can adapt to almost any habit, except for one: pressing "Hard" instead of "
 
 Regarding add-on compatibility, as a general rule of thumb, if an add-on affects intervals and scheduling in some way, it shouldn't be used with FSRS.
 
-### Desired Retention
+### Желаемое усвоение
 
 Desired retention controls how likely you are to remember cards when they are scheduled for a review.
 The default value of `0.90` will schedule cards so you have a 90% chance of remembering

@@ -51,7 +51,7 @@ After deciding the answer is O, you click the
 After confirming that you are correct, you tell Anki how well you
 remembered the answer, and Anki will choose when to show you the card again. For example, Anki might decide to show you the card again in 3 days. In this case, we say the card now has a 3 day interval.
 
-#### Card States
+#### Состояния карты
 
 <div id="types-of-cards" />
 

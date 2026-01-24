@@ -45,7 +45,7 @@
   - [Комплект колод](importing/packaged-decks.md)
 - [Экспорт](exporting.md)
 - [+Резервные копии](backups.md)
-- [Управление файлами](files.md)
+- [+Управление файлами](files.md)
 - [+Статистика](stats.md)
 - [+Медиафайлы](media.md)
 - [+Математика и символы](math.md)
