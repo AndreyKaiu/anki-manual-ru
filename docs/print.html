@@ -1978,7 +1978,7 @@ two
 <p>In the preview, you’d actually see:</p>
 <pre><code>one two
 </code></pre>
-<p>To add a new line, you need to add a &lt;br&gt; code to the end of a
+<p>To add a new line, you need to add a <br> code to the end of a
 line, like so:</p>
 <pre><code>one&lt;br&gt;
 two
@@ -2123,7 +2123,7 @@ example above, if the expression contained the word &quot;myword&quot; without a
 formatting, then the HTML would be the same: &quot;myword&quot;. But when you
 include formatting in your fields, extra HTML is included. If &quot;myword&quot;
 was bolded for example, the actual HTML would be
-&quot;&lt;b&gt;myword&lt;/b&gt;&quot;.</p>
+&quot;<b>myword</b>&quot;.</p>
 <p>This can present a problem for things like dictionary links. In the
 above example, the dictionary link would end up being:</p>
 <pre><code>&lt;a href=&quot;http://example.com/search?q=&lt;b&gt;myword&lt;/b&gt;&quot;&gt;check in dictionary&lt;/a&gt;
@@ -4515,9 +4515,9 @@ as &quot;atta dog&quot;, but not &quot;dog a&quot; or &quot;adog&quot;.</p>
 <p><code>-&quot;a dog&quot;</code><br />
 finds notes without the exact sequence of characters &quot;a dog&quot; in them.</p>
 <p><code>d_g</code><br />
-finds notes with d, &lt;one character&gt;, g, like dog, dig, dug, and so on.</p>
+finds notes with d, <one character>, g, like dog, dig, dug, and so on.</p>
 <p><code>d*g</code><br />
-finds notes with d, &lt;zero or more characters&gt;, g, like dg, dog, dung,
+finds notes with d, <zero or more characters>, g, like dg, dog, dung,
 etc.</p>
 <p><code>w:dog</code><br />
 searches for the word &quot;dog&quot; as opposed to a sequence of characters - will match &quot;dog&quot;, but not &quot;doggy&quot;
@@ -4814,7 +4814,7 @@ However, if you don't use a colon search, the colons need to be escaped like thi
 <p><code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code><br />
 <code>&amp;</code>, <code>&lt;</code>, and <code>&gt;</code> are treated as HTML when searching in Anki, and as such, searches
 containing them don't work as expected. However, you can search for them by using their
-corresponding HTML entity names (<code>&amp;amp;</code> for <code>&amp;</code>, <code>&amp;lt;</code> for <code>&lt;</code>, and <code>&amp;gt;</code> for <code>&gt;</code>).
+corresponding HTML entity names (<code>&amp;amp;</code> for <code>&amp;</code>, <code>&lt;</code> for <code>&lt;</code>, and <code>&gt;</code> for <code>&gt;</code>).
 For example, searching <code>&amp;amp;text</code> searches for a note with <code>&amp;text</code> in a field.</p>
 </li>
 </ul>
@@ -4970,8 +4970,8 @@ HTML syntax.</p>
 <p>If you wish to use HTML for formatting your file but also wish to
 include angle brackets or ampersands, you may use the following replacements:</p>
 <div class="table-wrapper"><table><thead><tr><th>Character</th><th>Replacement</th></tr></thead><tbody>
-<tr><td>&lt;</td><td><code>&amp;lt;</code></td></tr>
-<tr><td>&gt;</td><td><code>&amp;gt;</code></td></tr>
+<tr><td>&lt;</td><td><code>&lt;</code></td></tr>
+<tr><td>&gt;</td><td><code>&gt;</code></td></tr>
 <tr><td>&amp;</td><td><code>&amp;amp;</code></td></tr>
 </tbody></table>
 </div>
@@ -5322,13 +5322,13 @@ and leech tags so that they will have a clean copy of it.</p>
 </code></pre>
 <ul>
 <li>
-<p>Если у вас несколько профилей, вы можете передать <code>-p &amp;lt;name&amp;gt;</code> для загрузки конкретного профиля.</p>
+<p>Если у вас несколько профилей, вы можете передать <code>-p &lt;name&gt;</code> для загрузки конкретного профиля.</p>
 </li>
 <li>
 <p>Если вы передадите -p some-fake-name, Anki покажет экран выбора профиля при запуске. Если профиль не указан, загружается последний использованный профиль.</p>
 </li>
 <li>
-<p>Чтобы изменить язык интерфейса, используйте <code>-l &amp;lt;iso 639-1 language code&amp;gt</code>, например <code>-l ja</code> для японского языка.
+<p>Чтобы изменить язык интерфейса, используйте <code>-l &lt;iso 639-1 language code&amp;gt</code>, например <code>-l ja</code> для японского языка.
 Если вы всегда хотите использовать пользовательское расположение папки данных, вы можете изменить ярлык Anki. В Windows щёлкните правой кнопкой мыши по ярлыку, выберите Properties, перейдите на вкладку Shortcut и добавьте <code>-b \\path\\to\\data\\folder</code> после пути к программе, в результате чего получится примерно следующее:</p>
 <p>&quot;C:\Program Files\Anki\anki.exe&quot; -b &quot;C:\AnkiDataFolder&quot;</p>
 </li>

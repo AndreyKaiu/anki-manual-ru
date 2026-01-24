@@ -79,7 +79,7 @@ both children of this tag. Behind the scenes, Anki has renamed the two tags to
 `Math::Calculus` and `Math::Algebra` respectively and updated your notes accordingly.
 
 Another use case for selecting multiple items is searching: If you right-click on
-a selection of items, you can choose **Search &gt; All/Any Selected**. This
+a selection of items, you can choose **Search > All/Any Selected**. This
 can be combined with keyboard modifiers as described in [Search Tool](#search-tool)
 to append the resulting search to the current search.
 

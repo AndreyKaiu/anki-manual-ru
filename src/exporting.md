@@ -47,7 +47,7 @@ file. This is useful for copying your collection back and forth between
 devices.
 
 Existing media in your collection is not deleted when you import a
-collection package. To delete unused media, use Tools&gt;Check Media.
+collection package. To delete unused media, use Tools>Check Media.
 
 If you choose Anki 2.1.50+ Collection Package format, imports and exports
 will be faster, and media files will be compressed, but the resulting

@@ -41,10 +41,10 @@ as "atta dog", but not "dog a" or "adog".
 finds notes without the exact sequence of characters "a dog" in them.
 
 `d_g`\
-finds notes with d, &lt;one character&gt;, g, like dog, dig, dug, and so on.
+finds notes with d, <one character>, g, like dog, dig, dug, and so on.
 
 `d*g`\
-finds notes with d, &lt;zero or more characters&gt;, g, like dg, dog, dung,
+finds notes with d, <zero or more characters>, g, like dg, dog, dung,
 etc.
 
 `w:dog`\
@@ -433,7 +433,7 @@ you need to tell Anki not to treat them specially. This is called "escaping a ch
 - `&`, `<`, and `>`\
   `&`, `<`, and `>` are treated as HTML when searching in Anki, and as such, searches
   containing them don't work as expected. However, you can search for them by using their
-  corresponding HTML entity names (`&amp;` for `&`, `&lt;` for `<`, and `&gt;` for `>`).
+  corresponding HTML entity names (`&amp;` for `&`, `<` for `<`, and `>` for `>`).
   For example, searching `&amp;text` searches for a note with `&text` in a field.
 
 ### Raw input
