@@ -1,72 +1,39 @@
-# Exporting
+# Экспорт
 
 <!-- toc -->
 
-Exporting allows you to save part of your collection as a text file or
-packaged Anki deck. To export, click the File menu and choose **Export**.
+Экспорт позволяет вам сохранить часть вашей коллекции в виде текстового файла или упакованной колоды Anki. Чтобы экспортировать, нажмите меню **Файл** и выберите **Экспортировать**.
 
-## Text Files
+## Текстовые файлы
 
-If you choose "Notes in Plain Text", Anki will write the contents of the
-notes into a text file. Each field is separated by a tab. If you edit
-the resulting file and don't modify the first field, you can later
-import that file back into Anki and Anki will update your notes based on
-your edits, provided you import back into the same note type.
+Если вы выберете "Записи в текст", Anki запишет содержимое заметок в текстовый файл. Каждое поле разделено табуляцией. Если вы отредактируете получившийся файл и не измените первое поле, вы можете позже импортировать этот файл обратно в Anki, и Anki обновит ваши заметки на основе ваших правок, при условии, что вы импортируете обратно в тот же тип заметки.
 
-If you find yourself needing to edit the first field as well, you'll
-need to change the format of your note type so that the first field is
-an ID number rather than actual text. (You can install
-the [Add note id](https://ankiweb.net/shared/info/8897764)
-add-on to make this easier.)
+Если вам нужно редактировать и первое поле тоже, вам потребуется изменить формат вашего типа заметки, чтобы первое поле было ID номером, а не фактическим текстом. (Вы можете установить дополнение [Add note id](https://ankiweb.net/shared/info/8897764), чтобы сделать это проще.)
 
-In order for formatting to be preserved when you import text back in,
-the text is exported with all the HTML formatting embedded in it.
+Чтобы форматирование сохранилось при импорте текста обратно, текст экспортируется со всем HTML-форматированием, встроенным в него.
 
-## Packaged Decks
+## Упакованные колоды
 
-A "packaged deck" consists of cards, notes, note types, and any sounds or
-images bundled up into a file ending with .apkg or .colpkg. You can use
-packaged decks to transfer cards between people, or for backing up parts
-of your collection.
+"Пакет колод Anki" состоит из карточек, заметок, типов заметок и любых звуков или изображений, упакованных в файл с расширением .apkg или .colpkg. Вы можете использовать упакованные колоды для передачи карточек между людьми или для резервного копирования частей вашей коллекции.
 
-There are two different kinds of packaged decks.
+Существует два разных вида упакованных колод.
 
-### Collection (.colpkg)
+### Коллекция (.colpkg)
 
-When you export all decks with scheduling included, this is called a
-"collection package". Anki will copy your entire collection into a file
-ending in .colpkg, and place it on your desktop. A collection package is
-used to back up your collection, or copy it to another device.
+Когда вы экспортируете все колоды с включенным планированием, это называется "пакетом коллекции". Anki скопирует всю вашу коллекцию в файл с расширением .colpkg и поместит его на ваш рабочий стол. Пакет коллекции используется для резервного копирования вашей коллекции или копирования её на другое устройство.
 
-Collection packages created with previous versions of Anki were called
-collection.apkg.
+Пакеты коллекций, созданные с предыдущими версиями Anki, назывались collection.apkg.
 
-When this file is later imported, Anki will delete all the current cards
-in the collection, and replace the collection with the items in the
-file. This is useful for copying your collection back and forth between
-devices.
+Когда этот файл позже импортируется, Anki удалит все текущие карточки в коллекции и заменит коллекцию элементами из файла. Это полезно для копирования вашей коллекции туда и обратно между устройствами.
 
-Existing media in your collection is not deleted when you import a
-collection package. To delete unused media, use Tools>Check Media.
+Существующие медиафайлы в вашей коллекции не удаляются при импорте пакета коллекции. Чтобы удалить неиспользуемые медиафайлы, используйте «**Инструменты > Проверить медиафайлы**».
 
-If you choose Anki 2.1.50+ Collection Package format, imports and exports
-will be faster, and media files will be compressed, but the resulting
-.colpkg file will not be readable by older Anki clients.
+Если вы выберете формат пакета коллекции Anki 2.1.50+, импорт и экспорт будут быстрее, а медиафайлы будут сжаты, но получившийся файл .colpkg не будет читаться старыми клиентами Anki.
 
-### Deck (.apkg)
+### Колода (.apkg)
 
-Deck packages contain a single deck (and any child decks it may have).
-They have a filename ending with .apkg, but a filename other than
-collection.apkg. When you import a deck package, Anki will add the
-contents into your collection, rather than overwriting your collection.
+Пакеты колод содержат одну колоду (и любые дочерние колоды, которые у неё могут быть). У них имя файла заканчивается на .apkg, но с именем файла, отличным от collection.apkg. Когда вы импортируете пакет колоды, Anki добавит содержимое в вашу коллекцию, а не перезапишет вашу коллекцию.
 
-If some notes in the deck package have previously been imported, Anki
-will keep the version with the most recent modification time. So if you
-download an updated deck, the edits that have been made in the updated
-version will be made in your collection as well, but if you re-import an
-unchanged deck after making edits in your collection, the changes in
-your collection will be kept.
+Если некоторые заметки в пакете колоды уже импортировались ранее, Anki сохранит версию с наиболее поздним временем изменения. Так что если вы скачали обновленную колоду, правки, сделанные в обновленной версии, будут применены и в вашей коллекции, но если вы повторно импортируете неизмененную колоду после внесения правок в вашей коллекции, изменения в вашей коллекции будут сохранены.
 
-If you choose not to include scheduling information, Anki will assume
-that you are sharing the deck with other people, and will remove marked
-and leech tags so that they will have a clean copy of it.
+Если вы не установите флаг "Вместе с расписанием", Anki предположит, что вы делитесь колодой с другими людьми, и удалит теги "marked" и "leech", чтобы у них была чистая копия.
