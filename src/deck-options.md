@@ -202,7 +202,7 @@ When you change this option, Anki will re-sort the decks in the current preset.
 
 On recent Anki versions, you should leave this option set to `Sequential`, and adjust the [display order](deck-options.md#display-order) instead.
 
-## Lapses
+## Забытые
 
 When you click **Again** on a review card, it is called a _lapse_. The options listed here affect such lapsed cards.
 

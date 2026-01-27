@@ -1,488 +1,424 @@
-# Searching
+# Поиск
 
 <!-- toc -->
 
-Anki's Browse screen and the Filtered Deck feature use a common method
-of searching for specific cards/notes. This method can also be used to adjust the scope of FSRS optimization. 
+Окно просмотра списка карточек в Anki и функция фильтрованных колод используют общий метод поиска конкретных карточек/записей. Этот метод также может быть использован для корректировки области оптимизации FSRS.
 
-## Simple searches
+## Простой поиск
 
-When you type some text into the search box, Anki finds matching notes
-and displays their cards. Anki searches in all fields of the notes, but
-does not search for tags (see [later in this section](#tags-decks-cards-and-notes) to search for tags). Some examples:
+Когда вы вводите какой-либо текст в поле поиска, Anki находит соответствующие записи и отображает их карточки. Anki ищет по всем полям записей, но не ищет по тегам (см. [далее в этом разделе](#Теги-колоды-карточки-и-записи) для поиска по тегам). Некоторые примеры:
 
 `dog`\
-searches for "dog" - will match words like "doggy" and "underdog" too.
+ищет "dog" в любой части слова — также будет соответствовать таким словам, как "doggy" и "underdog".
 
 `dog cat`\
-finds notes that have both "dog" and "cat" on them, such as "raining
-cats and dogs".
+находит записи, на которых есть и "dog", и "cat", например, "raining cats and dogs".
 
 `dog or cat`\
-finds notes with either "dog" or "cat".
+находит записи с "dog" или "cat".
 
 `dog (cat or mouse)`\
-finds notes with "dog" and "cat", or "dog" and "mouse".
+находит записи с "dog" и "cat" или с "dog" и "mouse".
 
 `-cat`\
-finds notes without "cat".
+находит записи без "cat".
 
 `-cat -mouse`\
-finds notes with neither "cat" nor "mouse".
+находит записи без "cat" и без "mouse".
 
 `-(cat or mouse)`\
-same as the above.
+то же, что и выше.
 
 `"a dog"`\
-finds notes with the exact sequence of characters "a dog" in them, such
-as "atta dog", but not "dog a" or "adog".
+находит записи с точной последовательностью символов "a dog" в них, например, "atta dog", но не "dog a" и не "adog".
 
 `-"a dog"`\
-finds notes without the exact sequence of characters "a dog" in them.
+находит записи без точной последовательности символов "a dog" в них.
 
 `d_g`\
-finds notes with d, <one character>, g, like dog, dig, dug, and so on.
+находит записи с d, <один любой символ>, g, например, dog, dig, dug и так далее.
 
 `d*g`\
-finds notes with d, <zero or more characters>, g, like dg, dog, dung,
-etc.
+находит записи с d, <ноль или более любых символов>, g, например, dg, dog, dung и т.д.
 
 `w:dog`\
-searches for the word "dog" as opposed to a sequence of characters - will match "dog", but not "doggy"
-or "underdog". Requires Anki 2.1.24+, AnkiMobile 2.1.61+, or AnkiDroid 2.17+. Note that
-formatting changes may be interpreted as word boundaries, e.g. searching
-for `w:exam` will match **exam**ple, as the "exam" part of example is in bold format.
+ищет слово "dog" в отличие от последовательности символов — будет соответствовать "dog", но не "doggy" или "underdog". Требуется Anki 2.1.24+, AnkiMobile 2.1.61+ или AnkiDroid 2.17+. Обратите внимание, что изменения форматирования могут интерпретироваться как границы слов, например, поиск `w:exam` будет соответствовать **exam**ple, так как часть "exam" в слове example выделена жирным шрифтом.
 
 `w:dog*`\
-will match "dog" and "doggy", but not "underdog".
+будет соответствовать "dog" и "doggy", но не "underdog".
 
 `w:*dog`\
-will match "dog" and "underdog", but not "doggy".
+будет соответствовать "dog" и "underdog", но не "doggy".
 
-Things to note from the above:
+Важные моменты из вышесказанного:
 
-- Search terms are separated by spaces.
+- Условия поиска разделяются пробелами.
 
-- When multiple search terms are provided, Anki looks for notes that
-  match all of the terms - an implicit `and` is inserted between each
-  term. On Anki 2.1.24+, AnkiMobile 2.0.60+, and AnkiDroid 2.17+ you can be explicit
-  if you like (`dog and cat` is the same as `dog cat`), but older
-  Anki versions will treat `and` as just another word to search for.
+- Когда предоставлено несколько условий поиска, Anki ищет записи, соответствующие всем условиям — между каждым условием подразумевается `and`. В Anki 2.1.24+, AnkiMobile 2.0.60+ и AnkiDroid 2.17+ вы можете указать явно, если хотите (`dog and cat` — то же самое, что `dog cat`), но более старые версии Anki будут рассматривать `and` как просто ещё одно слово для поиска.
 
-- You can use `or` if you only need one of the terms to match.
+- Вы можете использовать `or`, если вам нужно, чтобы соответствовало только одно из условий.
 
-- You can prepend a minus sign (`-`) to a term to find notes that don’t
-  match the term.
+- Вы можете добавить знак минус (`-`) перед условием, чтобы найти записи, которые не соответствуют этому условию.
 
-- You can group search terms by placing them in parentheses, as in the
-  `dog (cat or mouse)` example. This becomes important when
-  combining OR and AND searches — in the example, with the
-  parentheses, it matches either "dog cat" or "dog mouse", whereas
-  without them it would match either "dog and cat" or "mouse".
+- Вы можете группировать условия поиска, помещая их в круглые скобки, как в примере `dog (cat or mouse)`. Это становится важным при объединении поисков OR и AND — в примере с круглыми скобками это соответствует либо "dog cat", либо "dog mouse", тогда как без них это соответствовало бы либо "dog и cat", либо "mouse".
 
-- Anki is only able to search within formatting in the [sort field](editing.md#customizing-fields) you’ve configured. For example, if you add
-  "**exa**mple" to one of your fields, with the "exa" part in bold, this will not be matched when
-  searching for `example` unless that field is the sort field. If a
-  word is not formatted, or the formatting does not change in the
-  middle of the word, then Anki will be able to find it in any field.
+- Anki может выполнять поиск внутри форматирования только в [поле сортировки](editing.md#Настройка-полей), которое вы настроили. Например, если вы добавите "**exa**mple" в одно из ваших полей, причём часть "exa" будет выделена жирным шрифтом, это не будет найдено при поиске `example`, если это поле не является полем сортировки. Если слово не отформатировано или форматирование не меняется в середине слова, то Anki сможет найти его в любом поле. (Возможно anki научат со временем искать и с форматированием, но на начало 2026 года этого нет, а если вам очень требуется поиск и в форматировании, то посмотрите это дополнение [Advanced Browser - mod kaiu 2026](https://ankiweb.net/shared/info/1334324384))
 
-- Standard searches are case insensitive for Latin characters - a-z will
-  match A-Z, and vice versa. Other characters such as Cyrillic are case sensitive
-  in a standard search, but can be made case insensitive by searching on a word
-  boundary or regular expression (`w:`, `re:`).
+- Стандартный поиск нечувствителен к регистру для латинских символов — a-z будет соответствовать A-Z, и наоборот. Другие символы, такие как кириллица, чувствительны к регистру в стандартном поиске, но могут быть сделаны нечувствительными к регистру с помощью поиска по границе слова или регулярному выражению (`w:`, `re:`).
 
-## Limiting to a field
+## Ограничение по полю
 
-You can also ask Anki to match only if a particular field contains some
-text. Unlike the previous search examples, searching in fields requires an exact
-match by default.
+Вы также можете попросить Anki находить совпадения только если определённое поле содержит некоторый текст. В отличие от предыдущих примеров поиска, поиск по полям по умолчанию требует точного совпадения.
 
 `front:dog`\
-finds notes with a Front field of exactly "dog". A field that says "a
-dog" will not match.
+находит записи, у которых поле Front точно равно "dog". Поле с текстом "a dog" не подойдёт.
 
 `"animal front:a dog"`\
-finds notes where the "Animal Front" field is exactly "a dog". The double quotes are
-mandatory: see [later in this section](#matching-special-characters).
+находит записи, где поле "Animal Front" точно равно "a dog". Двойные кавычки обязательны: см. [далее в этом разделе](#Сопоставление-специальных-символов).
 
 `front:*dog*`\
-finds notes where the Front field contains dog somewhere.
+находит записи, где поле Front содержит dog где-либо.
 
 `front:`\
-finds notes that have an empty Front field.
+находит записи с пустым полем Front.
 
 `front:_*`\
-finds notes that have a non-empty Front field.
+находит записи с непустым полем Front.
 
 `front:*`\
-finds notes that have a Front field, empty or not.
+находит записи, у которых есть поле Front, пустое или нет.
 
 `fr*:text`\
-finds notes in a field starting with "fr". Requires Anki 2.1.24+, AnkiMobile 2.1.60+, or AnkiDroid 2.17+.
+находит записи в поле, название которого начинается с "fr". Требуется Anki 2.1.24+, AnkiMobile 2.1.60+ или AnkiDroid 2.17+.
 
-## Tags, decks, cards and notes
+## Теги, колоды, карточки и записи
 
 `tag:animal`\
-finds notes with the tag "animal", or subtags like "animal::mammal".
+находит записи с тегом "animal" или подтегами, такими как "animal::mammal".
 
 `tag:none`\
-finds notes with no tags.
+находит записи без тегов.
 
 `tag:ani*`\
-finds notes with tags starting with "ani".
+находит записи с тегами, начинающимися на "ani".
 
 `deck:french`\
-find cards in a top-level deck called "French", or its subdecks like "French::Words". It will not match subdecks with that name, such as "Languages::French".
+находит карточки в основной колоде с названием "French" или её подколодах, таких как "French::Words". Не будет соответствовать подколодам с таким названием, как например, "Languages::French".
 
 `deck:french::words`\
-find cards in the "French::Words" subdeck.
+находит карточки в подколоде "French::Words".
 
 `deck:french -deck:french::*`\
-finds cards in "French", but not its subdecks.
+находит карточки в "French", но не в её подколодах.
 
 `deck:"french words"`\
-searching when the deck name has a space.
+поиск, когда название колоды содержит пробел.
 
 `"deck:french words"`\
-same as earlier.
+то же, что и выше.
 
 `deck:filtered`\
-filtered decks only.
+только фильтрованные колоды.
 
 `-deck:filtered`\
-normal decks only.
+только обычные колоды.
 
 `preset:"Default"`\
-cards in all decks that use the "Default" deck options preset.
-Requires Anki 23.10+, AnkiMobile 23.10+ or AnkiDroid 2.17+.
+карточки во всех колодах, которые используют набор настроек колоды "Default". Требуется Anki 23.10+, AnkiMobile 23.10+ или AnkiDroid 2.17+.
 
 `card:forward`\
-finds cards created by a card type named "Forward".
+находит карточки, созданные типом карточки с названием "Forward".
 
 `card:1`\
-searches for cards by card type number, e.g. to find the second cloze
-deletion for a note, you’d use `card:2`
+ищет карточки по номеру типа карточки, например, чтобы найти второй пропуск в записи (задание с пропусками), вы бы использовали `card:2`.
 
 `note:basic`\
-searches for cards created with a note type named "Basic".
+ищет карточки, созданные с типом записи с названием "Basic".
 
-## Ignoring accents/combining characters
+## Игнорирование акцентов/комбинируемых символов
 
-Requires Anki 2.1.24+, AnkiMobile 2.0.60+ or AnkiDroid 2.17+.
+Требуется Anki 2.1.24+, AnkiMobile 2.0.60+ или AnkiDroid 2.17+.
 
-You can use `nc:` (nc stands for "no combining") to make Anki ignore combining characters. For example:
+Вы можете использовать `nc:` (nc означает "no combining" — без комбинирования), чтобы заставить Anki игнорировать комбинируемые символы (символы предназначенные для модификации предыдущего основного знака). Например:
 
 `nc:uber`\
-matches notes with "uber", "über", "Über" and so on.
+соответствует записям с "uber", "über", "Über" и т.д.
 
 `nc:は`\
-matches "は", "ば", and "ぱ".
+соответствует "は", "ば" и "ぱ".
 
-Searches that ignore combining characters are slower than regular searches.
+Поиски, игнорирующие комбинируемые символы, выполняются медленнее, чем обычные поиски.
 
-## Regular expressions
+## Регулярные выражения
 
-Anki 2.1.24+, AnkiMobile 2.0.60+ and AnkiDroid 2.17+ support searching in notes with "regular expressions",
-a standard and powerful way of searching in text.
+Anki 2.1.24+, AnkiMobile 2.0.60+ и AnkiDroid 2.17+ поддерживают поиск по записям с помощью «регулярных выражений», стандартного и мощного способа поиска в тексте.
 
-Start a search with `re:` to search using regular expressions. To make things easier, Anki will
-treat the following as [raw input](#raw-input), so bear in mind the rules listed there.
+Начните поиск с `re:`, чтобы использовать регулярные выражения. Для упрощения Anki будет рассматривать следующее как [необработанный ввод](#Необработанный-ввод), поэтому учитывайте правила, перечисленные там.
 
-Some examples:
+Некоторые примеры:
 
 `"re:(some|another).*thing"`\
-finds notes that have "some" or "another" on them, followed by 0 or more characters, and then "thing".
+находит записи, содержащие "some" или "another", за которыми следует 0 или более символов, а затем "thing".
 
 `re:\d{3}`\
-finds notes that have 3 digits in a row.
+находит записи, содержащие 3 цифры подряд.
 
-Regular expressions can also be limited to a specific field. Please note that unlike the normal searches
-in a specific field, regular expressions in fields don't require an exact match:
+Регулярные выражения также можно ограничить конкретным полем. Обратите внимание, что в отличие от обычного поиска по конкретному полю, регулярные выражения в полях не требуют точного совпадения:
 
 `front:re:[a-c]1`\
-matches uppercase or lowercase a1, B1 or c1 that occurs anywhere in the "Front" field.
+соответствует A1, B1 или C1 в верхнем или нижнем регистре, встречающимся в любом месте поля "Front".
 
 `front:re:^[a-c]1$`\
-same as the previous example, but will not match if any other text falls before or after a1/b1/c1.
+то же, что и предыдущий пример, но не будет соответствовать, если перед или после a1/b1/c1 есть какой-либо другой текст.
 
-Anki 2.1.50+ supports regular expressions for tags:
+Anki 2.1.50+ поддерживает регулярные выражения для тегов:
 
 `tag:re:^parent$`\
-finds notes with the exact tag "parent", disregarding any child tags like "parent::child".
+находит записи с точным тегом "parent", игнорируя любые дочерние теги, такие как "parent::child".
 
 `"tag:re:lesson-(1[7-9]|2[0-5])"`\
-finds notes with tags "lesson-17" through "lesson-25".
+находит записи с тегами от "lesson-17" до "lesson-25".
 
-For more information on regular expressions, see [this website](<https://regexone.com/lesson/introduction_abcs>).
+Для получения дополнительной информации о регулярных выражениях см. [этот веб-сайт](<https://regexone.com/lesson/introduction_abcs>).
 
-Some things to be aware of:
+Некоторые моменты, о которых следует знать:
 
-- The search is case-insensitive by default; use `(?-i)` at the start to turn on case sensitivity.
-- Some text like spaces and newlines may be represented differently in HTML - you can
-  use the HTML editor in the editing screen to see the underlying HTML contents.
-- For the specifics of Anki's regex support, see the [regex crate documentation](<https://docs.rs/regex/1.3.9/regex/#syntax>).
+- Поиск нечувствителен к регистру по умолчанию; используйте `(?-i)` в начале, чтобы включить чувствительность к регистру.
+- Некоторые тексты, такие как пробелы и переводы строк, могут быть представлены в HTML по-разному — вы можете использовать HTML-редактор на экране редактирования, чтобы увидеть лежащее в основе HTML-содержимое.
+- Для подробностей о поддержке регулярных выражений в Anki см. [документацию пакета regex](<https://docs.rs/regex/1.3.9/regex/#syntax>).
 
-## Card state
+## Состояние карточки
 
 `is:due`\
-review cards and learning cards waiting to be studied.
+карточки для повторения и карточки на изучении, ожидающие изучения.
 
 `is:new`\
-new cards.
+новые карточки.
 
 `is:learn`\
-cards in learning.
+карточки на изучении.
 
 `is:review`\
-reviews (both due and not due) and lapsed cards.
+повторения (как запланированные, так и незапланированные) и просроченные карточки.
 
 `is:suspended`\
-cards that have been [automatically](leeches.md) or manually suspended.
+карточки, которые были [автоматически](leeches.md) ("пиявки") или вручную исключены.
 
 `is:buried`\
-cards that have been either [automatically](studying.md#siblings-and-burying) or
-manually buried.
+карточки, которые были либо [автоматически](studying.md#Связанные-и-откладывание) отложены, либо отложены вручную.
 
 `is:buried-sibling`\
-cards that have been buried automatically.
+карточки, которые были автоматически отложены.
 
 `is:buried-manually`\
-cards that have been manually buried.
+карточки, которые были отложены вручную.
 
-Cards that have [lapsed](deck-options.md#lapses) fall into several of the previous categories, so it may
-be useful to combine different search terms to get more precise results:
+Карточки, которые [забыли](deck-options.md#Забытые), попадают в несколько предыдущих категорий, поэтому может быть полезно комбинировать разные условия поиска для получения более точных результатов:
 
 `is:learn is:review`\
-cards that have lapsed and are awaiting relearning.
+карточки, которые забыли и ожидают переучивания.
 
 `-is:learn is:review`\
-review cards, not including lapsed cards.
+карточки для повторения, не включая забытые карточки.
 
 `is:learn -is:review`\
-cards that are in learning for the first time.
+карточки, которые находятся на изучении впервые.
 
-## Flags
+## Флаги
 
 `flag:0`\
-cards without a flag.
+карточки без флага.
 
 `flag:1`\
-cards with a red flag.
+карточки с красным флагом.
 
 `flag:2`\
-cards with an orange flag.
+карточки с оранжевым флагом.
 
 `flag:3`\
-cards with a green flag.
+карточки с зелёным флагом.
 
 `flag:4`\
-cards with a blue flag.
+карточки с синим флагом.
 
 `flag:5`\
-cards with a pink flag.
+карточки с розовым флагом.
 
 `flag:6`\
-cards with a turquoise flag.
+карточки с бирюзовым флагом.
 
 `flag:7`\
-cards with a purple flag.
+карточки с фиолетовым флагом.
 
-## Card properties
+## Свойства карточки
 
 `prop:ivl>=10`\
-cards with interval of 10 days or more.
+карточки с интервалом 10 дней или более.
 
 `prop:due=1`\
-cards due tomorrow.
+карточки, запланированные на завтра.
 
 `prop:due=-1`\
-cards due yesterday that haven’t been answered yet.
+карточки, запланированные на вчера, на которые ещё не ответили.
 
 `prop:due>=1`\
-all cards due in the future, including tomorrow.
+все карточки, запланированные на будущее, включая завтра.
 
 `prop:due<=-1`\
-all overdue cards.
+все просроченные карточки.
 
 `prop:due>=-1 prop:due<=1`\
-cards due yesterday, today and tomorrow.
+карточки, запланированные на вчера, сегодня и завтра.
 
 `prop:reps<10`\
-cards that have been answered less than 10 times.
+карточки, на которые отвечали менее 10 раз.
 
 `prop:lapses>3`\
-cards that have lapsed more than 3 times.
+карточки, которые забывали более 3 раз.
 
 `prop:ease!=2.5`\
-cards easier or harder than default ease.
+карточки легче или сложнее, чем стандартная лёгкость.
 
 `prop:pos<=100`\
-new cards with a position in the queue less than or equal to 100.
+новые карточки с позицией в очереди меньше или равной 100.
 
-The following searches require Anki 23.10+ and FSRS enabled:
+**Следующие поиски требуют Anki 23.10+ и включённого FSRS:**
 
 `prop:s>21`\
-cards with stability greater than 21 days.
+карточки со стабильностью больше 21 дня.
 
 `prop:d>0.3`\
-cards with difficulty greater than 0.3.
+карточки со сложностью больше 0.3.
 
 `prop:r<0.9`\
-cards with retrievability less than 0.9.
+карточки со вспоминаемостью меньше 0.9.
 
-## Recent Events
+## Последние события
 
-### Added
+### Добавленные
 
 `added:1`\
-cards added today.
+карточки, добавленные сегодня.
 
 `added:7`\
-cards added in the last 7 days.
+карточки, добавленные за последние 7 дней.
 
-The check is made against card creation time rather than note creation
-time, so cards that were generated within the time frame will be
-included even if their notes were added a long time ago.
+Проверка осуществляется по времени создания карточки, а не времени создания записи, поэтому карточки, созданные в указанный промежуток времени, будут включены, даже если их записи были добавлены давно.
 
-### Edited
+### Отредактированные
 
 `edited:n`\
-cards where the note text was added/edited in the last n days.
+карточки, в которых текст записи был добавлен/отредактирован за последние n дней.
 
-This requires Anki 2.1.28+ or AnkiMobile 2.0.64+.
+Это требует Anki 2.1.28+ или AnkiMobile 2.0.64+.
 
-### Answered
+### Изученные
 
 `rated:1`\
-cards answered today.
+карточки, на которые дан ответ сегодня.
 
 `rated:1:2`\
-cards answered Hard (2) today.
+карточки, на которые сегодня ответили «Трудно» (2 кнопка).
 
 `rated:7:1`\
-cards answered Again (1) in the last 7 days.
+карточки, на которые ответили «Снова» (1 кнопка) за последние 7 дней.
 
 `rated:31:4`\
-cards answered Easy (4) in the last 31 days.
+карточки, на которые ответили «Легко» (4 кнопка) за последние 31 день.
 
-Anki 2.1.39+ supports rating searches over 31 days.
+Anki 2.1.39+ поддерживает поиск по оценкам за период более 31 дня.
 
-Note that, to search for cards answered at a particular day, `rated:n -rated:(n-1)` might not work every time. Use the following instead:
+Обратите внимание, что поиск карточек, на которые ответили в определённый день, `rated:n -rated:(n-1)` может работать не всегда. Вместо этого используйте следующее:
 
 `prop:rated=0`\
-cards answered today.
+карточки, на которые ответили сегодня.
 
 `prop:rated=-1`\
-cards answered one day ago.
+карточки, на которые ответили вчера (1 день до этого).
 
 `prop:rated=-7`\
-cards answered 7 days ago.
+карточки, на которые ответили 7 дней назад.
 
-### First Answered
+### Впервые дан ответ (карты для первого повторения)
 
-Requires Anki 2.1.45+.
+Требуется Anki 2.1.45+.
 
 `introduced:1`\
-cards answered for the first time today.
+карточки, на которые ответили впервые сегодня.
 
 `introduced:365`\
-cards answered for the first time within the last 365 days.
+карточки, на которые ответили впервые за последние 365 дней.
 
-## Matching special characters
+## Сопоставление специальных символов
 
-If you're using a version earlier than Anki 2.1.36 the following searches may not work.
+Если вы используете версию Anki ранее 2.1.36, следующие поиски могут не работать.
 
-As shown in the previous section, some characters like `*`, `_` and `"` have a
-special meaning in search. If you need to locate those characters in a search,
-you need to tell Anki not to treat them specially. This is called "escaping a character" and is primarily done by using double quotes and backslashes.
+Как показано в предыдущем разделе, некоторые символы, такие как `*`, `_` и `"`, имеют особое значение при поиске. Если вам нужно найти эти символы в поиске, вам нужно указать Anki не рассматривать их как особые. Это называется «экранированием символа» и в основном выполняется с помощью двойных кавычек и обратных слешей.
 
-- _Space_\
-  To match something that includes spaces, enclose the `"entire term"` in double
-  quotes. If it is a colon search, you also have the option to only quote the
-  `part:"after the colon"`.
+- _Пробел_\
+  Чтобы найти что-то, включающее пробелы, заключите `"весь термин"` в двойные кавычки. Если это поиск с двоеточием, у вас также есть возможность заключить в кавычки только `часть:"после двоеточия"`.
 
 - `And`/`Or`\
-  To search for these words, wrap them with double quotes. For example, `dog "and" cat` searches for "dog", "cat" and the word "and".
-  If you wrap the entire search term with quotes like in the previous example, you do not need to escape `and` or `or`.
+  Чтобы найти эти слова, заключите их в двойные кавычки. Например, `dog "and" cat` ищет "dog", "cat" и слово "and". Если вы заключите весь поисковый термин в кавычки, как в предыдущем примере, вам не нужно экранировать `and` или `or`.
 
-- `"`, `*` and `_`\
-  Add a backslash before these characters to treat them literally. For example,
-  `_` will match any single character, but `\_` matches only an actual underscore.
+- `"`, `*` и `_`\
+  Добавьте обратный слеш перед этими символами, чтобы рассматривать их буквально. Например, `_` будет соответствовать любому одиночному символу, но `\_` соответствует только фактическому символу подчёркивания.
 
 - `\`\
-  Because a backslash is used to remove the special meaning from other characters,
-  it too is treated specially. If you need to search for an actual backslash,
-  use `\\` instead of `\`.
+  Поскольку обратный слеш используется для удаления особого значения других символов, он также рассматривается как особый. Если вам нужно найти фактический обратный слеш, используйте `\\` вместо `\`.
 
-- `(` and `)`\
-  You can search for parentheses by enclosing the entire term in quotes,
-   by using a backslash, or both at the same time. For example, `"(text)"`, `\(text\)` and
-  `"\(text\)"` are all equivalent searches, and search for `(text)`.
+- `(` и `)`\
+  Вы можете искать круглые скобки, заключив весь термин в кавычки, используя обратный слеш или оба одновременно. Например, `"(text)"`, `\(text\)` и `"\(text\)"` — это всё эквивалентные поиски, и они ищут `(text)`.
 
 - `-`\
-  Starting a search term with `-` usually inverts it: `-dog` matches everything
-  except dog for example. If you instead wish to include an actual hyphen,
-  you can either use a backslash, or include the text in quotes. For example,
-  `\-free` or `"-free"` will match "guilt-free" and "cruelty-free".
+  Начало поискового термина с `-` обычно инвертирует его: `-dog` соответствует всему, кроме dog, например. Если вместо этого вы хотите включить фактический дефис, вы можете использовать обратный слеш или заключить текст в кавычки. Например, `\-free` или `"-free"` будут соответствовать "guilt-free" и "cruelty-free".
 
 - `:`\
-  Colons have to be escaped using backslashes unless they are preceded by another, unescaped colon.
-  For example, `w:3:30` searches for "3:30" on word boundary and doesn't require you to use a backslash.
-  However, if you don't use a colon search, the colons need to be escaped like this: `3\:30`.
+  Двоеточия должны быть экранированы с помощью обратных слешей, если перед ними не стоит другое, неэкранированное двоеточие. Например, `w:3:30` ищет "3:30" по границе слова и не требует использования обратного слеша. Однако, если вы не используете поиск с двоеточием, двоеточия нужно экранировать так: `3\:30`.
 
-- `&`, `<`, and `>`\
-  `&`, `<`, and `>` are treated as HTML when searching in Anki, and as such, searches
-  containing them don't work as expected. However, you can search for them by using their
-  corresponding HTML entity names (`&amp;` for `&`, `<` for `<`, and `>` for `>`).
-  For example, searching `&amp;text` searches for a note with `&text` in a field.
+- `&`, `<` и `>`\
+  `&`, `<` и `>` рассматриваются как HTML при поиске в Anki, и поэтому поиски, содержащие их, работают не так, как ожидается. Однако вы можете искать их, используя соответствующие имена HTML-сущностей (`&amp;` для `&`, `&lt;` для `<` и `&gt;` для `>`). Например, поиск `&amp;text` ищет запись с `&text` в поле.
 
-### Raw input
+### Необработанный ввод
 
-Text preceded by certain keywords (like `re:`) will be treated as raw input. That is,
-the characters listed above largely lose their special meaning. In such a context, only
-a minimum of escaping is required to prevent ambiguity:
+Текст, предваряемый определёнными ключевыми словами (такими как `re:`), будет рассматриваться как необработанный ввод. То есть символы, перечисленные выше, в значительной степени теряют своё особое значение. В таком контексте для предотвращения неоднозначности требуется минимальное экранирование:
 
-- Double quotes (`"`) must be escaped.
+- Двойные кавычки (`"`) должны быть экранированы.
 
-- Spaces and unescaped parentheses require the search term to be quoted.
+- Пробелы и неэкранированные круглые скобки требуют, чтобы поисковый термин был заключён в кавычки.
 
-- The search term must not end in an odd number of backslashes.
+- Поисковый термин не должен заканчиваться нечётным количеством обратных слешей.
 
-## Object IDs
+## Идентификаторы объектов
 
 `nid:123`\
-the note with note id 123.
+запись с идентификатором записи 123.
 
 `cid:123,456,789`\
-all cards with card ids 123, 456, or 789.
+все карточки с идентификаторами карточек 123 или 456 или 789.
 
-Note and card IDs can be found in the [card info](stats.md) dialog in the
-browser. These searches may also be helpful when doing add-on
-development or otherwise working closely with the database.
+Идентификаторы записей и карточек можно найти в диалоговом окне [Текущая карточка](stats.md#Информация-о-карточке) в окне "Список карточек". Эти поиски также могут быть полезны при разработке дополнений или другой тесной работе с базой данных.
 
-## Custom Data
+## Пользовательские данные
 
-Anki allows small amounts of custom data to be stored on cards, enabling
-advanced use cases such as custom schedulers. One of the notable applications
-of this feature was in earlier implementations of FSRS. In Anki 23.10+, there
-are some ways to search it:
+Anki позволяет хранить небольшое количество пользовательских данных на карточках, что позволяет реализовывать сложные сценарии, такие как пользовательские планировщики. Одним из известных применений этой функции были ранние реализации FSRS. В Anki 23.10+ есть несколько способов их поиска:
 
 `has-cd:v`\
-cards having the property `v` in custom data.
+карточки, имеющие свойство `v` в пользовательских данных.
 
 `prop:cdn:d>5`\
-cards with the value of `d` in custom data (usually refers to difficulty in FSRS) greater than 5.
+карточки со значением `d` в пользовательских данных (обычно относится к сложности в FSRS) больше 5.
 
 `prop:cds:v=reschedule`\
-cards with the string `v` in custom data equal to `reschedule`.
+карточки со строкой `v` в пользовательских данных, равной `reschedule`.
 
-## Other Searches
+## Другие поиски
 
 `prop:due=1 is:learn`\
-interday learning cards due for tomorrow.
+междневные карточки на изучении, запланированные на завтра.
 
 `prop:due=0 is:learn -introduced:1`\
-interday learning cards due today.
+междневные карточки на изучении, запланированные на сегодня.
 
 `prop:resched=0`\
-cards rescheduled today, either using **Set due date** or **Reschedule cards on change**.
+карточки, перенесённые сегодня, либо с помощью **Задать срок**, либо **Перепланировать карточки при изменениях**.

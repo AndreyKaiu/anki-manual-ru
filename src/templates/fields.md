@@ -51,7 +51,7 @@ In the preview, you’d actually see:
 
     one two
 
-To add a new line, you need to add a &lt;br&gt; code to the end of a
+To add a new line, you need to add a <br> code to the end of a
 line, like so:
 
     one<br>
@@ -229,7 +229,7 @@ example above, if the expression contained the word "myword" without any
 formatting, then the HTML would be the same: "myword". But when you
 include formatting in your fields, extra HTML is included. If "myword"
 was bolded for example, the actual HTML would be
-"&lt;b&gt;myword&lt;/b&gt;".
+"<b>myword</b>".
 
 This can present a problem for things like dictionary links. In the
 above example, the dictionary link would end up being:

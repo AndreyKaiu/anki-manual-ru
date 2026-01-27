@@ -1,53 +1,32 @@
-# Packaged Decks
+# Упакованные колоды
 
 <!-- toc -->
 
-Anki packages (.apkg files) enable you to import decks, notes, note types, and cards from
-other users. They are commonly shared on [AnkiWeb](https://ankiweb.net/shared/decks).
+Пакет колод Anki (.apkg) позволяют вам импортировать колоды, записи, типы записей и карточки от других пользователей. Они обычно распространяются на [AnkiWeb](https://ankiweb.net/shared/decks).
 
-## Scheduling
+## Планирование
 
 Anki packages may also contain scheduling information, which is useful if you want to
 transfer decks between devices or profiles. However, when importing
 a deck shared by someone else, you typically do not want to adopt their card intervals
 or review history.
 
-If you encounter imported cards with unexpectedly large intervals, the deck author may
-accidentally have included their scheduling information. You can use the
-[Set Due Date feature](../browsing.md#cards) to reset the imported cards. On Anki
-23.10 and later, you can remove any scheduling information during the import process
-by leaving the "Import any learning progress" option unselected. This will also remove
-any "leech" or "marked" tags from the imported cards.
+Если вы столкнулись с импортированными карточками, имеющими неожиданно большие интервалы, возможно, автор колоды случайно включил свою информацию о планировании (флаг "Вместе с расписанием"). Вы можете использовать [функцию «Задать срок»](../browsing.md#Карты), чтобы сбросить интервалы у импортированных карточек. На Anki 23.10 и более поздних версиях вы можете удалить любую информацию о планировании во время процесса импорта, просто не выбирая опцию «Импортировать прогресс обучения». Это также удалит теги "leech" (это карта "пиявка") и "marked" (это помеченная карта) с импортированных карточек.
 
-## Updating
+## Обновление
 
-When you import an .apkg file, Anki will identify any notes in it that are
-already in your collection due to a previous import. If the notes in the file
-are newer than your local copy, the notes will be updated with the contents of
-the file by default.
+Когда вы импортируете файл .apkg, Anki определит любые записи в нём, которые уже есть в вашей коллекции из предыдущего импорта. Если запись в файле новее, чем в вашей локальной копии, то по умолчанию запись в локальной копии будет обновлена содержимым из файла.
 
-This updating process is generally not possible if the note type is changed (e.g. if either
-you or the deck author do things like add an extra field to the note type).
-You will still be able to import any missing notes from the file, but
-notes you have imported previously will not be updated if the deck author
-has made changes.
+Этот процесс обновления обычно невозможен, если тип записи был изменён (например, если вы или автор колоды сделали такие вещи, как добавление дополнительного поля к типу записи). Вы всё равно сможете импортировать отсутствующие записи из файла, но записи, которые вы импортировали ранее, не будут обновлены, если автор колоды внёс изменения.
 
-### Anki 23.10 and Later
+### Anki 23.10 и более поздние версии
 
-Anki 23.10 introduced more flexibility: You can choose to unconditionally
-update notes and note types, always overwriting your modifications,
-or, on the other hand, never update existing objects.
+Anki 23.10 привнёс больше гибкости: Вы можете выбрать безусловное обновление записей и типов записей, всегда перезаписывая ваши изменения, или, с другой стороны, никогда не обновлять существующие объекты.
 
-Also, if both you and the deck author modified the same note type, you can now decide to
-_merge_ the two versions. This will preserve all templates and fields contained in
-either one, but will require a full sync, and may mark other existing notes as modified.
+Также, если и вы, и автор колоды изменили один и тот же тип записи, вы теперь можете решить _объединить_ две версии. Это сохранит все шаблоны и поля, содержащиеся в любой из версий, но потребует полной синхронизации и может пометить другие существующие записи как изменённые.
 
-#### Note to Deck Authors
+#### Замечание для авторов колод
 
-Merging relies on template and field ids, which were introduced in Anki 2.1.67.
-If a template or field lacks an id, because it has been created with an earlier
-release, Anki attempts to find an equivalent by comparing names.
+Объединение полагается на идентификаторы шаблонов и полей, которые были введены в Anki 2.1.67. Если у шаблона или поля отсутствует id, потому что он был создан в более раннем выпуске, Anki пытается найти эквивалент, сравнивая имена.
 
-See this [this add-on](https://ankiweb.net/shared/info/2063785767) for why it is
-advantageous to share note types with field and template ids, and how to add them to
-existing ones.
+Ознакомьтесь с [этим дополнением](https://ankiweb.net/shared/info/2063785767), чтобы понять, почему полезно делиться типами записей с идентификаторами полей и шаблонов, и как добавить их к существующим.

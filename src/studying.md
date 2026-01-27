@@ -187,7 +187,7 @@ from all decks at once and shown in the order they are due.
 To control the order cards appear in, see [Display Order](./deck-options.md#display-order). For more fine-grained ordering of new cards, you
 can change the order in the [browser](browsing.md).
 
-## Siblings and Burying
+## Связанные и откладывание
 
 Recall from [the basics](getting-started.md) that Anki can create more than one
 card for each thing you input, such as a front→back card and a

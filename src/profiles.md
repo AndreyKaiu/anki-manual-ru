@@ -1,33 +1,18 @@
-# Profiles
+# Профили
 
-If more than one person wants to use Anki on your computer, you can set
-up a separate profile for each user. Each user profile has their own
-collection, and own program settings. Add-ons are shared across profiles.
-Profiles are configured by going to the File menu and choosing "Switch Profile".
+Если более одного человека хочет использовать Anki на вашем компьютере, вы можете настроить отдельный профиль для каждого пользователя. Каждый профиль пользователя имеет свою собственную коллекцию и свои настройки программы. Дополнения являются общими для всех профилей. Профили настраиваются через меню **Файл** и выбор «**Сменить профиль**».
 
-**Only a single profile can be synced to an AnkiWeb account.**
-If you have different users on your computer, each user will
-need to set up a separate AnkiWeb account for their profile. If you attempt
-to link two or more profiles to the same AnkiWeb account, you will overwrite
-the data from one profile with the data from the other.
+**Только один профиль может быть синхронизирован с учётной записью AnkiWeb.** Если у вас разные пользователи на вашем компьютере, каждому пользователю потребуется настроить отдельную учётную запись AnkiWeb для своего профиля. Если вы попытаетесь связать два или более профилей с одной и той же учётной записью AnkiWeb, вы перезапишете данные одного профиля данными другого.
 
-Profiles are primarily intended to be used by different people, and are not
-recommended for splitting up your own content.
-If you have created multiple profiles for yourself, the best option is to
-merge them into a single profile. You can do so by exporting one deck from
-profile A, and then importing it into profile B, repeating for any other decks
-in profile A, until everything is in profile B.
+Профили в первую очередь предназначены для использования разными людьми и не рекомендуются для разделения вашего собственного контента. Если вы создали несколько профилей для себя, лучшим вариантом будет объединить их в один профиль. Вы можете сделать это, экспортировав одну колоду из профиля A, а затем импортировав её в профиль B, повторяя для любых других колод в профиле A, пока всё не окажется в профиле B.
 
-AnkiDroid does not support profiles.
+AnkiDroid не поддерживает профили.
 
-## Profiles window
+## Окно "Профили"
 
-From the Profiles window (accessible via File>Switch Profile from the main window), you can:
+В окне профилей (в меню «**Файл > Сменить профиль**» главного окна) вы можете:
 
-- Open / Add / Rename / Delete user profiles.
-- Quit the program.
-- Restore an [automatic backup.](./backups.md)
-- Downgrade your collection, which is necessary if you want to open it with
-  an earlier Anki release. If you skip this step, you may get an error message
-  when opening your collection in an older Anki version, and you will need to
-  return to this version, downgrade, then try again.
+- Открыть / Добавить / Переименовать / Удалить профили пользователей.
+- Выйти из программы.
+- Восстановить [автоматическую резервную копию](./backups.md).
+- Понизить версию вашей коллекции, что необходимо, если вы хотите открыть её в более раннем выпуске Anki. Если вы пропустите этот шаг, вы можете получить сообщение об ошибке при открытии вашей коллекции в более старой версии Anki, и вам нужно будет вернуться к этой версии, понизить версию, а затем попробовать снова.
