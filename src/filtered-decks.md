@@ -1,252 +1,138 @@
-# Filtered Decks & Cramming
+# Фильтрованные колоды и «зубрёжка»
 
 <!-- toc -->
 
-When you study a regular deck in Anki, only a limited number of cards
-are shown: the cards Anki thinks you are about to forget, and a daily
-limit of new cards. This is generally useful, as it ensures you don't
-spend more time studying than necessary. But sometimes it can be useful
-to step outside of these normal limits, such as when you need to review
-for a test, focus on particular material, and so on. To make this
-possible, Anki provides a different type of deck called a "filtered
-deck".
+Когда вы изучаете обычную колоду в Anki, показывается только ограниченное количество карточек: те карточки, которые, по мнению Anki, вы вот-вот забудете, и дневной лимит новых карточек. Обычно это полезно, так как гарантирует, что вы не потратите на изучение больше времени, чем необходимо. Но иногда бывает полезно выйти за эти обычные пределы, например, когда вам нужно повторить материал перед тестом, сосредоточиться на определённом материале и так далее. Чтобы сделать это возможным, Anki предоставляет другой тип колоды, называемый «фильтрованная колода».
 
-Filtered decks offer a lot of possibilities. They can be used for
-previewing cards, cramming cards before a test, studying particular
-tags, catching up on a backlog with a particular sort order, reviewing
-ahead of schedule, going over the day's failed cards, and more.
+Фильтрованные колоды предлагают много возможностей. Их можно использовать для предварительного просмотра карточек, «зубрёжки» карточек перед тестом, изучения карточек с определёнными тегами, навёрстывания отставания с определённым порядком сортировки, повторения заранее, повторного прохождения неудачных карточек дня и многого другого.
 
-## Custom Study
+## Учить ещё
 
-The easiest way to create a filtered deck is with the Custom Study
-button, which appears at the bottom of the screen when you click on a
-deck. It offers some convenient preset filters for common tasks like reviewing
-the cards that you have failed that day. It will create a filtered deck called
-"Custom Study Session" and automatically open it for you.
+Самый простой способ создать фильтрованную колоду — использовать кнопку «Учить ещё», которая появляется в нижней части экрана, когда вы нажимаете на колоду. Она предлагает несколько удобных предустановленных фильтров для общих задач, таких как повторение карточек, на которые вы сегодня ответили «Снова». Она создаст фильтрованную колоду с названием «Допзанятие» и автоматически откроет её для вас.
 
-If an existing "Custom Study Session" deck exists, it will be emptied
-before a new one is created. If you wish to keep a custom study deck,
-you can rename it from the deck list.
+Если уже существует колода «Допзанятие», она будет очищена перед созданием новой. Если вы хотите сохранить колоду для пользовательского изучения, вы можете переименовать её из списка колод.
 
-Here is a summary of each of the options:
+Вот краткое описание каждого из вариантов:
 
-**Increase today's new card limit**\
-Add more new cards to the deck you are currently studying. Note that
-unlike other options, this does "not" create a new filtered deck, it
-modifies the existing deck.
+**Добавить новых на сегодня**\
+Добавляет больше новых карточек в колоду, которую вы сейчас изучаете. Обратите внимание, что в отличие от других вариантов, это **не создаёт новую фильтрованную колоду**, а изменяет существующую колоду.
 
-**Increase today's review card limit**\
-If not all reviews due today were shown because of the daily review limit,
-this option allows you to show more of them. As with the new cards
-option, this modifies the existing deck.
+**Добавить повторяемых на сегодня**\
+Если не все повторения, запланированные на сегодня, были показаны из-за дневного лимита повторений, эта опция позволяет вам показать больше из них. Как и в случае с опцией новых карточек, это изменяет существующую колоду.
 
-**Review forgotten cards**\
-Show all the cards, for which you've answered Again (1) within the number of days
-you specify.
+**Повторить забытые карточки**\
+Показывает все карточки, на которые вы ответили «Снова» в течение указанного вами количества дней.
 
-**Review ahead**\
-Show cards that will be due in the near future (the number of days you
-specify). This is useful for working through some of your older cards
-before a vacation, but it will not help with cards you have learned
-recently. Please see the [reviewing ahead](#reviewing-ahead) section
-below for more info.
+**Повторить с опережением**\
+Показывает карточки, которые должны быть повторены в ближайшем будущем (в течение указанного вами количества дней). Это полезно для проработки некоторых ваших более старых карточек перед отпуском, но не поможет с карточками, которые вы недавно выучили. Пожалуйста, ознакомьтесь с разделом [повторение с опережением](#Повторение-с-опережением) ниже для получения дополнительной информации.
 
-**Preview new cards**\
-Show cards that you have recently added, without converting them to
-review cards as they are answered.
+**Предпросмотр новых карточек**\
+Показывает карточки, которые вы недавно добавили, не превращая их в карточки для повторения по мере ответа на них.
 
-**Study by card state or tag**\
-Select a certain number of cards from the current deck to study. You can
-choose to select new cards only, due cards only, or all cards; after you
-click "Choose Tags", you can also limit the selected cards by tags. If
-you wish to see all the cards in the deck (for instance, to study before
-a big test), you can set the number of cards to more than the number of
-cards in the deck.
+**Учить по состоянию карточки или по метке**\
+Выберите определённое количество карточек из текущей колоды для изучения. Вы можете выбрать только новые карточки, только запланированные карточки или все карточки; после нажатия «Выбрать метки» вы также можете ограничить выбранные карточки по меткам. Если вы хотите увидеть все карточки в колоде (например, чтобы повторить перед большим тестом), вы можете установить количество карточек больше, чем количество карточек в колоде.
 
-## Home Decks
+## Домашние колоды
 
-When a card is moved to a filtered deck, it retains a link to the deck,
-from which it came. That previous deck is said to be the card's "home
-deck".
+Когда карточка перемещается в фильтрованную колоду, она сохраняет связь с колодой, из которой она пришла. Эта предыдущая колода называется «домашней колодой» карточки.
 
-Cards automatically return to their home deck after they are studied in
-the filtered deck. This can be after a single review, or after multiple
-reviews, depending on your settings.
+Карточки автоматически возвращаются в свои домашние колоды после того, как они изучены в фильтрованной колоде. Это может произойти после одного повторения или после нескольких повторений, в зависимости от ваших настроек.
 
-It is also possible to move all cards back to their home decks at once:
+Также можно переместить все карточки обратно в их домашние колоды разом:
 
-- The "Empty" button in the study overview moves all cards in the
-  filtered deck back to their home deck, but does not delete the empty
-  filtered deck. This can be useful if you want to fill it again later
-  (using the Rebuild button).
+- Кнопка «Очистить» в обзоре изучения перемещает все карточки из фильтрованной колоды обратно в их домашние колоды, но не удаляет пустую фильтрованную колоду. Это может быть полезно, если вы хотите заполнить её снова позже (с помощью кнопки «Пересобрать»).
 
-- Deleting a filtered deck does the same thing as "Empty" does, but
-  also removes the emptied deck from the deck list. No cards are
-  deleted when you delete a filtered deck.
+- Удаление фильтрованной колоды делает то же самое, что и кнопка «Очистить», но также удаляет очищенную колоду из списка колод. Ни одна карточка не удаляется при удалении фильтрованной колоды.
 
-## Creating Manually
+## Создание вручную
 
-Advanced users can create filtered decks with arbitrary search strings
-(or "filters"),
-instead of relying on the preset filters. To create a filtered deck manually,
-choose Create Filtered Deck from the Tools menu.
+Опытные пользователи могут создавать фильтрованные колоды с произвольными строками поиска (или «фильтрами») вместо использования предустановленных фильтров. Чтобы создать фильтрованную колоду вручную, выберите в меню «**Инструменты > Создать фильтрованную колоду**».
 
-When you click the Build button, Anki finds cards that match the
-settings you specified, and temporarily moves them from their existing
-decks into your new filtered deck for study.
+Когда вы нажимаете кнопку «Создать», Anki находит карточки, которые соответствуют настройкам фильтра поиска, и временно перемещает их из их колод в вашу новую фильтрованную колоду для изучения.
 
-If you wish to fetch cards again using the same filter options (for
-instance, if you want to study all cards with a particular tag every
-day), you can use the Rebuild button at the bottom of the deck's
-overview screen.
+Если вы хотите снова получить карточки, используя те же параметры фильтра (например, если вы хотите изучать все карточки с определённой меткой каждый день), вы можете использовать кнопку «Пересобрать» в нижней части экрана обзора колоды.
 
-The **search** area controls what cards Anki will gather. All of the
-searches possible in the browser are also possible for filtered decks,
-such as limiting to tags, finding cards forgotten a certain number of
-times, and so on. Please see the [searching](searching.md) section of the
-manual for more information on the different possibilities.
+Область для ввода **Поиск** определяет, какие карточки соберёт Anki. Все поиски, возможные в окне списка карточек, также возможны для фильтрованных колод, такие как ограничение по меткам, поиск карточек, забытых определённое количество раз, и так далее. Пожалуйста, ознакомьтесь с разделом [поиск](searching.md) руководства для получения дополнительной информации о различных возможностях.
 
-Filtered decks cannot pull in cards that are suspended, buried, or already in a
-different filtered deck. For this reason, a search in the
-browser may reveal cards that do not end up in the filtered deck.
+Фильтрованные колоды не могут извлекать карточки, которые исключены, отложены или уже находятся в другой фильтрованной колоде. По этой причине поиск в списке карточек может выявить карточки, которые в итоге не попадут в фильтрованную колоду.
 
-The **limit** option controls how many cards will be gathered into the
-deck. The order you select controls both the order cards are gathered
-in, and the order they will be reviewed in. If you select "most lapses"
-and a limit of 20 for example, then Anki will show you only the 20 most
-lapsed cards.
+Опция **ограничить** определяет, сколько карточек будет собрано в колоду. Выбранный вами порядок определяет как порядок сбора карточек, так и порядок их повторения. Если вы выберете «Самые забываемые» и ограничение в 20, например, то Anki покажет вам только 20 карточек с наибольшим количеством забываний.
 
-The **enable second filter** option allows you to create a filtered deck
-comprised of two different searches, so that you can, for example, include
-due cards with one order, and a smaller amount of new cards with a different order.
+Опция **Активировать второй фильтр** позволяет вам создать фильтрованную колоду, состоящую из двух разных поисков, чтобы вы могли, например, включить запланированные карточки с одним порядком и меньшее количество новых карточек с другим порядком.
 
-## Order
+## Порядок
 
-The "cards selected by" option controls the order that cards will appear
-in. If the maximum number of cards you select is lower than the number
-of cards that match the filter criteria, Anki will exclude the cards at
-the end of this sorted list first.
+Опция «карт, выбранных» определяет порядок появления карточек. Если максимальное количество выбранных вами карточек меньше, чем количество карточек, соответствующих критериям фильтра, Anki сначала исключит карточки в конце этого отсортированного списка.
 
-**Oldest seen first**\
-Display those cards first, that you haven't seen in reviews for the longest
-time.
+**Сначала просмотренные давно**\
+Сначала отображаются те карточки, которые вы не видели при повторениях дольше всего.
 
-**Random**\
-Randomize the order of all cards that match the filter criteria (use no
-set order).
+**В случайном порядке**\
+Установит случайный порядок всем карточкам, соответствующим критериям фильтра (не использует заданный порядок).
 
-**Increasing intervals**\
-Display cards that have the smallest interval first.
+**Увеличивающиеся интервалы**\
+Сначала отображаются карточки с наименьшим интервалом.
 
-**Decreasing intervals**\
-Display cards that have the largest interval first.
+**Сокращающиеся интервалы**\
+Сначала отображаются карточки с наибольшим интервалом.
 
-**Most lapses**\
-Display those cards first, that you have failed the most times.
+**Самые забываемые**\
+Сначала отображаются те карточки, которые вы забывали наибольшее количество раз.
 
-**Order added**\
-Display cards that you added first (i.e. those cards that have the earliest
-creation date).
+**В порядке добавления**\
+Отображаются карточки, которые вы добавили первыми (т.е. те карточки, у которых самая ранняя дата создания).
 
-**Order due**\
-Display cards with the earliest due date first.
+**По расписанию повторения**\
+Сначала отображаются карточки с самым ранним сроком повторения.
 
-**Latest added first**\
-Display cards that you have most recently added to the deck first.
-(This is the opposite of "Order added".)
+**Сначала последние добавленные**\
+Сначала отображаются карточки, которые вы добавили в колоду последними. (Это противоположность «В порядке добавления»).
 
-**Relative overdueness**\
-Display cards that you're most likely to have forgotten first. This is useful if
-you have a large backlog that may take some time to get through, and you want to
-reduce the chances of forgetting more cards.
+**Относительная просроченность**\
+Сначала отображаются карточки, которые вы, скорее всего, забыли. Это полезно, если у вас большое отставание, на проработку которого может потребоваться некоторое время, и вы хотите уменьшить шансы забыть ещё больше карточек.
 
-When using the SM-2 algorithm, overdueness is determined by comparing how
-overdue cards are, and how long their interval is. For example, a card with a
-current interval of 5 days that is overdue by 2 days, will display before a card
-with a current interval of 10 days that is overdue by 3 days.
+При использовании алгоритма SM-2 просроченность определяется сравнением того, насколько просрочены карточки, и насколько длинный у них интервал. Например, карточка с текущим интервалом в 5 дней, просроченная на 2 дня, будет отображаться перед карточкой с текущим интервалом в 10 дней, просроченной на 3 дня.
 
-When using FSRS, overdueness is calculated based on on each card's retrievability,
-and the desired retention in the deck preset.
+При использовании FSRS просроченность рассчитывается на основе вспоминаемости каждой карточки и желаемого уровня усвоения в настройках колоды.
 
-## Steps & Returning
+## Шаги и возвращение
 
-By default, Anki will use the steps of a card’s home deck. If a new card
-would normally be reviewed twice when being learned, the same thing will
-happen when you study it in a filtered deck.
-To learn about how (re)learning steps work, see [Deck Options](deck-options.md#learning-steps) section.
+По умолчанию Anki будет использовать шаги домашней колоды карточки. Если новую карточку обычно нужно повторить два раза при изучении, то же самое произойдёт, когда вы будете изучать её в фильтрованной колоде. Чтобы узнать о том, как работают шаги изучения/переучивания, см. раздел [Параметры колоды](deck-options.md#Шаги-обучения).
 
-Cards return to their home deck when (re)learning is complete. Thus if
-you have 3 learning steps, a new card will return to its home deck upon
-three presses of "Good" or a single press of "Easy".
+Карточки возвращаются в свои домашние колоды, когда изучение завершено. Таким образом, если у вас 3 шага изучения, новая карточка вернётся в свою домашнюю колоду после трёх нажатий «Хорошо» или одного нажатия «Легко».
 
-Filtered decks with rescheduling disabled show 4 buttons. The **Again**, **Hard**, and **Good** buttons have configurable delays. The **Easy** button removes cards from the filtered deck.
+Фильтрованные колоды с отключённой опцией "Перепланировать карточки" показывают 4 кнопки для ответов. Кнопки **Снова**, **Трудно** и **Хорошо** имеют настраиваемые задержки. Кнопка **Легко** удаляет карточки из фильтрованной колоды.
 
-## Due Reviews
+## Ожидающие повторения
 
-If the filtered deck includes cards that were due for review, they will
-be shown like they would have been in their original deck: they appear
-in the review card count at the bottom of the screen, and there are four
-choices for how well you remembered. Upon a correct answer, the card
-will be moved back to its home deck, and its next delay adjusted using
-the home deck's settings. If you forget the card, it will be shown
-according to the relearning steps defined in the home deck.
+Если фильтрованная колода включает карточки, которые были запланированы для повторения, они будут показаны так, как если бы они находились в своей исходной колоде: они появляются в счётчике карточек для повторения в нижней части экрана, и есть четыре варианта того, насколько хорошо вы запомнили. При правильном ответе карточка будет перемещена обратно в свою домашнюю колоду, а её следующая задержка будет скорректирована с использованием настроек домашней колоды. Если вы забыли карточку, она будет показана в соответствии с шагами переучивания, определёнными в домашней колоде.
 
-## Reviewing Ahead
+## Повторение с опережением
 
-If your search included cards that are not due, Anki will show the
-reviews ahead of time.
+Если ваш поиск включал карточки, которые не запланированы, Anki покажет повторения заранее.
 
-Anki uses a special algorithm for these reviews that takes into account
-how early you are reviewing. If the cards were almost due to be shown,
-they will be given a new delay similar to what they would have received
-if you had reviewed them on time. If the cards are reviewed soon after
-they were scheduled however, their new delay will be similar to their
-previous delay. This calculation works on a sliding scale.
+Anki использует специальный алгоритм для этих повторений, который учитывает, насколько рано вы повторяете. Если карточки были почти готовы к показу, им будет задана новая задержка, аналогичная той, которую они получили бы, если бы вы повторили их вовремя. Однако если карточки повторяются вскоре после того, как они были запланированы, их новая задержка будет аналогична их предыдущей задержке. Этот расчёт работает по скользящей шкале.
 
-Because reviewing a card shortly after it is scheduled has little impact
-on scheduling (e.g. a card due tomorrow with a one day interval will
-remain due tomorrow if reviewed early), **the "review ahead" custom
-study setting is not appropriate for repeated use**. If used to go
-through a week's worth of cards before a trip, the mature cards will be
-rescheduled into the future and the new cards will remain at small
-intervals, because you don't know them well enough for them to be
-rescheduled further. If you review ahead again the next day, all you'll
-end up doing is going through those same new cards again, to little
-benefit.
+Поскольку повторение карточки вскоре после её запланирования мало влияет на планирование (например, карточка, запланированная на завтра с интервалом в один день, останется запланированной на завтра, если её повторить заранее), **настройка «Повторить с опережением» в пользовательском изучении не подходит для многократного использования**. Если использовать её для проработки карточек на неделю вперёд перед поездкой, зрелые карточки будут перенесены в будущее, а новые карточки останутся с небольшими интервалами, потому что вы не знаете их достаточно хорошо, чтобы они были перенесены дальше. Если вы снова повторите заранее на следующий день, всё, что вы сделаете, — это снова пройдёте те же новые карточки, с минимальной пользой.
 
-## Rescheduling
+## Перепланирование
 
-By default, Anki will return cards to their home decks with altered scheduling,
-based on your performance in the filtered deck. 
+По умолчанию Anki будет возвращать карточки в их домашние колоды с изменённым расписанием, основанным на ваших результатах в фильтрованной колоде.
 
-To change this behaviour, turn off **Reschedule
-cards based on my answers**. When this is turned off, cards are shown in a simple "preview mode", and
-when they are returned to their original deck, they are returned exactly as they started.
+Чтобы изменить это поведение, отключите **Перепланировать карточки на основе моих ответов в этой колоде**. Когда эта опция отключена, карточки показываются в простом «режиме предварительного просмотра», и когда они возвращаются в свою исходную колоду, они возвращаются точно в том же состоянии, в котором были.
 
-## Catching Up
+## Навёрстывание отставания
 
-Filtered decks can be useful for catching up when you've fallen behind
-in your reviews. One Anki user describes the way they use the filtered
-decks to catch up as follows:
+Фильтрованные колоды могут быть полезны для навёрстывания отставания, когда вы отстали в повторениях. Один пользователь Anki описывает способ использования фильтрованных колод для навёрстывания следующим образом:
 
-    I did this for a backlog of 800 cards with filtered subdecks. Worked
-    very well for me.
+    Я сделал это для отставания в 800 карточек с фильтрованными колодами. Сработало очень хорошо для меня.
 
-    Just Due filter with: "is:due prop:due>-7"
+    Фильтр для колоды "Только запланированные": "is:due prop:due>-7"
 
-    Over Due filter with: "is:due prop:due<=-7"
+    Фильтр для колоды "Просроченные": "is:due prop:due<=-7"
 
-    The Just Due deck will then contain cards that became due in the past
-    week. That's the deck you should study every day as it gets the cards
-    that become due regularly. With this you can study as if there weren't
-    any backlog.
+    Тогда колода «Только запланированные» будет содержать карточки, которые стали запланированными за последнюю неделю. Это та колода, которую вы должны изучать каждый день, так как она получает карточки, которые становятся запланированными регулярно. С этим вы можете изучать так, как будто отставания нет.
 
-    The Over Due deck will contain your backlog — cards which you didn't
-    study in time. You can study them the same way you would study new
-    cards. They go back into the regular cards, so the number of overdue
-    will never grow as long as you keep your Just Due deck in check.
+    А колода «Просроченные» будет содержать ваше отставание — карточки, которые вы не изучили вовремя. Вы можете изучать их так же, как вы изучали бы новые карточки. Они возвращаются в обычные карточки, поэтому количество просроченных никогда не будет расти, пока вы контролируете свою колоду «Только запланированные».
 
-    How long it takes depends on how many overdue cards you study each day
-    in addition to the ones that become due regularly. You can still motor
-    through them when you feel like it - or you can do a specific number per
-    day like you would for new cards. Up to you.
+    Сколько времени это займёт, зависит от того, сколько просроченных карточек вы изучаете каждый день в дополнение к тем, которые становятся запланированными регулярно. Вы всё ещё можете быстро прорабатывать их, когда вам этого хочется, — или вы можете делать определённое количество в день, как для новых карточек. Вам решать.

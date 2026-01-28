@@ -38,7 +38,7 @@
 - [Синхронизация с AnkiWeb](syncing.md)
 - [+Профили](profiles.md)
 - [Список карточек](browsing.md)
-- [Отфильтрованные колоды](filtered-decks.md)
+- [+Фильтрованные колоды](filtered-decks.md)
 - [+Поиск](searching.md)
 - [+Импорт](importing/intro.md)
   - [+Текстовые файлы](importing/text-files.md)

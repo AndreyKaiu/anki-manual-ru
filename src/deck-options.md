@@ -146,7 +146,7 @@ The options here only affect new cards and
 [learning cards](getting-started.md#card-states). Once a card
 has graduated (that is, gone through all the learning steps), the options in this section no longer apply to the card.
 
-### Learning Steps
+### Шаги обучения
 
 Controls the number of learning repetitions, and the delay
 between them. One or more delays, separated by spaces must be entered.
