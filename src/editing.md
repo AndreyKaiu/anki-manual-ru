@@ -1,8 +1,8 @@
-# Adding/Editing
+# Добавление/Редактирование
 
 <!-- toc -->
 
-## Adding Cards and Notes
+## Добавление карточек и записей
 
 Recall from the [basics](getting-started.md) that in Anki we add notes rather than
 cards, and Anki creates cards for us. Click **Add** in the [main window](studying.md#decks),
@@ -74,7 +74,7 @@ site. In particular:
   understand the concepts behind the acronyms, learning the acronyms
   will become a lot easier.
 
-## Adding a Note Type
+## Добавление типа записи
 
 While basic note types are sufficient for simple cards with only a word
 or phrase on each side, as soon as you find yourself wanting to include

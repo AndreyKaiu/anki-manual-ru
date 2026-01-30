@@ -37,7 +37,7 @@
 - [Параметры колоды](deck-options.md)
 - [Синхронизация с AnkiWeb](syncing.md)
 - [+Профили](profiles.md)
-- [Список карточек](browsing.md)
+- [+Просмотр](browsing.md)
 - [+Фильтрованные колоды](filtered-decks.md)
 - [+Поиск](searching.md)
 - [+Импорт](importing/intro.md)

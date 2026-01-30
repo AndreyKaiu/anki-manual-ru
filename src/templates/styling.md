@@ -242,7 +242,7 @@ Covering all of HTML’s features is outside the scope of this manual, but
 there are plenty of good introductory guides to HTML available on the
 web if you’d like to learn more.
 
-## Browser Appearance
+## Вид в окне "Просмотр"
 
 If your card templates are complex, it may be difficult to read the
 question and answer columns (called "Front" and "Back") in the [card list](../browsing.md#cardnote-table). The "browser appearance" option allows you to define a

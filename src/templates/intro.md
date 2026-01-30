@@ -1,4 +1,4 @@
-# Card Templates
+# Шаблоны карточек
 
 Card templates tell Anki which fields should appear on the front and back of your card,
 and control which cards will be generated when certain fields have text in them.
@@ -48,7 +48,7 @@ options:
   can check which deck the cards are currently going to by choosing
   Deck Override again.
 
-- The **Browser Appearance** option allows you to set different (perhaps
+- The **Вид в окне "Просмотр"** option allows you to set different (perhaps
   simplified) templates for display in the Question and Answer columns
   of the browser; see [browser appearance](styling.md#browser-appearance) for more
   information.
