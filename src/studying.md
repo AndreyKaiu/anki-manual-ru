@@ -5,7 +5,7 @@
 When you have found a deck you like or entered some notes in, it’s time
 to start studying.
 
-## Decks
+## Колоды
 
 Study in Anki is limited to the currently selected deck as well as any
 subdecks it contains.

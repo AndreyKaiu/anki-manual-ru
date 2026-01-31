@@ -173,7 +173,7 @@ The **Hard** button works differently depending on which step you're on.
 If there’s nothing else to study, Anki will show learning cards up to 20 minutes
 early by default. To turn this off or change the amount of time to look ahead, see [Preferences](preferences.md).
 
-#### Day Boundaries
+#### Границы дня
 
 Anki treats small steps and steps that [cross a day boundary](./preferences.md#review) differently.
 With small steps, the cards are shown as soon as the delay has passed,

@@ -358,7 +358,7 @@ Please make sure the filenames match exactly. If the file is called
 arial.TTF and you write arial.ttf in your card templates, it will not
 work.
 
-## Night Mode
+## Ночной режим
 
 You can customize the way templates appear when night mode is enabled in
 the preferences screen.
