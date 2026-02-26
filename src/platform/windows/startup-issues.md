@@ -1,4 +1,4 @@
-# Windows startup issues
+﻿# Windows startup issues
 
 <!-- toc -->
 
@@ -76,6 +76,11 @@ updates are installed, instead of running Anki directly, press the <kbd>Windows<
 
 ```
 %LocalAppData%\Programs\Anki\anki-console.bat
+```
+
+В последних версиях это:
+```
+%LocalAppData%\Programs\Anki\anki-console.exe
 ```
 
 Presumably Anki will fail to open like before, but the output in the terminal window may reveal something about

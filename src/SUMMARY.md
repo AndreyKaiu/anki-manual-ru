@@ -26,7 +26,7 @@
     - [Методы ввода](platform/linux/input-methods.md)
 - [Начало работы](getting-started.md)
 - [+Получение помощи](getting-help.md)
-- [Учёба](studying.md)
+- [+Изучение](studying.md)
 - [Добавление/Редактирование](editing.md)
 - [Шаблоны карточек](templates/intro.md)
   - [Замена полей](templates/fields.md)

@@ -1,82 +1,67 @@
-# Deck Options
+# Параметры колод
 
 <!-- toc -->
 
-Deck options primarily control the way Anki schedules cards. It is recommended
-that you spend a few weeks with the defaults to get a feel for how Anki works
-before you start adjusting the options. Please make sure you understand the options
-before changing them, as mistakes can reduce Anki's effectiveness.
+Параметры колод в первую очередь контролируют то, как Anki планирует повторение карточек. Рекомендуется сначала несколько недель поработать с настройками по умолчанию, чтобы понять, как работает Anki, прежде чем начинать их корректировать. **Пожалуйста, убедитесь, что вы понимаете настройки, прежде чем менять их, так как ошибки могут снизить эффективность Anki.**
 
-On your computer, do any of the following to open deck options:
+На вашем компьютере выполните любое из следующих действий, чтобы открыть параметры колоды:
 
-- Click the gear icon on the Decks screen.
-- Select a deck on the Decks screen, and then click **Options**
-  at the bottom of the screen.
-- Click **More > Options** while in review mode.
-- Press <kbd>O</kbd> while in review mode.
+- Нажмите на значок шестерёнки на экране колод.
+- Выберите колоду на экране колод, а затем нажмите **Параметры** внизу экрана.
+- Нажмите «**Ещё** > **Настройки**» в режиме изучения.
+- Нажмите <kbd>O</kbd> в режиме изучения.
 
-Here are some community posts about deck options that have been contributed in the past:
+Вот несколько сообщений от сообщества о настройках колод, опубликованных в прошлом:
 
-- [Deck Options Explained](https://forums.ankiweb.net/t/deck-options-explained/213)
-- [Deck Options in a Mental Map](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
+- [Варианты колод: объяснение](https://forums.ankiweb.net/t/deck-options-explained/213)
+- [Варианты колоды на ментальной карте](https://forums.ankiweb.net/t/deck-options-in-a-mental-map/15757)
 
-## Presets
+## Конфигурации
 
-Anki allows you to share options between different decks, to make
-it easier to update options in many decks at once. To do this, options are
-grouped into _presets_. If you change an option in a preset, the change is applied to all decks that use the same preset. All newly created decks use the "Default" preset.
+Anki позволяет вам делиться настройками между разными колодами, чтобы упростить одновременное обновление настроек во многих колодах. Для этого настройки группируются в конфигурацию (набор настроек). Если вы измените настройку в конфигурации, это изменение применяется ко всем колодам, использующим ту же конфигурацию. Все вновь созданные колоды используют конфигурацию "По умолчанию".
 
-To change the options in one deck but not other decks, click the
-arrow icon in the top right of the Deck Options window. You can do the following:
+Чтобы изменить настройки в одной колоде, но не в других, нажмите значок стрелки в правом верхнем углу окна Параметры колоды (выпадающий список у кнопки "Сохранить"). Вы можете сделать следующее:
 
-- **Save**: Save all modifications you've made in deck options.
-- **Add Preset**: Add a new preset for this deck, with the default options.
-- **Clone**: Clone your current preset, which is useful if you
-  want to modify some of the options but keep the rest as they are.
-- **Rename**: Change the name of the current preset.
-- **Delete**: Delete the current preset. This will make your next sync
-  a [one-way sync](./syncing.md#conflicts).
-- **Save to All Subdecks**: Like **Save**, but also assigns the selected preset to all
-  subdecks of the currently selected deck.
+- **Сохранить**: Сохранить все изменения, которые вы сделали в настройках колоды.
+- **Добавить конфигурацию**: Добавит новый набор настроек для этой колоды с настройками по умолчанию.
+- **Клонировать конфигурацию**: Клонировать ваш текущий набор настроек, что полезно, если вы хотите изменить некоторые настройки, но оставить остальные как есть.
+- **Переименовать конфигурацию**: Изменить имя текущего набора настроек.
+- **Удалить конфигурацию**: Удалить текущий набор настроек. Это превратит вашу следующую синхронизацию в [одностороннюю синхронизацию](./syncing.md#Конфликты).
+- **Сохранить во все подколоды**: Как **Сохранить**, но также назначает выбранный набор настроек всем подколодам текущей выбранной колоды.
 
-Deck options are not retroactive. For example, if you change an option that
-controls the delay after failing a card, cards that you failed before
-changing this option will still have the old delay, not the new one.
+Параметры колод не имеют обратной силы. Например, если вы измените параметр, контролирующий задержку после неудачного ответа, то карточки на которые вы ответили неудачно до изменения этого параметра так и будут иметь старую задержку, а не новую.
 
-## Subdecks
+## Подколоды
 
-If your deck has subdecks, and you wish one or more of them to have different settings from the parent deck, you can assign those subdecks to separate presets.
-When Anki shows a card, it will check which subdeck the card is in, and use the options
-for that deck. There are two exceptions:
+Если ваша колода имеет подколоды, и вы хотите, чтобы одна или несколько из них имели другие настройки, отличные от родительской колоды, вы можете назначить этим подколодам отдельные конфигурации. Когда Anki показывает карточку, он проверит, в какой подколоде находится карточка, и использует настройки для этой колоды. Есть два исключения:
 
-- The **New cards/day** and **Maximum reviews/day** [limits](#daily-limits) of a subdeck affect the number of cards that can be gathered from that subdeck. But the total number of cards you see during your study session is controlled by the limits of the deck you select to study.
-- The [display order](#display-order) options are taken from the
-  deck you select to study, not the deck of the current card.
+- Это **Новых карточек в день** и **Максимум повторяемых в день** – подколоды влияют на количество карточек, которые могут быть взяты из этой подколоды. Но общее количество карточек, которое вы видите во время сессии изучения, контролируется лимитами колоды, которую вы выбрали для изучения.
+- Настройки [порядка показа](#Порядок-показа) берутся из колоды, которую вы выбрали для изучения, а не из колоды текущей карточки.
 
-For example, let's say you have this collection:
+Например, предположим, у вас есть такая коллекция:
 
-    - Deck A (Preset 1)
-      - Deck A::Subdeck B (Preset 2)
+    - Колода A (Конфигурация 1)
+      - Колода A::Подколода B (Конфигурация 2)
 
-Preset 1 and Preset 2 are identical, with two exceptions:
+Конфигурация 1 и Конфигурация 2 идентичны, за двумя исключениями:
 
-- Preset 1:
-  - **Learning steps**: `1m 10m`
-  - **New/review order**: `Mix with reviews`
-- Preset 2:
-  - **Learning steps**: `20m 2h`
-  - **New/review order**: `Show after reviews`
+- Конфигурация 1:
+  - **Шаги изучения**: `1m 10m`
+  - **Порядок новых/повторений**: `Перемешать с повторяемыми`
+- Конфигурация 2:
+  - **Шаги изучения**: `20m 2h`
+  - **Порядок новых/повторений**: `Показывать после повторяемых`
 
-If you choose to study Subdeck B:
+Если вы выберете для изучения Подколоду B:
 
-- Learning steps for all new cards will be `20m 2h` (Preset 2 applies).
-- All new cards will be shown after reviews (Preset 2 applies).
+- Шаги обучения для всех новых карточек будут `20m 2h` (применяется Конфигурация 2).
+- Все новые карточки будут показаны после повторений (применяется Конфигурация 2).
 
-If you choose to study Deck A:
+Если вы выберете для изучения Колоду A:
 
-- Learning steps for new cards in Deck A will be `1m 10m` (Preset 1 applies).
-- Learning steps for new cards in Subdeck B will be `20m 2h` (Preset 2 applies).
-- All new cards will be mixed with reviews (Preset 1 applies).
+- Шаги обучения для новых карточек в Колоде A будут `1m 10m` (применяется Конфигурация 1).
+- Шаги обучения для новых карточек в Подколоде B будут `20m 2h` (применяется Конфигурация 2).
+- Все новые карточки будут смешаны с повторяемыми (применяется Конфигурация 1).
 
 ## Daily Limits
 
@@ -225,7 +210,7 @@ the next day.
 Control the way Anki handles leeches. For details, see the [leeches](leeches.md)
 section.
 
-## Display Order
+## Порядок показа
 
 The options in this section are taken from the deck you select to study, not
 the deck of the currently displayed card.
@@ -539,7 +524,7 @@ For more info on FSRS, please check:
 - [FSRS4Anki Wiki](https://github.com/open-spaced-repetition/fsrs4anki/wiki)
 - [FSRS4Anki on Github](https://github.com/open-spaced-repetition/fsrs4anki)
 
-## Advanced
+## Дополнительно
 
 ### Maximum Interval
 

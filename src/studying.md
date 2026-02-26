@@ -1,246 +1,151 @@
-# Studying
+# Изучение
 
 <!-- toc -->
 
-When you have found a deck you like or entered some notes in, it’s time
-to start studying.
+Когда вы нашли понравившуюся колоду или добавили несколько записей, пришло время приступить к изучению.
 
 ## Колоды
 
-Study in Anki is limited to the currently selected deck as well as any
-subdecks it contains.
+Изучение в Anki ограничено текущей выбранной колодой, а также любыми содержащимися в ней подколодами.
 
-On the decks screen, your decks and subdecks will be displayed in a list. [New, Learn, and Due (To Review)](getting-started.md#card-states)
-cards for that day will be also displayed here.
+На экране колод ваши колоды и подколоды будут отображаться в виде списка. Карточки для [Новых, Изучаемых и Ожидающих повторения (К повторению)](getting-started.md#Состояния-карты) на этот день также будут здесь показаны.
 
 ![](media/decks_screen.png)
 
-When you click on a deck, it will become the "current deck", and Anki
-will change to the study screen. You can return to the deck list at any time by clicking on “Decks” at
-the top of the main window. (You can also use the Study
-Deck action in the menu to select a new deck from the keyboard, or you
-can press the <kbd>S</kbd> key to study the currently selected deck.)
+Когда вы нажимаете на колоду, она становится «текущей колодой», и Anki переключается на экран изучения. Вы можете вернуться к списку колод в любое время, нажав «Колоды» в верхней части главного окна. (Вы также можете использовать действие «Учить колоду» в меню, чтобы выбрать новую колоду, или вы можете нажать клавишу <kbd>S</kbd> для изучения текущей выбранной колоды.)
 
-You can click the gears button to the right of a deck to rename or
-delete the deck, change its [options](deck-options.md), or [export](exporting.md) it.
+Вы можете нажать кнопку с шестеренкой справа от колоды, чтобы переименовать или удалить колоду, изменить её [параметры](deck-options.md) или [экспортировать](exporting.md) её.
 
-## Study Overview
+## Обзор изучения
 
-After clicking on a deck to study, you’ll see a screen that shows you
-how many cards are due today. This is called the "deck overview" screen:
+После нажатия на колоду для изучения вы увидите экран, показывающий, сколько карточек запланировано на сегодня. Это называется экраном «обзора колоды»:
 
 ![](media/study_overview.png)
 
-The cards are split into [three types](getting-started.md#card-states): New, Learning, and To Review.
-If you have [Bury siblings](#siblings-and-burying) activated in your deck options, you
-may see how many cards will be buried in grey:
+Карточки разделены на [три типа](getting-started.md#card-states): Новые, Изучаемые и К повторению.
+Если у вас активировано [Откладывание связанных](#Связанные-и-откладывание) в настройках колоды, вы можете увидеть, сколько карточек будет отложено, серым цветом:
 
 ![](media/study_overview_buried_cards.png)
 
-To start a study session, click the **Study Now** button. Anki will
-proceed to show you cards until the cards to be shown for the day have
-run out.
+Чтобы начать сеанс изучения, нажмите кнопку **Учить**. Anki будет показывать вам карточки до тех пор, пока не закончатся карточки, запланированные на день.
 
-While studying, you can return to the overview by pressing the <kbd>S</kbd> key
-on your keyboard.
+Во время изучения вы можете вернуться к обзору, нажав клавишу <kbd>S</kbd> на клавиатуре.
 
-## Questions
+## Вопросы
 
-When a card is shown, only the question is shown at first. After
-thinking about the answer, either click the **Show Answer** button, or
-press the <kbd>Space</kbd>. The answer will then be shown. It’s okay if it takes
-you a little while to recall the answer, but as a general rule if you
-can’t answer within about 10 seconds, it’s probably better to move on
-and show the answer than keep struggling to remember.
+Когда карточка показывается, сначала отображается только вопрос. После обдумывания ответа нажмите кнопку **Показать ответ** или клавишу
+<kbd>Пробел</kbd>. Затем будет показан ответ. Нормально, если вам требуется немного времени, чтобы вспомнить ответ, но как общее правило, если вы не можете ответить в течение примерно 10 секунд, вероятно, лучше перейти к ответу, чем продолжать мучительно пытаться вспомнить.
 
 ## Кнопки ответа
 
-After the answer is shown, compare the answer you thought of
-with the answer that is shown and select any of the following buttons.
+После того как ответ показан, сравните вспомненый вами ответ с показанным ответом и выберите одну из следующих кнопок.
 
-- **Again**: Select this when your answer is incorrect or when you couldn't recall the answer. If your answer is partially correct, you should be strict with yourself: if it counts as a fail in a real-life context outside of Anki, then it counts as a fail in Anki as well. You'll typically use this button about 5-20% of the time.
+- **Снова**: Выбирайте это, когда ваш ответ неверен или когда вы не смогли вспомнить ответ. Если ваш ответ частично правильный, будьте строги к себе: если в реальной жизни, вне Anki, это считается ошибкой, то в Anki это также считается ошибкой. Обычно вы будете использовать эту кнопку примерно в 5-20% случаев.
 
-  Keyboard Shortcut: <kbd>1</kbd>
+  Сочетание клавиш: <kbd>1</kbd>
 
-- **Hard**: Select this button when your answer is correct, but you had doubts about it or it took a long time to recall.
+- **Трудно**: Выбирайте эту кнопку, когда ваш ответ правильный, но вы сомневались в нём или потребовалось много времени, чтобы его вспомнить.
 
-  Keyboard Shortcut: <kbd>2</kbd>
+  Сочетание клавиш: <kbd>2</kbd>
 
-- **Good**: Select this when your answer is correct, but it took some mental effort to recall it. When Anki is used properly, this should be the most commonly used button. You'll typically use this button about 80-95% of the time.
+- **Хорошо**: Выбирайте это, когда ваш ответ правильный, но для его припоминания потребовались некоторые умственные усилия. При правильном использовании Anki это должна быть самая часто используемая кнопка. Обычно вы будете использовать эту кнопку примерно в 80-95% случаев.
 
-  Keyboard Shortcut: <kbd>3</kbd>, <kbd>Space</kbd>, <kbd>Enter</kbd>
+  Сочетание клавиш: <kbd>3</kbd>, <kbd>Пробел</kbd>, <kbd>Enter</kbd>
 
-- **Easy**: Select this if your answer is correct and it took no mental effort to recall it.
+- **Легко**: Выбирайте это, если ваш ответ правильный и не потребовал никаких умственных усилий для его припоминания.
 
-  Keyboard Shortcut: <kbd>4</kbd>
+  Сочетание клавиш: <kbd>4</kbd>
 
-If you find it hard to use four answer buttons, you can also use only **Again** and **Good** buttons. Use **Again** for incorrect answers and use **Good** for correct answers.
+Если вам трудно использовать четыре кнопки ответа, вы можете использовать только кнопки **Снова** и **Хорошо**. Используйте **Снова** для неправильных ответов и **Хорошо** для правильных ответов.
 
-Each answer button shows the next time a card will be reviewed again if you select that button. To learn about the settings that control the next review intervals, see the topics [Learning Steps](deck-options.html#learning-steps), [Lapses](deck-options.md#lapses), [FSRS](deck-options.html#fsrs) and [Advanced](deck-options.md#advanced) in the Deck Options section.
+Каждая кнопка ответа показывает следующее время, когда карточка будет снова показана для повторения, если вы выберете эту кнопку. Чтобы узнать о настройках, управляющих следующими интервалами повторения, см. темы [Шаги обучения](deck-options.html#Шаги-обучения), [Забытые](deck-options.md#Забытые), [FSRS](deck-options.html#fsrs) и [Дополнительно](deck-options.md#Дополнительно) в разделе Конфигурация колоды.
 
-## Fuzz Factor
+## Фактор флуктуации
 
-When you select an answer button on a review card, Anki also applies a small amount of random “fuzz”
-to prevent cards that were introduced at the same time and given the same ratings
-from sticking together and always coming up for review on the same day.
+Когда вы выбираете кнопку ответа для карточки на повторении, Anki также применяет небольшую случайную флуктуацию (отклонение),
+чтобы карточки, добавленные в одно и то же время и получившие одинаковые оценки, не шли парами и не всегда выпадали для повторения в один и тот же день.
 
-Learning cards are also given up to 5 minutes of extra delay so that they
-don’t always appear in the same order, but answer buttons won't reflect that. It
-is not possible to turn this feature off.
+Изучаемые карточки также могут получить до 5 минут дополнительной задержки, чтобы они не всегда появлялись в одном и том же порядке, но кнопки ответа не будут это отражать. Отключить эту функцию невозможно.
 
 ## Редактирование и другое
 
-You can click the **Edit** button in the bottom left to edit the current
-note. When you finish editing, you’ll be returned to study. The editing
-screen works very similarly to the [add notes](editing.md) screen.
+Вы можете нажать кнопку **Редактировать** в левом нижнем углу, чтобы отредактировать текущую запись. Когда вы закончите редактирование, вы вернетесь к изучению. Экран редактирования работает очень похоже на экран [добавления записей](editing.md).
 
-At the bottom right of the study screen is a button labeled **More**.
-This button provides some other operations you can do on the current
-card or note:
+В правом нижнем углу экрана изучения находится кнопка с надписью **Ещё**. Эта кнопка предоставляет некоторые другие операции, которые вы можете выполнить с текущей карточкой или записью:
 
-- [**Flag Card**](editing.md#using-flags): Adds a colored marker to the card, or toggles it off. Flags will appear during
-  study, and you can search for flagged cards in the Browse screen. This is useful
-  when you want to take some action on the card at a later date, such as looking
-  up a word when you get home. If you're using Anki 2.1.45+, you can also rename flags
-  from the [browser](browsing.md).
+- [**Пометить карточку флажком**](editing.md#Использовать-флаги): Добавляет цветной маркер на карточку или убирает его. Флажки отображаются во время изучения, и вы можете искать карточки с флажками в окне Просмотра. Это полезно, когда вы хотите выполнить какое-либо действие с карточкой позже, например, посмотреть значение слова, когда вернетесь домой. Если вы используете Anki 2.1.45+, вы также можете переименовывать флажки в [Просмотре](browsing.md).
 
-- **Bury Card / Note**: Hides a card or all of the note’s cards from review until the next day.
-  (If you want to unbury cards before then, you can click the “unbury”
-  button on the [deck overview](studying.md#study-overview) screen.) This is useful if
-  you cannot answer the card at the moment or you want to come back to it
-  another time. Burying can also [happen automatically](studying.md#siblings-and-burying) for
-  cards of the same note.
+- **Отложить карточку / запись**: Скрывает карточку или все карточки записи от повторения до следующего дня. (Если вы хотите вернуть отложенные карточки раньше, вы можете нажать кнопку «Вернуть» на экране [обзора колоды](studying.md#Обзор-изучения).) Это полезно, если вы не можете ответить на карточку в данный момент или хотите вернуться к ней в другой раз. Откладывание также может [происходить автоматически](studying.md#Связанные-и-откладывание) для карточек одной и той же записи.
 
-- **Reset card**: Moves the current card to [the end of the new queue](browsing.md#cards).
+- **Сбросить карточку**: Перемещает текущую карточку в [конец очереди новых](browsing.md#Карточки).
 
-  The "Restore original position" option allows you to reset the card back to its original position when you reset it.
+  Опция «Восстановить исходную позицию» позволяет вам сбросить карточку обратно на её исходную позицию при сбросе.
 
-  The "Reset repetition and lapse count" option, if enabled, will set the review and failure counters
-  for the card back to zero. It does not remove the review history that is shown at the bottom of the
-  card info screen.
+  Опция «Сбросить счетчик количества повторений и забытых», если включена, обнуляет счётчики повторений и неудач для карточки. Она не удаляет историю повторений, которая показывается внизу экрана информации о карточке.
 
-- **Set Due Date**: Puts cards in the review queue, and [makes them due on a certain date.](browsing.md#cards)
+- **Задать срок**: Помещает карточки в очередь на повторение и [делает их запланированными на определённую дату](browsing.md#Карточки).
 
-- **Suspend Card / Note**: Hides a card or all of the note’s cards from review until they are
-  manually unsuspended (by clicking the suspend button in the browser).
-  This is useful if you want to avoid reviewing the note for some time,
-  but don’t want to delete it.
+- **Исключить карточку / запись**: Скрывает карточку или все карточки записи от повторения до тех пор, пока они не будут возвращены вручную (нажатием кнопки исключения в Просмотре). Это полезно, если вы хотите на время исключить повторение записи, но не хотите её удалять.
 
-- **Options**: Edit the [options](deck-options.md) for the current deck.
+- **Параметры**: Редактировать [параметры](deck-options.md) для текущей колоды.
 
-- **Card Info**: Displays [statistical information](stats.md#card-info) about the card.
+- **Сведения о карточке**: Показывает [статистическую информацию](stats.md#Информация-о-карточке) о карточке.
 
-- **Previous Card Info**: Displays [statistical information](stats.md#card-info) about the previous card.
+- **Сведения о предыдущей**: Показывает [статистическую информацию](stats.md#Информация-о-карточке) о предыдущей карточке.
 
-- [**Mark Note**](editing.md#the-marked-tag): Adds a “marked” tag to the current note, so it can be easily found in the
-  browser. This is similar to flagging individual cards, but works with a tag
-  instead, so if the note has multiple cards, all cards will appear in a search
-  for the marked tag. Most users will want to use flags instead.
+- [**Отметить запись**](editing.md#Метка-marked): Добавляет тег «marked» к текущей записи, чтобы её можно было легко найти в Просмотре. Это похоже на установку флажков на отдельные карточки, но работает с тегом, поэтому, если у записи несколько карточек, все карточки будут найдены при поиске по тегу «marked». Большинству пользователей лучше использовать флажки.
 
-- **Create Copy**: Opens a [duplicate](browsing.md#finding-duplicates) of the current
-  note in the editor, which can be slightly modified to easily obtain variations of your cards.
-  By default, the duplicate card will be created in the same deck as the original.
+- **Создать копию**: Открывает [копию](browsing.md#Найти-повторы) текущей записи в редакторе, который можно немного изменить, чтобы легко получить вариации ваших карточек. По умолчанию карточка-копия будет создана в той же колоде, что и исходная.
 
-- **Delete Note**: Deletes the note and all of its cards.
+- **Удалить запись**: Удаляет запись и все её карточки.
 
-- **Replay Audio**: If the card has audio on the front or back, play it again.
+- **Воспроизвести снова**: Если на карточке есть аудио на лицевой или обратной стороне, воспроизвести его снова.
 
-- **Pause Audio**: Pauses the audio if it is playing.
+- **Аудио на паузу**: Приостанавливает воспроизведение аудио, если оно играет.
 
-- **Audio -5s / +5s**: Jump backwards / forward 5 seconds in the currently playing audio.
+- **Аудио -5 с / +5 с**: Перемотка назад / вперёд на 5 секунд в текущем воспроизводимом аудио.
 
-- **Record Own Voice**: Record from your microphone for the purposes of checking your
-  pronunciation. This recording is temporary and will go away when you
-  move to the next card. If you want to add audio to a card permanently,
-  you can do that in the edit window.
+- **Записать свой голос**: Запись с вашего микрофона для проверки произношения. Эта запись временная и исчезнет, когда вы перейдете к следующей карточке. Если вы хотите добавить аудио к карточке навсегда, вы можете сделать это в окне редактирования.
 
-- **Replay Own Voice**: Replay the previous recording of your voice (presumably after showing
-  the answer).
+- **Воспроизвести свой голос**: Воспроизвести предыдущую запись вашего голоса (предположительно, после показа ответа).
 
-## Display Order
+## Порядок отображения
 
-Studying will show cards from the selected deck and any decks it
-contains. Thus, if you select your “French” deck, the subdecks
-“French::Vocab” and “French::My Textbook::Lesson 1” will be shown as
-well.
+Изучение будет показывать карточки из выбранной колоды и всех колод, которые она содержит. Таким образом, если вы выберете колоду «French», подколоды «French::Vocab» и «French::My Textbook::Lesson 1» также будут показаны.
 
-By default, for new cards, Anki gathers cards from the decks in
-alphabetical order. So in the above example, you would get cards first
-from “French”, then “My Textbook”, and finally “Vocab”. You can use this
-to control the order cards appear in, placing high priority cards in
-decks that appear higher in the list. When computers sort text
-alphabetically, the “-” character comes before alphabetical characters,
-and “\~” comes after them. So you could call the deck “-Vocab” to make
-them appear first, and you could call the other deck “\~My Textbook” to
-force it to appear after everything else.
+По умолчанию для новых карточек Anki собирает карточки из колод в алфавитном порядке. Таким образом, в приведенном выше примере вы сначала получите карточки из колоды «French», затем «My Textbook» и, наконец, «Vocab». Вы можете использовать это для управления порядком появления карточек, помещая карточки с высоким приоритетом в колоды, которые находятся выше в списке. Когда компьютеры сортируют текст по алфавиту, символ «-» предшествует буквенным символам, а «\~» следует за ними. Таким образом, вы можете назвать колоду «-Лексика», чтобы она появлялась первой, и вы можете назвать другую колоду «\~Мой учебник», чтобы она появлялась после всех остальных.
 
-New cards and reviews are gathered separately, and Anki won’t wait until
-both queues are empty before moving on to the next deck, so it’s
-possible you’ll be exposed to new cards from one deck while seeing
-reviews from another deck, or vice versa. If you don’t want this, click
-directly on the deck you want to study instead of one of the parent
-decks.
+Новые карточки и карточки для повторения собираются отдельно, и Anki не будет ждать, пока обе очереди опустеют, прежде чем перейти к следующей колоде, поэтому возможно, что вам будут показываться новые карточки из одной колоды, в то время как вы видите повторения из другой колоды, или наоборот. Если вы не хотите этого, нажмите непосредственно на ту колоду, которую хотите изучать, а не на одну из родительских колод.
 
-Since cards in learning are somewhat time-critical, they are fetched
-from all decks at once and shown in the order they are due.
+Поскольку карточки в процессе изучения являются в некоторой степени критичными ко времени, они извлекаются из всех колод сразу и показываются в порядке их запланированного появления.
 
-To control the order cards appear in, see [Display Order](./deck-options.md#display-order). For more fine-grained ordering of new cards, you
-can change the order in the [browser](browsing.md).
+Для управления порядком появления карточек см. [Порядок показа](./deck-options.md#Порядок-показа). Для более тонкой настройки порядка новых карточек вы можете изменить порядок в [Просмотре](browsing.md).
 
 ## Связанные и откладывание
 
-Recall from [the basics](getting-started.md) that Anki can create more than one
-card for each thing you input, such as a front→back card and a
-back→front card, or two different cloze deletions from the same text.
-These related cards are called "siblings".
+Вспомните из [начал](getting-started.md), что Anki может создавать более одной
+карточки для каждой введенной вами информации, например, карточку прямая→обратная и
+карточку обратная→прямая, или два разных текста с пропусками из одного и того же текста.
+Эти родственные карточки называются «связанными».
 
-When you answer a card that has siblings, Anki can prevent the card’s
-siblings from being shown in the same session by automatically "burying"
-them. Buried cards are hidden from review until the clock rolls over to
-a new day or you manually unbury them using the “Unbury” button that’s
-visible at the bottom of the [deck overview](studying.md#study-overview) screen. Anki
-will bury siblings even if the siblings are not in the same deck (for
-instance, if you use the [deck override](templates/intro.md) feature).
+Когда вы отвечаете на карточку, у которой есть связанные, Anki может предотвратить показ связанных карточек в той же сессии, автоматически «откладывая» их. Отложенные карточки скрыты от повторения до наступления нового дня или пока вы не вернете их вручную, нажав кнопку «**Вернуть**», которая видна внизу экрана [обзора колоды](studying.md#Обзор-изучения). Anki будет откладывать связанные карточки, даже если они находятся не в той же колоде (например, если вы используете функцию [подмена колоды](templates/intro.md)).
 
-You can enable burying from the [deck options](deck-options.md) screen -
-there are separate settings for new cards and reviews.
+Вы можете включить откладывание на экране [параметры колоды](deck-options.md) — существуют отдельные настройки для новых карточек и для повторений.
 
-Anki will only bury siblings that are new or review cards. It will not
-hide cards in learning, as time is of the essence for those cards. On
-the other hand, when you study a learning card, any new/review siblings
-will be buried.
+Anki будет откладывать только те связанные карточки, которые являются новыми или находятся на повторении. Он не будет скрывать карточки в изучении, так как время для них критично. С другой стороны, когда вы изучаете карточку в процессе изучения, любые связанные новые карточки или карточки на повторении будут отложены.
 
-Also note that a card cannot be buried and suspended at the same time. Suspending a
-buried card will unbury it. Suspended cards can't be buried.
+Также обратите внимание, что карточка не может быть одновременно отложенной и исключенной. Исключение отложенной карточки вернёт её из отложенных. Исключенные карточки не могут быть отложены.
 
-## Keyboard Shortcuts
+## Горячие клавиши
 
-Most of the common operations in Anki have keyboard shortcuts. Most of
-them are discoverable in the interface: menu items list their shortcuts
-next to them, and hovering the mouse cursor over a button will generally
-show its shortcut in a tooltip.
+Большинство распространенных операций в Anki имеют горячие клавиши. Большинство из них можно найти в интерфейсе: пункты меню отображают свои сочетания клавиш рядом с собой, а наведение курсора мыши на кнопку обычно показывает её сочетание клавиш во всплывающей подсказке.
 
-When studying, either <kbd>Space</kbd> or <kbd>Enter</kbd> will show the answer. When the
-answer is shown, you can use <kbd>Space</kbd> or <kbd>Enter</kbd> to select the Good button.
-You can use the <kbd>1</kbd>-<kbd>4</kbd> keys to select a specific ease button. Many people
-find it convenient to answer most cards with <kbd>Space</kbd> and keep one finger
-on <kbd>1</kbd> for when they forget.
+При изучении либо <kbd>Пробел</kbd>, либо <kbd>Enter</kbd> показывают ответ. Когда ответ показан, вы можете использовать <kbd>Пробел</kbd> или <kbd>Enter</kbd>, чтобы выбрать кнопку «Хорошо». Вы можете использовать клавиши <kbd>1</kbd>-<kbd>4</kbd>, чтобы выбрать конкретную кнопку оценки. Многие люди находят удобным отвечать на большинство карточек клавишей <kbd>Пробел</kbd>, держа один палец на клавише <kbd>1</kbd> на случай, если они забыли ответ.
 
-The "Study Deck" item in the Tools menu allows you to quickly switch to
-a deck with the keyboard. You can trigger it with the <kbd>/</kbd> key. When
-opened, it will display all of your decks and show a filter area at the
-top. As you type characters, Anki will display only decks matching the
-characters you type. You can add a space to separate multiple search
-terms, and Anki will show only decks that match all the terms. So “ja 1”
-or “on1 ja” would both match a deck called “Japanese::Lesson1”.
+Пункт «**Учить колоду**» в меню Инструменты позволяет быстро переключиться на колоду с помощью клавиатуры. Вы можете вызвать его клавишей <kbd>/</kbd>. При открытии отобразятся все ваши колоды и область фильтра вверху. По мере ввода символов Anki будет показывать только колоды, соответствующие введенным символам. Вы можете добавить пробел для разделения нескольких условий поиска, и Anki покажет только колоды, соответствующие всем условиям. Таким образом, «ja 1» или «on1 ja» подойдут для колоды с названием «Japanese::Lesson1».
 
-## Falling Behind
+## Отставание от графика
 
-When you fall behind in your reviews, Anki by default prioritizes cards that have
-been waiting the longest. This ordering ensures that no cards will
-be left waiting indefinitely, but it means that if you introduce new
-cards, their reviews won’t appear until you’ve gotten through your
-backlog.
+Когда вы отстаете от графика повторений, Anki по умолчанию отдает приоритет карточкам, которые ждут дольше всех. Такой порядок гарантирует, что ни одна карточка не останется ждать бесконечно, но это означает, что если вы добавляете новые карточки, их повторения не появятся, пока вы не разберетесь с накопившимся долгом.
 
-When you answer cards that have been waiting for a while, Anki factors
-in that delay when determining the next time a card should be shown. This means if you are returning to Anki after a long break, you don't have to start anew and can just start back from where you left.
+Когда вы отвечаете на карточки, которые ждали какое-то время, Anki учитывает эту задержку при определении следующего времени показа карточки. Это означает, что если вы возвращаетесь в Anki после долгого перерыва, вам не нужно начинать все сначала; вы можете просто продолжить с того места, где остановились.
