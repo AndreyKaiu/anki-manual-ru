@@ -178,7 +178,7 @@ decks or manage your note types.
 
 ## Organizing Content
 
-### Using Decks Appropriately
+### Правильное использование колод
 
 [Decks](getting-started.md#decks) are designed to divide your content up into
 broad categories that you wish to study separately, such as English, Geography,
@@ -326,7 +326,7 @@ hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
 formatting. Under Preferences, you can toggle "Paste without shift
 key strips formatting" to modify the default behaviour.
 
-## Cloze Deletion
+## Заполнение пропусков
 
 _Cloze deletion_ is the process of hiding one or more words in a
 sentence. For example, if you have the sentence:
@@ -430,7 +430,7 @@ sure to clone the existing Cloze type instead of another type of note.
 Things like formatting can be customized, but it is not possible to add
 extra card templates to the cloze note type.
 
-## Image Occlusion
+## Скрытие части изображений
 
 Anki 23.10+ supports Image Occlusion cards natively. An Image
 Occlusion (IO) note is a special case of cloze deletion based on images

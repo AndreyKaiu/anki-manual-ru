@@ -24,7 +24,7 @@
     - [Неверная тема GTK](platform/linux/gtk-theme.md)
     - [Wayland (Вейленд)](platform/linux/wayland.md)
     - [Методы ввода](platform/linux/input-methods.md)
-- [Начало работы](getting-started.md)
+- [+Начало работы](getting-started.md)
 - [+Получение помощи](getting-help.md)
 - [+Изучение](studying.md)
 - [Добавление/Редактирование](editing.md)
