@@ -3,7 +3,7 @@
 [+Введение](intro.md)
 
 - [+Предыстория](background.md)
-- [Особенности платформ](platform/intro.md)
+- [+Особенности платформ](platform/intro.md)
   - [Windows](platform/windows/intro.md)
     - [Установка и обновление](platform/windows/installing.md)
     - [Проблемы с установкой](platform/windows/installation-issues.md)

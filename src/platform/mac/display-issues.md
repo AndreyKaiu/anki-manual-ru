@@ -1,32 +1,28 @@
-# Display Issues on macOS
+# Проблемы с отображением на macOS
 
 <!-- toc -->
 
-## Change the Video Driver
+## Смена видеодрайвера
 
-### Changing the Driver From the Preferences Screen
-If you're experiencing display issues or crashes in Anki 23.10+, you can try
-changing the video driver in the preferences screen by navigating to **Anki →
-Preferences** and then selecting the driver from the dropdown menu. After that it
-is necessary to restart Anki.
+### Изменение драйвера из окна Параметров
+Если вы испытываете проблемы с отображением или вылеты в Anki 23.10+, вы можете попробовать изменить видеодрайвер в окне параметров, перейдя в **Anki → Настройки** и выбрав драйвер из раскрывающегося меню. После этого необходимо перезапустить Anki.
 
-### Changing the Driver From Terminal.app
-Older Anki versions did not provide an option in the preferences, but allowed
-you to adjust the driver by opening Terminal.app, then pasting the following and hit <kbd>Enter</kbd>:
+### Изменение драйвера из Terminal.app
+В старых версиях Anki не было опции в параметрах, но вы могли настроить драйвер, открыв Terminal.app, затем вставив следующее и нажав <kbd>Enter</kbd>:
 
 ```
 echo software > ~/Library/Application\ Support/Anki2/gldriver6
 ```
 
-It will not print anything. You can then start Anki again.
+Команда ничего не выведет. Затем вы можете снова запустить Anki.
 
-If you wish to switch back to the default, change `software` to `auto`, or
-remove that file.
+Если вы хотите вернуться к настройкам по умолчанию, замените `software` на `auto` или удалите этот файл.
 
-## eGPUs
+## eGPU
 
-If you experience blank screens when using an external graphics card on a Mac, you can <kbd>Ctrl</kbd>-click on the Anki app, click **Get Info**, and enable the **prefer eGPU** option.
+Если у вас возникает пустой экран при использовании внешней графической карты на Mac, вы можете нажать <kbd>Ctrl</kbd> и щелкнуть по приложению Anki, нажать **Сведения** и включить опцию **prefer eGPU**.
 
-## Monitors with Different Resolutions
+## Мониторы с разным разрешением
 
-Please see [this forum post](https://forums.ankiweb.net/t/mac-known-issues-wording-suggestion/7331).
+Смотрите [это сообщение на форуме](https://forums.ankiweb.net/t/mac-known-issues-wording-suggestion/7331).
+
