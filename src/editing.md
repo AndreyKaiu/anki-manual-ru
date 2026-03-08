@@ -4,172 +4,82 @@
 
 ## Добавление карточек и записей
 
-Recall from the [basics](getting-started.md) that in Anki we add notes rather than
-cards, and Anki creates cards for us. Click **Add** in the [main window](studying.md#decks),
-and the Add Notes window will appear.
+Как мы уже знаем из [начал](getting-started.md), в Anki мы добавляем записи, а не карточки, и Anki создает карточки за нас. Нажмите **Добавить** в [главном окне](studying.md#Колоды), и появится окно Добавление записей.
 
 ![Add Screen](media/add_screen.png)
 
-The top left of the window shows us the current [note type](getting-started.md#note-types). If it does
-not say "Basic," then you may have added some note types when you
-downloaded a shared deck. The text below assumes that "Basic" is
-selected.
+В левом верхнем углу окна отображается текущий [тип записи](getting-started.md#Типы-записей). Если там не указано "Простая", возможно, вы добавили несколько типов записей при загрузке общей колоды. Текст ниже предполагает, что выбрана "Простая".
 
-The top right of the window shows us the [deck](getting-started.md#decks) cards will be added to. If
-you would like to add cards to a new deck, you can click on the deck name
-button and then click **Add**.
+В правом верхнем углу окна показана [колода](getting-started.md#Колоды), в которую будут добавляться карточки. Если вы хотите добавить карточки в новую колоду, нажмите на кнопку с названием колоды, а затем нажмите **Добавить**.
 
-Below the note type, you'll see some buttons, and an area labelled
-"Front" and "Back". Front and Back are called [fields](getting-started.md#notes--fields), and you can add,
-remove, and rename them by clicking the "Fields…​" button above.
+Под типом записи вы увидите несколько кнопок и область с названиями "Front" (перед) и "Back" (зад). Передняя и задняя стороны называются [полями](getting-started.md#Записи-и-поля). Вы можете добавлять, удалять и переименовывать их, нажав кнопку "Поля…​" выше.
 
-Below the fields is another area labelled "**tags**". Tags are labels that
-you can attach to your notes, to make organizing and finding notes
-easier. You can leave the tags blank if you wish, or add one or more of
-them. Tags are separated by a space. If the tags area says
+Под полями находится другая область с названием "**Метки**". Метки — это ярлыки, которые можно прикреплять к записям, чтобы упростить их организацию и поиск. При желании вы можете оставить поле меток пустым или добавить одну или несколько меток. Метки разделяются пробелом. Если в области меток написано
 
     vocab check_with_tutor
 
-…​then the note you add would have two tags.
+…​то у добавляемой записи будет две метки.
 
-When you have entered text into the front and back, you can click the
-**Add** button or press <kbd>Ctrl</kbd>+<kbd>Enter</kbd> (<kbd>Command</kbd>+<kbd>Enter</kbd> on a Mac) to add the
-note to your collection. When you do so, a card will be created as well,
-and placed into the deck you chose. If you would like to edit a card you
-added, you can click the history button to search for a recently added
-card in the [browser](browsing.md).
+Когда вы ввели текст на переднюю и заднюю стороны, вы можете нажать кнопку **Добавить** или нажать <kbd>Ctrl</kbd>+<kbd>Enter</kbd>  (<kbd>Command</kbd>+<kbd>Enter</kbd> на Mac), чтобы добавить запись в вашу коллекцию. При этом также будет создана карточка и помещена в выбранную вами колоду. Если вы хотите отредактировать добавленную карточку, вы можете нажать кнопку **История**, чтобы найти недавно добавленную карточку в [Просмотре](browsing.md).
 
-For more information on the buttons between the note type and the
-fields, please see the [editor](editing.md) section.
+Дополнительную информацию о кнопках между типом записи и полями можно найти в разделе [Функции редактирования](editing.md#Функции-редактирования).
 
-### Duplicate Check
+### Проверка на дубликаты
 
-Anki checks the first field for uniqueness, so it will warn you if you
-enter two cards with a Front field of "apple" (for example). The
-uniqueness check is limited to the current note type, so if you're
-studying multiple languages, two cards with the same Front would not be
-listed as duplicates as long as you had a different note type for each
-language.
+Anki проверяет уникальность первого поля, поэтому программа предупредит вас, если вы введете две карточки с одинаковым значением в поле 
+"Front", например, "яблоко". Проверка на уникальность ограничена текущим типом записей, поэтому при изучении нескольких языков две карточки с одинаковой передней стороной не будут считаться дубликатами, если для каждого языка используется свой тип записи.
 
-Anki does not check for duplicates in other fields automatically for
-efficiency reasons, but the browser has a "Find Duplicates" function,
-which you can run periodically.
+По соображениям производительности Anki не проверяет дубликаты в других полях автоматически, но в Просмотре есть функция "Найти повторы", которую можно запускать периодически.
 
-### Effective Learning
+### Эффективное обучение
 
-Different people like to review in different ways, but there are some
-general concepts to keep in mind. An excellent introduction is [this article](https://super-memory.com/articles/20rules.htm) on the SuperMemo
-site. In particular:
+Разные люди предпочитают учиться по-разному, но есть несколько общих концепций, которые следует иметь в виду. Отличное введение — [эта статья](https://super-memory.com/articles/20rules.htm) на сайте SuperMemo. В частности:
 
-- **Keep it simple**: The shorter your cards, the easier they are to
-  review. You may be tempted to include lots of information "just in
-  case," but reviews will quickly become painful.
+- **Будьте проще**: Чем короче ваши карточки, тем легче их повторять. Вас может искушать желание включить много информации "на всякий случай", но повторение быстро станет утомительным.
 
-- **Don't memorize without understanding**: If you are studying a
-  language, try to avoid large lists of words. The best way to learn
-  languages is in context, which means seeing those words used in a
-  sentence. Likewise, imagine you're studying a computer course. If
-  you attempt to memorize the mountain of acronyms, you'll find it
-  very difficult to make progress. But if you take the time to
-  understand the concepts behind the acronyms, learning the acronyms
-  will become a lot easier.
+- **Не запоминайте без понимания**: Если вы изучаете язык, старайтесь избегать больших списков слов. Лучший способ выучить язык — в контексте, то есть видеть эти слова использованными в предложении. Аналогично, представьте, что вы изучаете компьютерный курс. Если вы попытаетесь запомнить гору аббревиатур, вам будет очень трудно продвигаться. Но если вы потратите время на понимание концепций, стоящих за аббревиатурами, их запоминание станет намного проще.
 
 ## Добавление типа записи
 
-While basic note types are sufficient for simple cards with only a word
-or phrase on each side, as soon as you find yourself wanting to include
-more than one piece of information on the front or back, it's better to
-split that information up into more fields.
+Хотя базовых типов записей достаточно для простых карточек со словом или фразой на каждой стороне, как только вы захотите включить более одного элемента информации на переднюю или заднюю сторону, лучше разбить эту информацию на несколько полей.
 
-You may find yourself thinking "but I only want one card, so why can't I
-just include the audio, a picture, a hint, and the translation in the
-Front field?" If you'd prefer to do that, that's fine. But the
-disadvantage of that approach is that all the information is stuck
-together. If you wanted to sort your cards by the hint, you wouldn't be
-able to do that as it is mixed in with the other content. You also
-wouldn't be able to do things such as moving the audio from the front to the
-back, except by laboriously copying and pasting it for every note. By
-keeping content in separate fields, you make it much easier to adjust
-the layout of your cards in the future.
+Вы можете подумать: "но мне нужна только одна карточка, так почему я не могу просто включить аудио, картинку, подсказку и перевод в поле Front?" Если вы предпочитаете так делать, это нормально. Но недостаток такого подхода в том, что вся информация оказывается "склеенной". Если вы захотите отсортировать карточки по подсказке, вы не сможете этого сделать, потому что она перемешана с другим содержимым. Вы также не сможете, например, перенести аудио с передней стороны на заднюю, кроме как путем кропотливого копирования и вставки для каждой записи. Храня контент в отдельных полях, вы значительно упрощаете будущую корректировку макета ваших карточек.
 
-To create a new type of note, choose **Tools > Manage Note Types** from the
-main Anki window. Then click **Add** to add a new type of note. You will now
-see another screen that gives you a choice of note types to base the new
-type on. "Add" means to base the newly created type on one that comes
-with Anki. "Clone" means to base the newly created type on one that is
-already in your collection. For instance, if you'd created a French
-vocab type already, you might want to clone that when creating a German
-vocab type.
+Чтобы создать новый тип записи, выберите «**Инструменты > Управление типами записей**» в главном окне Anki. Затем нажмите **Добавить**, чтобы добавить новый тип записи. Появится еще один экран, предлагающий выбрать тип записи, на котором будет основываться новый тип. "Добавить" означает создать новый тип на основе одного из встроенных в Anki. "Клонировать" означает создать новый тип на основе уже существующего в вашей коллекции. Например, если вы уже создали тип для французского вокабуляра, вы можете клонировать его при создании типа для немецкого вокабуляра.
 
-After choosing OK, you will be asked to name the new type. The subject
-material that you are studying is a good choice here – things like "Japanese",
-"Trivia", and so on. Once you have chosen a name, close the Note Types
-window, and you will return to the adding window.
+После нажатия ОК вам будет предложено дать имя новому типу. Хорошим выбором будет название изучаемого материала — например, "Японский", "Викторины" и так далее. После выбора имени закройте окно типов записей, и вы вернетесь в окно добавления.
 
 ## Настройка полей
 
-To customize fields, click the **Fields...** button when adding or editing
-a note, or while the note type is selected in the Manage Note Types
-window.
+Чтобы настроить поля, нажмите кнопку **Поля...** при добавлении или редактировании записи, либо когда тип записи выбран в окне Управление типами записей.
 
-![Fields](media/fields.png)
+![Поля](media/fields.png)
 
-You can add, remove, or rename fields by clicking the appropriate
-buttons.
+Вы можете добавлять, удалять или переименовывать поля, нажимая соответствующие кнопки.
 
-To change the order in which the fields appear in this dialog
-and the add notes dialog, you can use the reposition button, which asks
-for the numerical position you want the field to have. So if you want to
-change a field to be the new first field, enter "1".
+Чтобы изменить порядок отображения полей в этом диалоговом окне и в окне добавления записей, вы можете использовать кнопку изменения позиции **Переместить**, которая запрашивает числовой номер позиции, которую вы хотите присвоить полю. Так, если вы хотите сделать поле новым первым полем, введите "1".
 
-Alternatively you can also drag and drop the field names to reorder them. To do
-that, use your mouse or finger to drag the field to the desired position. An indicator will
-show you where the field will be moved to.
+Кроме того, вы можете перетаскивать имена полей для изменения порядка. Для этого используйте мышь или палец, чтобы перетащить поле на нужную позицию. Индикатор покажет, куда будет перемещено поле.
 
-Do not use "Tags", "Type", "Deck", "Card", or "FrontSide" as field
-names, as they are [special fields](templates/fields.md#special-fields) and will not work
-properly.
+Не используйте "Tags", "Type", "Deck", "Card", или "FrontSide" в качестве имен полей, так как они являются [специальными полями](templates/fields.md#Специальные-поля) и не будут работать должным образом.
 
-The options at the bottom of the screen allow you to edit various
-properties of the fields to be used when adding and editing the cards.
-This is _not_ where you customize what appears on your cards when
-reviewing; for that, please see [templates](templates/intro.md).
+Параметры в нижней части экрана позволяют редактировать различные свойства полей, используемых при добавлении и редактировании карточек. Здесь _не_ настраивается то, что отображается на ваших карточках во время повторения; для этого обратитесь к разделу [шаблоны](templates/intro.md).
 
-- **Editing Font** allows you to customize the font and size used when
-  editing notes. This is useful if you want to make unimportant
-  information smaller, or increase the size of non-Latin characters which
-  are hard to read. The changes you make here do not affect how cards
-  appear when reviewing: to do that, please see the
-  [templates](templates/intro.md) section. If you have enabled the "type in the
-  answer" function, however, the text you type will use the font size
-  defined here. (For information about how to change the actual font face
-  when typing the answer, please see the [checking your answer](templates/fields.md#checking-your-answer) section.)
+- **Шрифт в редакторе** позволяет настроить шрифт и размер, используемые при редактировании записей. Это полезно, если вы хотите сделать неважную информацию меньше или увеличить размер нелатинских символов, которые трудно читать. Внесенные здесь изменения не влияют на то, как карточки выглядят при повторении: для этого обратитесь к разделу [шаблоны](templates/intro.md). Однако, если вы включили функцию "type in the answer" ("с вводом ответа"), вводимый вами текст будет использовать размер шрифта, заданный здесь. (Информацию о том, как изменить фактический гарнитуру шрифта при вводе ответа, см. в разделе [проверка ответа](templates/fields.md#Проверка-вашего-ответа).)
 
-- **Sort by this field…​** tells Anki to show this field in the Sort Field
-  column of the browser. You can use this to sort cards by that field.
-  Only one field can be the sort field at once.
+- **Сортировать список по этому полю...** указывает Anki отображать это поле в колонке Поле сортировки в Просмотре. Вы можете использовать это для сортировки карточек по этому полю. Одновременно только одно поле может быть полем сортировки.
 
-- **Reverse text direction** is useful if you are studying languages that
-  display text from right to left (RTL), such as Arabic or Hebrew. This
-  setting currently only controls editing; to make sure the text displays
-  correctly during review, you'll need to adjust your
-  [template](templates/styling.md#text-direction).
+- **Направление письма справа налево** полезно, если вы изучаете языки с письмом справа налево (RTL), такие как арабский или иврит. В настоящее время этот параметр управляет только редактированием; чтобы текст правильно отображался во время повторения, вам нужно будет настроить свой [шаблон](templates/styling.md#Направление-текста).
 
-- **Use HTML editor by default** is useful if you prefer to edit the fields
-  directly in HTML.
+- **Использовать HTML по умолчанию** полезно, если вы предпочитаете редактировать поля непосредственно в HTML.
 
-- **Collapse by default**. Fields can be collapsed/expanded.
-  The animation can be disabled in the [preferences.](preferences.md)
+- **Сворачивать по умолчанию**. Поля можно сворачивать/разворачивать. Анимацию можно отключить в [настройках.](preferences.md)
 
-- **Exclude from unqualified searches (slower)** can be used if you want
-  the content of a certain field not to appear in unqualified [(not limited to a specific field)](searching.md#limiting-to-a-field)
-  searches.
+- **Исключить из поиска без указания поля (медленнее)** можно использовать, если вы хотите, чтобы содержимое определенного поля не появлялось в неуточненных [(не ограниченных конкретным полем)](searching.md#Ограничение-по-полю) поисках.
 
-After you have added fields, you will probably want to add them to the front
-or back of your cards. For more information on that, please see the
-[templates](templates/intro.md) section.
+После того как вы добавили поля, вам, вероятно, захочется добавить их на переднюю или заднюю сторону ваших карточек. Для получения дополнительной информации об этом обратитесь к разделу [шаблоны](templates/intro.md).
 
-## Changing Deck / Note Type
+## Изменение колоды / типа записи
 
 While adding, you can click on the top left button to change note type,
 and the top right button to change deck. The window that opens up will
@@ -180,351 +90,211 @@ decks or manage your note types.
 
 ### Правильное использование колод
 
-[Decks](getting-started.md#decks) are designed to divide your content up into
-broad categories that you wish to study separately, such as English, Geography,
-and so on. You may be tempted to create lots of little decks to keep your
-content organized, such as "my geography book chapter 1", or "food verbs", but
-this is not recommended, for the following reasons:
+[Колоды](getting-started.md#Колоды) предназначены для разделения вашего контента на широкие категории, которые вы хотите изучать отдельно, например, "Английский", "География" и так далее. Вас может искушать желание создать множество маленьких колод для организации контента, например, "моя книга по географии глава 1" или "глаголы еды", но это не рекомендуется по следующим причинам:
 
-- Lots of little decks may mean you end up seeing cards in a
-  recognizable order. On older scheduler versions, new cards can only
-  be introduced in deck order. And if you were planning to click on each deck
-  in turn (which is slow), you will end up seeing all the "chapter 1" or
-  "food verb" reviews together. This makes it easier to answer the
-  cards, as you can guess them from the context, which leads to weaker
-  memories. When you need to recall the word or phrase outside Anki,
-  you won't always have the luxury of being shown related content first!
+- Множество маленьких колод может означать, что вы в итоге будете видеть карточки в узнаваемом порядке. В старых версиях планировщика новые карточки могут вводиться только в порядке колод. И если вы планируете щелкать по каждой колоде по очереди (что медленно), вы в итоге увидите все повторения из "главы 1" или "глаголов еды" вместе. Это облегчает ответы на карточки, так как вы можете угадать их из контекста, что приводит к более слабому запоминанию. Когда вам нужно будет вспомнить слово или фразу вне Anki, у вас не всегда будет роскошь сначала увидеть связанный контент!
 
-- While less of a problem than it was in earlier Anki versions,
-  adding hundreds of decks may cause slowdowns, and very large deck
-  trees with thousands of items can actually break the display of
-  the deck list in Anki versions before 2.1.50.
+- Хотя это меньшая проблема, чем в ранних версиях Anki, добавление сотен колод может вызвать замедление работы, а очень большие деревья колод с тысячами элементов могут фактически сломать отображение списка колод в версиях Anki до 2.1.50.
 
-### Using Tags
+### Использование меток
 
-Instead of creating lots of little decks, it's a better idea to use tags
-and/or fields to classify your content. Tags are a useful way to boost
-search results, find specific content, and keep your collection
-organized.
-There are many ways of using tags and flags effectively, and
-thinking in advance about how you want to use them will help you decide
-what will work best for you.
+Вместо создания множества маленьких колод лучше использовать метки и/или поля для классификации вашего контента. Метки — это полезный способ улучшить результаты поиска, найти конкретный контент и поддерживать порядок в коллекции.
+Существует множество способов эффективного использования меток и флагов, и заблаговременное обдумывание того, как вы хотите их использовать, поможет вам решить, что лучше всего подойдет для вас.
 
-Some people prefer using decks and subdecks to keep their cards organized,
-but using tags offers a big advantage over decks for that: you can add several
-tags to a single note, but a single card can only belong to one deck, which
-makes tags a more powerful and flexible categorization system than
-decks in most cases. You can also organize tags in trees [in the same way as you can do for decks](getting-started.md#decks).
+Некоторые люди предпочитают использовать колоды и подколоды для организации своих карточек, но использование меток дает большое преимущество перед колодами: вы можете добавить несколько меток к одной записи, но одна карточка может принадлежать только одной колоде, что делает метки более мощной и гибкой системой категоризации, чем колоды в большинстве случаев. Вы также можете организовывать метки в деревья [так же, как вы можете это делать с колодами](getting-started.md#Колоды).
 
-For example, instead of creating a "food verbs" deck, you could add those
-cards to your main language study deck, and tag the cards with "food" and
-"verb". Since each card can have multiple tags, you can do things like
-[search](searching.md#tags-decks-cards-and-notes) for all verbs, or all
-food-related vocabulary, or all verbs that are related to food.
+Например, вместо создания колоды "глаголы еды" вы могли бы добавить эти карточки в свою основную колоду для изучения языка и пометить карточки метками "еда" и "глагол". Поскольку каждая карточка может иметь несколько меток, вы можете делать такие вещи, как [искать](searching.md#Метки-колоды-карточки-и-записи) все глаголы, или всю лексику, связанную с едой, или все глаголы, связанные с едой.
 
-You can add tags from the Edit window and from the [Browser](browsing.md), and you can also add,
-delete, rename, or organize tags there. Please note that
-tags work at [note](getting-started.md#notes--fields) level, which means that when you tag a card that has siblings,
-all the siblings will be tagged as well. If you need to tag a single card,
-but not its siblings, you should consider using flags instead.
+Вы можете добавлять метки из окна Редактировать и из [Просмотра](browsing.md), а также добавлять, удалять, переименовывать или организовывать их там. Обратите внимание, что метки работают на уровне [записи](getting-started.md#Записи-и-поля), что означает, что когда вы помечаете карточку, у которой есть родственные карточки, все родственные карточки также будут помечены. Если вам нужно пометить отдельную карточку, но не ее родственные, вам следует вместо этого рассмотреть возможность использования флагов.
 
-### Использовать флаги
+### Использование флагов
 
-Flags are similar to tags, but they will appear during study in the review
-window, showing a colored flag icon on the upper right area of the screen.
-You can also search for flagged cards in the Browse screen, rename flags
-from the browser and create filtered decks from flagged cards, but unlike tags,
-a single card can have only one flag at a time. Another important difference
-is that flags work at [card](getting-started.md#cards) level, so flagging a card that has siblings
-won't have any effect on the card's siblings.
+Флаги похожи на метки, но они появляются во время обучения в окне повторения, показывая цветной значок флага в правой верхней области экрана. Вы также можете искать отмеченные флагами карточки на экране Просмотра, переименовывать флаги из Просмотра и создавать фильтрованные колоды из отмеченных флагами карточек, но, в отличие от меток, одна карточка одновременно может иметь только один флаг. Еще одно важное отличие заключается в том, что флаги работают на уровне [карточки](getting-started.md#Карточки), поэтому установка флага на карточку, у которой есть родственные карточки, никак не повлияет на родственные карточки.
 
-You can flag / unflag cards directly while in review mode (by pressing
-<kbd>Ctrl</kbd>+<kbd>1-7</kbd> on Windows or <kbd>Cmd</kbd>+<kbd>1-7</kbd> on Mac)
-and from the [Browser.](browsing.md)
+Вы можете устанавливать/снимать флаги непосредственно в режиме повторения (нажимая <kbd>Ctrl</kbd>+<kbd>1-7</kbd> в Windows или <kbd>Cmd</kbd>+<kbd>1-7</kbd> на Mac) и из [Просмотра.](browsing.md)
 
 ### Метка "Marked"
 
-Anki treats a tag called "marked" specially. There are options in the review
-screen and browse screen to add and remove the "marked" tag. The study screen
-will show a star when the current card's note has that tag. And cards are
-shown in a different color in the browse screen when their note is marked.
+Anki обрабатывает метку под названием "marked" особым образом. На экране повторения и на экране Просмотра есть опции для добавления и удаления метки "marked". На экране изучения будет отображаться звездочка, если текущая карточка (точнее, ее запись) имеет эту метку. А на экране Просмотра карточки отображаются другим цветом, если их запись отмечена.
 
-Note: Marking is mainly left around for compatibility with older Anki
-versions; most users will want to use [flags](editing.md#using-flags) instead.
+Примечание: Помечивание ("Отметить") в основном оставлено для совместимости со старыми версиями Anki; большинству пользователей вместо этого следует использовать [флаги](editing.md#Использование-флагов).
 
-### Using Fields
+### Использование полей
 
-For those who like to stay very organized, you can add fields to your
-notes to classify your content, such as "book", "page", and so on. Anki
-supports searching in specific fields, which means you can do a search
-for `"book:my book" page:63` and immediately find what you're looking
-for.
+Для тех, кто любит поддерживать строгий порядок, вы можете добавить поля в свои записи для классификации контента, например, "книга", "страница" и так далее. Anki поддерживает поиск по конкретным полям, что означает, что вы можете выполнить поиск `"книга:моя книга" страница:63` и немедленно найти то, что ищете.
 
-### Custom Study and Filtered Decks
+### Выборочное изучение и фильтрованные колоды
 
-Using [custom study and filtered deck](filtered-decks.md) you can create
-temporary decks out of search
-terms. This allows you to review your content mixed together in a single
-deck most of the time (for optimum memory), but also create temporary
-decks when you need to focus on particular material, such as before a
-test. The general rule is that if you always want to be able to study
-some content separately, it should be in a normal deck; if you only
-occasionally need to be able to study it separately (for a test, when
-under a backlog, etc.), then filtered decks created from tags, flags,
-marks or fields are better.
+Используя [фильтрованные колоды](filtered-decks.md), вы можете создавать временные колоды на основе поисковых запросов. Это позволяет вам большую часть времени повторять контент вперемешку в одной колоде (для оптимального запоминания), но также создавать временные колоды, когда вам нужно сосредоточиться на конкретном материале, например, перед тестом. Общее правило таково: если вы всегда хотите иметь возможность изучать какой-то контент отдельно, он должен находиться в обычной колоде; если вам лишь иногда нужно изучать его отдельно (для теста, при наличии отставания и т.д.), то лучше подойдут фильтрованные колоды, созданные на основе меток, флагов, пометок "marked" или полей.
 
-## Editing Features
+## Функции редактирования
 
-The editor is shown when [adding notes](editing.md), [editing a note](studying.md#editing-and-more) during reviews, or [browsing](browsing.md).
+Редактор отображается при [добавлении записей](editing.md), [редактировании записи](studying.md#Редактирование-и-другое) во время повторений или в [Просмотре](browsing.md).
 
 ![Editor icons](media/editor_icons.png)
 
-On the top left are two buttons, which open the [fields](editing.md#customizing-fields) and
-[cards](templates/intro.md) windows.
+В левом верхнем углу находятся две кнопки, которые открывают окна [полей](editing.md#Настройка-полей) и [карточек](templates/intro.md).
 
-On the right are buttons that control formatting. Bold, italic and
-underline work like they do in a word processing program. The next two
-buttons allow you to subscript or superscript text, which is useful for
-chemical compounds like H<sub>2</sub>O or simple mathematical equations like
-x<sup>2</sup>. Then, there are two buttons to allow you to change text colour.
+Справа находятся кнопки, управляющие форматированием. Полужирный, курсив и подчеркивание работают так же, как в текстовом редакторе. Следующие две кнопки позволяют сделать текст нижним или верхним индексом, что полезно для химических соединений, таких как H<sub>2</sub>O, или простых математических уравнений, например x<sup>2</sup>. Далее есть две кнопки для изменения цвета текста.
 
-The rubber eraser button clears any formatting in the currently selected text — including the colour
-of the text, whether the selected text is bold, etc. The next three buttons allow creating lists, text alignment and text indent.
+Кнопка с ластиком (резинкой) очищает любое форматирование выделенного текста — включая цвет текста, полужирное начертание и т.д. Следующие три кнопки позволяют создавать списки, выравнивать текст и изменять отступы.
 
-You can use the paper-clip button to select audio, images, and videos from
-your computer's hard drive and attach them to your notes. Alternatively, you
-can copy the media onto your computer's clipboard (for instance, by
-right-clicking an image on the web and choosing "Copy Image") and paste
-it into the field that you want to place it in. For more information
-about media, please see the [media](media.md) section.
+Вы можете использовать кнопку со скрепкой, чтобы выбрать аудио, изображения и видео с жесткого диска вашего компьютера и прикрепить их к своим записям. Кроме того, вы можете скопировать медиафайл в буфер обмена вашего компьютера (например, щелкнув правой кнопкой мыши по изображению в интернете и выбрав "Копировать изображение") и вставить его в нужное поле. Для получения дополнительной информации о медиафайлах обратитесь к разделу [Медиафайлы](media.md).
 
-The microphone icon allows you to record from your computer's microphone
-and attach the recording to the note.
+Значок микрофона позволяет выполнить запись с микрофона вашего компьютера и прикрепить её к записи.
 
-The Fx button shows shortcuts to add MathJax or
-[LaTeX](math.md) to your notes.
+Кнопка Fx покажет выпадающий список с командами для добавления MathJax или [LaTeX](math.md) в ваши записи.
 
-The \[…​\] buttons are visible when a cloze note type is selected.
+Кнопки \[…​\] видны, когда выбран тип записи "Задание с пропусками".
 ![Cloze icons](media/cloze_icons.png)
 
-The `</>` button allows editing the underlying HTML of a field.
+Кнопка `</>` позволяет редактировать базовый HTML-код поля.
 ![HTML icon](media/html_icon.png)
 
-Anki 2.1.45+ supports adjusting sticky fields directly from the editing screen.
-If you click on the pin icon on the right of a field, Anki will not clear out
-the field's content after a note is added. If you find yourself entering the
-same content into multiple notes, you may find this useful. On previous Anki
-versions, sticky fields were toggled from the Fields screen.
+В Anki 2.1.45+ поддерживается настройка закрепленных полей непосредственно с экрана редактирования. Если вы нажмете на значок булавки справа от поля, Anki не будет очищать содержимое этого поля после добавления записи. Если вы часто вводите одно и то же содержимое в несколько записей, это может оказаться полезным. В предыдущих версиях Anki закрепленные поля включались на экране Поля.
 
 ![Pin icon](media/Pin_icon.png)
 
-Most of the buttons have shortcut keys. You can hover the mouse cursor
-over a button to see its shortcut.
+У большинства кнопок есть клавиши быстрого доступа. Вы можете навести указатель мыши на кнопку, чтобы увидеть ее сочетание клавиш.
 
-When pasting text, Anki will keep most formatting by default. If you
-hold down the <kbd>Shift</kbd> key while pasting, Anki will strip most of the
-formatting. Under Preferences, you can toggle "Paste without shift
-key strips formatting" to modify the default behaviour.
+При вставке текста Anki по умолчанию сохраняет большую часть форматирования. Если при вставке удерживать нажатой клавишу <kbd>Shift</kbd>, Anki удалит большую часть форматирования. В Настройках вы можете изменить параметр "Вставка без форматирования (удерживая Shift — противоположное)", чтобы изменить поведение по умолчанию.
 
 ## Заполнение пропусков
 
-_Cloze deletion_ is the process of hiding one or more words in a
-sentence. For example, if you have the sentence:
+_Заполнение пропусков_ ("Задание с пропусками") — это процесс скрытия одного или нескольких слов в предложении. Например, если у вас есть предложение:
 
-    Canberra was founded in 1913.
+    Канберра была основана в 1913 году.
 
-…​and you create a cloze deletion on "1913", then the sentence would
-become:
+…​и вы создаете пропуск на слове "1913", то предложение станет:
 
-    Canberra was founded in [...].
+    Канберра была основана в [...].
 
-Sometimes sections that have been removed in this fashion are said to be
-"occluded".
+Иногда части, удаленные таким образом, называют "скрытыми".
 
-For more information on why you might want to use cloze deletion, see
-Rule 5 [here](https://super-memory.com/articles/20rules.htm).
+Для получения дополнительной информации о том, зачем использовать пропуски, см. Правило 5 [здесь](https://super-memory.com/articles/20rules.htm).
 
-Anki provides a special cloze deletion type of note, to make creating
-clozes easy. To create a cloze deletion note, select the Cloze note
-type, and type some text into the "Text" field. Then drag the mouse over
-the text you want to hide to select it, and click the \[…​\] button.
-Anki will replace the text with:
+Anki предоставляет специальный тип записи для пропусков, чтобы упростить их создание. Чтобы создать запись с пропусками, выберите тип записи "Задание с пропусками" и введите текст в поле "Текст". Затем выделите текст, который хотите скрыть, и нажмите кнопку \[…​\]. Anki заменит текст на:
 
-    Canberra was founded in {{c1::1913}}.
+    Канберра была основана в {{c1::1913}}.
 
-The "c1" part means that you have created one cloze deletion in the
-sentence. You can create more than one deletion if you'd like. For
-example, if you select Canberra and click \[…​\] again, the text will
-now look like:
+Часть "c1" означает, что вы создали один пропуск в предложении. При желании вы можете создать более одного пропуска. Например, если выделить "Канберра" и снова нажать \[…​\] (справа знак + у кнопки, а иначе будет тоже c1), текст будет выглядеть так:
 
-    {{c2::Canberra}} was founded in {{c1::1913}}.
+    {{c2::Канберра}} была основана в {{c1::1913 году}}.
 
-When you add the above note, Anki will create two cards. The first card
-will show:
+При добавлении вышеуказанной записи Anki создаст две карточки. На первой карточке будет отображаться:
 
-    Canberra was founded in [...].
+    Канберра была основана в [...].
 
-…​on the question, with the full sentence on the answer. The other card
-will have the following on the question:
+…​на лицевой стороне, где вопрос, а полное предложение — на обороте. На другой карточке будет следующий вопрос:
 
-    [...] was founded in 1913.
+    [...] была основана в 1913 году.
 
-You can also elide multiple sections on the same card. In the above
-example, if you change c2 to c1, only one card would be created, with
-both Canberra and 1913 hidden. If you hold down <kbd>Alt</kbd> (<kbd>Option</kbd> on a Mac)
-while creating a cloze, Anki will automatically use the same number
-instead of incrementing it.
+Вы также можете скрыть несколько частей на одной карточке. В приведенном выше примере, если изменить c2 на c1, будет создана только одна карточка, на которой скрыты и "Канберра", и "1913". Если при создании пропуска удерживать <kbd>Alt</kbd>  (<kbd>Option</kbd> на Mac), Anki автоматически будет использовать тот же номер вместо увеличения (здесь имеется ввиду то, что используют горячие клавиши для создания пропуска: <kbd>Ctrl+Shift+C</kbd> и <kbd>Ctrl+Alt+Shift+C</kbd>)
 
-Cloze deletions don't need to fall on word boundaries, so if you select
-"anberra" rather than "Canberra" in the above example, the question
-would appear as "C\[…​\] was founded in 1913", giving you a hint.
+Пропуски не обязательно должны совпадать с границами слов, поэтому если в приведенном примере выбрать "анберра", а не "Канберра", вопрос будет выглядеть как "К\[…​\] была основана в 1913 году", что дает вам подсказку.
 
-You can also give yourself hints that don't match the text. If you
-replace the original sentence with:
+Вы также можете добавлять подсказки, которые не совпадают с текстом. Если заменить исходное предложение на:
 
-    Canberra::city was founded in 1913
+    Канберра::город была основана в 1913 году
 
-…​and then press \[…​\] after selecting "Canberra::city", Anki will
-treat the text after the two colons as a hint, changing the text into:
+…​а затем нажать \[…​\] после выделения "Канберра::город", Anki воспримет текст после двойного двоеточия как подсказку, преобразуя текст в:
 
-    {{c1::Canberra::city}} was founded in 1913
+    {{c1::Канберра::город}} была основана в 1913 году
 
-When the card comes up for review, it will appear as:
+Когда карточка появится для повторения, она будет выглядеть так:
 
-    [city] was founded in 1913.
+    [город] была основана в 1913 году.
 
-For information on testing your ability to type in a cloze deletion
-correctly, please see the section on [typing answers](templates/fields.md#checking-your-answer).
+Для получения информации о проверке вашей способности правильно вводить текст в пропуске, см. раздел [ввод ответов](templates/fields.md#Проверка-вашего-ответа).
 
-From version 2.1.56, nested cloze deletions are supported. For example, the following is valid:
+Начиная с версии 2.1.56 поддерживаются вложенные пропуски. Например, следующее является допустимым:
 
-    {{c1::Canberra was {{c2::founded}}}} in 1913
+    {{c1::Канберра была {{c2::основана}}}} в 1913 году
 
-The inner cloze is entirely nested within the outer. There is no support for partial overlaps, such as:
+Внутренний пропуск полностью вложен во внешний. Частичные перекрытия, такие как:
 
-    [...] founded in 1913 -> Canberra was
-    Canberra [...] in 1913 -> was founded
+    [...] основана в 1913 году -> Канберра была
+    Канберра [...] в 1913 году -> была основана
 
-with the word "was" appearing in both deletions.
+со словом "была", появляющимся в обоих пропусках, не поддерживаются.
 
-The current implementation can only handle a limited amount of nesting. In Anki 24.11, it is 3 levels.
-In other versions, the limit is around 8, but Anki may become slow as you approach the limit. It is
-not possible to extend the limit. If you use this feature, it is recommended you limit yourself to a
-few levels of nesting.
+Текущая реализация может обрабатывать только ограниченное количество уровней вложенности. В Anki 24.11 это 3 уровня. В других версиях предел составляет около 8, но Anki может замедляться при приближении к пределу. Расширить предел невозможно. Если вы используете эту функцию, рекомендуется ограничиться несколькими уровнями вложенности.
 
-Prior to version 2.1.56, if you need to create clozes from overlapping text, add another Text
-field to your cloze, add it to the [template](templates/intro.md), and then when
-creating notes, paste the text into two separate fields, like so:
+До версии 2.1.56, если вам нужно создать пропуски из перекрывающегося текста, добавьте еще одно поле "Текст" в вашу запись с пропусками, добавьте его в [шаблон](templates/intro.md), а затем при создании записей вставьте текст в два отдельных поля, например:
 
-    Text1 field: {{c1::Canberra was founded}} in 1913
+    Поле Текст1: {{c1::Канберра была основана}} в 1913 году
 
-    Text2 field: {{c2::Canberra}} was founded in 1913
+    Поле Текст2: {{c2::Канберра}} была основана в 1913 году
 
-The default cloze note type has a second field called Extra, that is
-shown on the answer side of each card. It can be used for adding some
-usage notes or extra information.
+В типе записи "Задание с пропусками" по умолчанию есть второе поле "Дополнение оборота", которое отображается на стороне ответа каждой карточки. Его можно использовать для добавления заметок по использованию или дополнительной информации.
 
-The cloze note type is treated specially by Anki, and cannot be created
-based on a regular note type. If you wish to customize it, please make
-sure to clone the existing Cloze type instead of another type of note.
-Things like formatting can be customized, but it is not possible to add
-extra card templates to the cloze note type.
+Тип записи "Задание с пропусками" обрабатывается Anki особым образом и не может быть создан на основе обычного типа записи. Если вы хотите его настроить, обязательно клонируйте существующий тип "Задание с пропусками", а не другой тип записи. Можно настраивать такие вещи, как форматирование, но добавить дополнительные шаблоны карточек к типу записи "Задание с пропусками" невозможно.
 
 ## Скрытие части изображений
 
-Anki 23.10+ supports Image Occlusion cards natively. An Image
-Occlusion (IO) note is a special case of cloze deletion based on images
-instead of text, and allows you to create cards that hide some parts
-of an image, testing your knowledge of that hidden information.
+Anki 23.10+ поддерживает карточки со скрытием части изображений (Image Occlusion) "из коробки". Запись со скрытием части изображения (IO) — это особый случай пропуска, основанный на изображениях, а не на тексте, который позволяет создавать карточки, скрывающие некоторые части изображения, проверяя ваше знание этой скрытой информации.
 
 ![Image Occlusion](media/io.jpg)
 
-### Adding an image
+### Добавление изображения
 
-To add IO cards to your collection, open the Add screen, click on "Type"
-and choose "Image Occlusion" from the list of built-in note types.
-Then, click on **Select Image** to load an image file saved on your
-computer's hard drive, or on **Paste image from clipboard**
-if you have an image copied to the clipboard.
+Чтобы добавить карточки IO в вашу коллекцию, откройте экран Добавления, нажмите на "Тип" и выберите "Скрытие части изображений" ("Image Occlusion" для анг. версии)  из списка встроенных типов записей. Затем нажмите **Выберите изображение**, чтобы загрузить файл изображения, сохраненный на жестком диске вашего компьютера, или нажмите **Вставить изображение из буфера**, если у вас есть изображение, скопированное в буфер обмена.
 
-### Adding IO cards
+### Добавление карточек IO
 
-After loading an image, the IO editor will open. Click on the
-icons on the left to add as many areas to your image as you want.
-There are three basic shapes to choose from:
+После загрузки изображения откроется редактор IO. Нажимайте на значки слева, чтобы добавить на изображение столько областей, сколько хотите. Доступны три основные формы:
 
-- Rectangle
-- Ellipse
-- Polygon
+- Прямоугольник
+- Овал
+- Многоугольник
 
-You can also choose between two different IO modes for each note:
+Вы также можете выбрать один из двух различных режимов IO для каждой записи:
 
-- **Hide All, Guess One**: All areas are hidden and only one
-  area at a time is revealed while learning.
-- **Hide One, Guess One**: Only one area at a time is hidden
-  and will be revealed during learning. The other areas will be visible.
+- **Спрятать всё, проверять одно**: Все области скрыты, и во время изучения открывается только одна область за раз.
+- **Спрятать одно, проверять одно**: За раз скрыта только одна область, и она будет открыта во время изучения. Остальные области будут видны.
 
 ![Image Occlusion Modes](media/io_modes.jpg)
 
 <!-- fields & tags are not intuitive to find in editor -->
-The default IO note type also has standard fields:
-**Header** (displayed above the image on the front and back of each card),
-**Back Extra** (displayed below the image on the back of each card),
-and **Comments** (not displayed on the cards). To access those from the IO editor,
-click the **Toggle Mask Editor** button.
-There you can also view and edit the **Tags** of the note.
+В типе записи IO по умолчанию также есть стандартные поля:
+**Заголовок** (отображается над изображением на передней и задней стороне каждой карточки),
+**Дополнение оборота** (отображается под изображением на обороте каждой карточки)
+и **Комментарии** (не отображаются на карточках). Чтобы получить к ним доступ из редактора IO,
+нажмите кнопку **Переключатель изменения маски**.
+Там вы также можете просматривать и редактировать **Метки** записи.
 
-Once you're done, click on the "Add" button, at the bottom of the screen.
-Anki will add a card for each shape or group of shapes you added in the previous step,
-and you can start reviewing them normally.
+Когда закончите, нажмите кнопку "Добавить" в нижней части экрана.
+Anki добавит по одной карточке для каждой фигуры или группы фигур, добавленных на предыдущем шаге, и вы сможете приступить к их обычному повторению.
 
-## Editing IO notes
+## Редактирование записей IO
 
-You can edit your IO notes by clicking on "Edit" while reviewing,
-or directly from the browser. There are several tools that you
-can use. Of note:
+Вы можете редактировать свои записи IO, нажав "Редактировать" во время повторения или непосредственно из Просмотра. Доступно несколько инструментов, которые вы можете использовать. Среди них:
 
-- Select: It allows you to select one or more shapes to move,
-  resize, delete or group them.
-- Zoom: You can freely move the image and zoom in or out using the mouse wheel.
-- Shapes (Rectangle, Ellipse or Polygon): Use them to add new shapes / cards.
-- Text: It adds text areas to your image. These text areas can be moved,
-  resized or deleted, but no card will be created when you use this tool.
-- Undo / Redo.
-- Zoom In / Out - Reset zoom.
-- Toggle Translucency: Use this tool to temporarily view the hidden areas.
-- Delete: Use this tool to delete selected shapes and text areas. Please
-  note that deleting a shape won't delete its associated card automatically;
-  you will need to use Tools>Empty Cards afterwards, the same as
-  with regular cloze deletions.
-- Duplicate.
-- Group selection: Use this tool to create a cluster of shapes, which will
-  allow you to move, resize or delete them simultaneously. Please note that
-  two or more single shapes will create only one card once grouped.
-- Ungroup selection: Select a group and then click this button to make each shape independent again.
-- Alignment: This tool can be used to align your shapes / text areas as desired.
+- Выбор: позволяет выбрать одну или несколько фигур для перемещения, изменения размера, удаления или их группировки.
+- Масштаб: вы можете свободно перемещать изображение и увеличивать или уменьшать масштаб с помощью колесика мыши.
+- Фигуры (Прямоугольник, Овал или Многоугольник): используйте их для добавления новых фигур/карточек.
+- Текст: добавляет текстовые области на ваше изображение. Эти текстовые области можно перемещать, изменять их размер или удалять, но при использовании этого инструмента карточка создаваться не будет.
+- Отменить / Повторить.
+- Увеличить / Уменьшить - Сбросить масштаб.
+- Переключить полупрозрачность: используйте этот инструмент для временного просмотра скрытых областей.
+- Удалить: используйте этот инструмент для удаления выбранных фигур и текстовых областей. Обратите внимание, что удаление фигуры не приведет к автоматическому удалению связанной с ней карточки; после этого вам нужно будет использовать «**Инструменты > Пустые карточки**», как и в случае с обычными пропусками.
+- Создать копию.
+- Выбрать группу: используйте этот инструмент для создания кластера фигур, что позволит перемещать, изменять их размер или удалять их одновременно. Обратите внимание, что из двух или более отдельных фигур после группировки будет создана только одна карточка.
+- Распустить группу: выберите группу, затем нажмите эту кнопку, чтобы снова сделать каждую фигуру независимой.
+- Выравнивание: этот инструмент можно использовать для выравнивания ваших фигур/текстовых областей по желанию.
 
-While reviewing IO Cards a "Toggle Masks" button will appear just below the image.
-This button will temporarily clear all shapes of the note when using "Hide All, Guess One" mode.
+Во время повторения карточек IO под изображением будет появляться кнопка "Переключить маски". Эта кнопка временно очистит все фигуры записи при использовании режима "Спрятать всё, проверять одно".
 
-## Inputting Non-Latin Characters and Accents
+## Ввод нелатинских символов и диакритических знаков
 
-All modern computers have built-in support for typing accents and
-non-Latin characters, and multiple ways to go about it. The method we
-recommend is by using a keyboard layout for the language you want to learn.
+Все современные компьютеры имеют встроенную поддержку ввода диакритических знаков и нелатинских символов, а также множество способов это сделать. Мы рекомендуем использовать раскладку клавиатуры для языка, который вы изучаете.
 
-Languages with a separate script like Japanese, Chinese, Thai, and so on,
-have their own layouts specific to that language.
+Языки с отдельной письменностью, такие как японский, китайский, тайский и т.д., имеют свои собственные раскладки, специфичные для этого языка.
 
-European languages that use accents may have their own layout, but can
-often be typed on a generic "international keyboard" layout. These work
-by typing the accent, then the character you want accented - e.g. an
-apostrophe (<kbd>´</kbd>) then the letter a (<kbd>a</kbd>) gives á.
+Европейские языки, использующие диакритические знаки, могут иметь свою собственную раскладку, но часто их можно вводить с помощью универсальной "международной раскладки клавиатуры". Они работают путем ввода диакритического знака, а затем символа, который нужно изменить — например, апостроф (<kbd>´</kbd>), затем буква а (<kbd>a</kbd>) дает á.
 
-### Adding international keyboard layouts
-Instructions on how to use international keyboards vary depending on the operating
-system and desktop environment that you are using. To get started, please see the
-links below.
+### Добавление международных раскладок клавиатуры
+Инструкции по использованию международных клавиатур различаются в зависимости от операционной системы и среды рабочего стола. Для начала ознакомьтесь со ссылками ниже.
 
 Windows:
 - <https://thegeekpage.com/how-to-add-us-international-keyboard-in-windows-10/>
@@ -536,50 +306,30 @@ Linux:
 - Gnome: <https://help.gnome.org/users/gnome-help/stable/tips-specialchars.html.en>
 - KDE Plasma: <https://userbase.kde.org/Tutorials/ComposeKey>
 
-### Adding keyboard layouts for specific languages
-Keyboards for specific languages are added in a similar way, but we can
-not cover them all here. For more information, please try searching
-on the internet for "input Japanese on a mac", "type Chinese on Windows 10", and
-so on.
+### Добавление раскладок клавиатуры для конкретных языков
+Клавиатуры для конкретных языков добавляются аналогичным образом, но мы не можем охватить их все здесь. Для получения дополнительной информации попробуйте поискать в интернете "input Japanese on a mac", "type Chinese on Windows 10", и так далее.
 
-For Linux it's best to look at the wiki pages of your distro, e.g.
-[Arch Linux](https://wiki.archlinux.org/title/Input_method) and
+Для Linux лучше всего обратиться к вики-страницам вашего дистрибутива, например,
+[Arch Linux](https://wiki.archlinux.org/title/Input_method) и
 [Debian Linux](https://wiki.debian.org/Keyboard#Modern_strategy).
-As an example, `apt install ibus-anthy` on Debian allows you to type hiragana characters.
+Например, установка `apt install ibus-anthy` в Debian позволит вам вводить символы хираганы.
 
-### Right-to-left Languages
-If you are learning a right-to-left language, there are lots of other
-things to consider. Please see [this page](http://dotancohen.com/howto/rtl_right_to_left.html)
-for more information.
+### Языки с письмом справа налево
+Если вы изучаете язык с письмом справа налево, нужно учитывать множество других аспектов. Дополнительную информацию см. на [этой странице](http://dotancohen.com/howto/rtl_right_to_left.html).
 
-### Limitations
-The toolkit on which Anki is built has trouble dealing with a few input
-methods, such as holding down keys to select accented characters on macOS,
-and typing characters by holding down the <kbd>Alt</kbd> key and typing a
-numeric code on Windows.
+### Ограничения
+Инструментарий, на котором построена Anki, испытывает трудности с некоторыми методами ввода, такими как удержание клавиш для выбора символов с диакритикой в macOS и ввод символов путем удержания клавиши <kbd>Alt</kbd> и набора цифрового кода в Windows.
 
-## Unicode Normalization
+## Нормализация Юникода
 
-Text like `á` can be represented in multiple ways on a computer, such as
-using a specific code for that symbol, or by using a standard `a` and then
-another code for the accent on top. This causes problems when mixing input
-from different sources, or using different computers - if your computer
-handles keyboard input in one form, but the content is stored in a different
-form, it will not match when searching, even though the end result appears
-identical.
+Текст, такой как `á`, может быть представлен на компьютере несколькими способами, например, с использованием специального кода для этого символа или с использованием стандартного `a` и затем другого кода для диакритического знака сверху. Это вызывает проблемы при смешивании ввода из разных источников или при использовании разных компьютеров — если ваш компьютер обрабатывает ввод с клавиатуры в одной форме, а контент хранится в другой форме, при поиске совпадения не будет, хотя конечный результат выглядит идентично.
 
-To ensure content can easily be found in searches, Anki normalizes the text
-to a standard form. For most users this process is transparent, but if you
-are studying certain material like archaic Japanese symbols, the normalization
-process can end up converting them to a more modern equivalent.
+Чтобы контент можно было легко найти при поиске, Anki нормализует текст до стандартной формы. Для большинства пользователей этот процесс незаметен, но если вы изучаете определенный материал, например, архаичные японские символы, процесс нормализации может преобразовать их в более современный эквивалент.
 
-If you want character variants preserved, the following in the [debug console](./misc.md)
-will turn off normalization:
+Если вы хотите сохранить варианты символов, следующая команда в [консоли отладки](./misc.md) отключит нормализацию:
 
 ```python
 mw.col.conf["normalize_note_text"] = False
 ```
 
-Any content added after that will remain untouched. The trade-off is that you may
-find it difficult to search for the content if you're switching between operating
-systems, or pasting content from mixed sources.
+Любой контент, добавленный после этого, останется нетронутым. Платой за это может стать сложность поиска контента при переходе между операционными системами или вставке контента из смешанных источников.

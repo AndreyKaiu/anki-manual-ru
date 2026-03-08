@@ -12,13 +12,13 @@
 ## Изменение драйвера из командной строки
 Если у вас возникли проблемы с отображением, вы можете попробовать переключиться в программный режим через cmd:
 
-```
+```bat
 echo software > %APPDATA%\Anki2\gldriver6
 ```
 
 Или вы можете сделать это через PowerShell:
 
-```
+```powershell
 echo software > $env:APPDATA\Anki2\gldriver6
 ```
 

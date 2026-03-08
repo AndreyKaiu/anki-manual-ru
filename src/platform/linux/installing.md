@@ -8,7 +8,7 @@
 
 Пользователям Debian и производных, таких как Ubuntu и [Chromebook с включенным Linux](https://support.google.com/chromebook/answer/9145439?), пожалуйста, выполните следующее перед установкой:
 
-```
+```shell
 sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 ```
 
@@ -26,7 +26,7 @@ sudo apt install libxcb-xinerama0 libxcb-cursor0 libnss3
 2. Если zstd еще не установлен в вашей системе, вам нужно установить его (например, `sudo apt install zstd`).
 3. Откройте терминал и выполните следующие команды, заменив имя файла на подходящее.
 
-```
+```shell
 tar xaf Downloads/anki-2XXX-linux-qt6.tar.zst
 cd anki-2XXX-linux-qt6
 sudo ./install.sh

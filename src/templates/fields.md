@@ -135,7 +135,7 @@ If you want TTS to read multiple fields or static text included in the template,
 This is other text on the template. It is outside of the tags so it should not be read.
 ```
 
-## Special Fields
+## Специальные поля
 
 There are some special fields you can include in your templates:
 

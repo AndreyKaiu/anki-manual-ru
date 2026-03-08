@@ -210,7 +210,7 @@ make them smaller and colored, you could use the following:
 }
 ```
 
-## Text Direction
+## Направление текста
 
 If you use a language that is written right-to-left, such as Arabic or Hebrew,
 you can add the CSS `direction` property to the .card section for correct display during review:
