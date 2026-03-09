@@ -1,86 +1,52 @@
-# Card Generation
+# Создание карточек
 
 <!-- toc -->
 
-## Reverse Cards
+## Обратные карточки
 
-You can watch [a video about reversing cards](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on) on YouTube.
+Вы можете посмотреть [видео об обратных карточках](http://www.youtube.com/watch?v=DnbKwHEQ1mA&yt:cc=on) на YouTube.
 
-If you want to create cards that go in both directions (e.g., both
-“ookii”→“big” and “big”→“ookii”), you have several options. The simplest
-is to select the “Basic (and reversed card)” built-in note type. This
-will generate two cards, one in each direction.
+Если вы хотите создавать карточки, работающие в обоих направлениях (например, и "ookii"→"большой", и "большой"→"ookii"), у вас есть несколько вариантов. Самый простой — выбрать встроенный тип записи "Простая (с обратной карточкой)". Это создаст две карточки: одну в прямом, другую в обратном направлении.
 
-If you want to generate reverse cards for only some of your material
-(perhaps you only want to take the time to study reverses for the most
-important material, or some of your cards don’t make sense reversed),
-you can select the “Basic (optional reversed card)” note type. This note
-type generates a forward-only card when you fill in only the first two
-fields; if you additionally enter something in the “Add Reverse” field
-(like a "y"), Anki will generate a reverse card as well. The contents of
-this field will never be displayed on a card.
+Если вы хотите создавать обратные карточки только для части вашего материала (возможно, вы хотите тратить время на изучение обратных карточек только для самого важного материала, или некоторые ваши карточки не имеют смысла в обратном направлении), вы можете выбрать тип записи "Простая (с обратной по выбору)". Этот тип записи создает карточку только в прямом направлении, когда вы заполняете только первые два поля; если вы дополнительно введете что-то в поле "Добавить обратную" (например, "y"), Anki создаст также обратную карточку. Содержимое этого поля никогда не будет отображаться на карточке.
 
-## Card Generation & Deletion
+## Создание и удаление карточек
 
-Anki will not create cards with empty front sides. Thus if “My Field”
-was empty, and one card’s front template included only that field, the
-card would not be created.
+Anki не будет создавать карточки с пустой передней стороной. Таким образом, если "Мое поле" было пустым, и шаблон передней стороны одной карточки включал только это поле, карточка создана не будет.
 
-When you edit a previously added note, Anki will automatically create
-extra cards if they were previously blank but no longer are. If your
-edits have made some cards blank when they previously were not, however,
-Anki will not delete them immediately, as that could lead to accidental
-data loss. To remove the empty cards, go to Tools → Empty Cards in the
-main window. You will be shown a list of empty cards and be given the
-option to delete them.
+Когда вы редактируете ранее добавленную запись, Anki автоматически создаст дополнительные карточки, если ранее они были пустыми, но перестали быть таковыми. Однако, если ваши правки сделали некоторые карточки пустыми, хотя раньше они не были таковыми, Anki не удалит их немедленно, так как это может привести к случайной потере данных. Чтобы удалить пустые карточки, перейдите в главном окне в «**Инструменты > Пустые карточки**». Вам будет показан список пустых карточек, и вы сможете их удалить.
 
-Because of the way that card generation works, it is not possible to
-manually delete individual cards, as they would just end up being recreated
-the next time the note was edited. Instead, you should make the
-relevant conditional replacement fields empty and then use the Empty
-Cards option.
+Из-за того, как работает создание карточек, невозможно вручную удалить отдельные карточки, так как они будут просто созданы заново при следующем редактировании записи. Вместо этого вы должны сделать соответствующие поля для условной замены пустыми, а затем использовать опцию "Пустые карточки".
 
-Anki does not consider special fields or non-field text for the purposes
-of card generation. Thus if your front template looked like the
-following, no card would be generated if Country was empty:
+Для целей создания карточек Anki не учитывает специальные поля или текст, не являющийся полем. Таким образом, если ваш шаблон передней стороны выглядел следующим образом, карточка не будет создана, если поле Страна было пустым:
 
-    Where is {{Country}} on the map?
+    Где на карте находится {{Страна}}?
 
-## Selective Card Generation
+## Выборочное создание карточек
 
-Sometimes you may want to generate extra cards for only some of your
-material, such as testing your ability to recall the most important
-words of a set. You can accomplish this by adding an extra field to your
-note, and adding some text into it (such as "1") on the notes you want
-the extra card. Then in the card template, you can make the card’s
-creation depend on that field being non-empty. For more information on
-this, please see the conditional replacement section below.
+Иногда вы можете захотеть создавать дополнительные карточки только для части вашего материала, например, для проверки способности вспоминать самые важные слова из набора. Вы можете добиться этого, добавив дополнительное поле в вашу запись и введя в него какой-нибудь текст (например, "1") для записей, для которых нужна дополнительная карточка. Затем в шаблоне карточки вы можете сделать создание карточки зависимым от того, что это поле не пусто. Для получения дополнительной информации об этом см. раздел об условной замене ниже.
 
 ## Conditional Replacement
 
-It is possible to include certain text, fields, or HTML on your cards
-only if a field is empty or not empty. An example:
+Можно включать определенный текст, поля или HTML на ваши карточки, только если поле пусто или не пусто. Пример:
 
-    This text is always shown.
+    Этот текст показывается всегда.
 
     {{#FieldName}}
-        This text is only shown if FieldName has text in it
+        Этот текст показывается, только если в поле FieldName есть текст
     {{/FieldName}}
 
     {{^FieldName}}
-        This text is only shown if FieldName is empty
+        Этот текст показывается, только если поле FieldName пусто
     {{/FieldName}}
 
-A real life example is only showing a label if the field is not empty:
+Пример из реальной жизни — показывать метку, только если поле не пусто:
 
     {{#Tags}}
         Tags: {{Tags}}
     {{/Tags}}
 
-Or say you want to display a specific field in blue on the front of your
-card if there are extra notes on the back (perhaps the fact that there
-are notes serves as a reminder that you should spend more time thinking
-about the answer). You can style the field as follows:
+Или, скажем, вы хотите отображать определенное поле синим цветом на передней стороне карточки, если на задней стороне есть дополнительные заметки (возможно, тот факт, что есть заметки, служит напоминанием о том, что вам следует потратить больше времени на обдумывание ответа). Вы можете стилизовать поле следующим образом:
 
     {{#Notes}}
         <span style="color:blue;">
@@ -92,25 +58,19 @@ about the answer). You can style the field as follows:
         </span>
     {{/Notes}}
 
-You can also use conditional replacement to control which cards are
-generated. This works since Anki will not generate
-cards which would have a blank front side. For
-example, consider a card with two fields on the front:
+Вы также можете использовать условную замену для управления тем, какие карточки создаются. Это работает, поскольку Anki не будет создавать карточки, у которых передняя сторона была бы пустой. Например, рассмотрим карточку с двумя полями на передней стороне:
 
     {{Expression}}
     {{Notes}}
 
-Normally a card would be generated if either the expression or notes
-field had text in it. If you only wanted a card generated if expression
-was not empty, then you could change the template to this:
+Обычно карточка была бы создана, если либо в поле Expression, либо в поле Notes был текст. Если бы вы хотели, чтобы карточка создавалась только тогда, когда Expression не пусто, вы могли бы изменить шаблон на этот:
 
     {{#Expression}}
         {{Expression}}
         {{Notes}}
     {{/Expression}}
 
-And if you wanted to require both fields, you could use two conditional
-replacements:
+А если бы вы хотели, чтобы оба поля были обязательными, вы могли бы использовать две условные замены:
 
     {{#Expression}}
         {{#Notes}}
@@ -119,78 +79,54 @@ replacements:
         {{/Notes}}
     {{/Expression}}
 
-Keep in mind that this only works when you place the
-conditional replacement code on the _front_ of the card; if you do this
-on the back, you will simply end up with cards with a blank back side.
-Similarly, since this works by checking if the front field would be
-empty, it is important to make sure you wrap the "entire" front side in
-the conditional replacement; for instance, the following would not work
-as expected:
+Имейте в виду, что это работает только тогда, когда вы помещаете код условной замены на _переднюю_ сторону карточки; если вы сделаете это на задней стороне, вы просто получите карточки с пустой задней стороной. Аналогично, поскольку это работает путем проверки, не будет ли поле передней стороны пустым, важно убедиться, что вы обернули "всю" переднюю сторону в условную замену; например, следующее не будет работать как ожидалось:
 
     {{#Expression}}
         {{Expression}}
     {{/Expression}}
     {{Notes}}
 
-## Blank Back Sides
+## Пустые задние стороны
 
-Card generation only looks at the front side of the card. For example, if you have a
-front template:
+Создание карточек учитывает только переднюю сторону карточки. Например, если у вас есть шаблон передней стороны:
 
     {{Field 1}}
 
-and a back template:
+и шаблон задней стороны:
 
     {{Field 2}}
 
-Then a card will be generated if Field 1 is non-empty. If Field 2 is empty, the card
-will still be generated, and you will get a blank back side.
+Тогда карточка будет создана, если поле "Field 1" не пусто. Если поле "Field 2" пусто, карточка все равно будет создана, и вы получите пустую заднюю сторону.
 
-If you wish to avoid a blank back side, you will need to place a required field
-on the front template as a conditional, like so:
+Если вы хотите избежать пустой задней стороны, вам нужно будет поместить обязательное поле в шаблон передней стороны в качестве условия, например:
 
     {{#Field 2}}
         {{Field 1}}
     {{/Field 2}}
 
-This will ensure the card is generated only if both Field 2 and Field 1 are non-empty.
+Это гарантирует, что карточка будет создана только в том случае, если оба поля не пусты.
 
-## Adding Empty Notes
+## Добавление пустых записей
 
-When you add a new note in Anki, if the card
-templates and note fields combine to produce no cards, a blank card will be
-created using the first template. This allows you to add material even if it's
-incomplete, and modify it or the template later to make it valid. If you don't
-wish to keep an empty note, you can remove it with the Empty Cards function.
+Когда вы добавляете новую запись в Anki, если шаблоны карточек и поля записи в совокупности не создают ни одной карточки, будет создана пустая карточка с использованием первого шаблона. Это позволяет вам добавлять материал, даже если он неполный, и позже изменить его или шаблон, чтобы он стал допустимым. Если вы не хотите сохранять пустую запись, вы можете удалить ее с помощью функции "Пустые карточки".
 
-## Cloze Templates
+## Шаблоны пропусков
 
-Please see the [cloze deletion](../editing.md#cloze-deletion) section for background info.
+Пожалуйста, обратитесь к разделу [заполнение пропусков](../editing.md#Заполнение-пропусков) для получения справочной информации.
 
-The cloze note type functions differently from regular note types.
-Instead of a customizable number of card types, it has a single type
-which is shared by all cloze deletions on a note.
+Тип записи с пропусками функционирует иначе, чем обычные типы записей. Вместо настраиваемого количества типов карточек у него есть один тип, который является общим для всех пропусков в записи.
 
-As mentioned in the card generation section above, generation of regular
-cards depends on one or more fields on the question being non-empty.
-Cloze deletion note types are generated differently:
+Как упоминалось в разделе о создании карточек выше, создание обычных карточек зависит от того, что одно или несколько полей в вопросе не пусты. Типы записей с пропусками создаются иначе:
 
-- Anki looks on the front template for one or more cloze replacements,
-  like {{cloze:FieldName}}.
+- Anki ищет в шаблоне передней стороны одно или несколько замещений пропусков, например {{cloze:FieldName}}.
 
-- It then looks in the FieldName field for all cloze references, like
-  {{c1::text}}.
+- Затем он ищет в поле FieldName все ссылки на пропуски, например {{c1::text}}.
 
-- For each separate number, a card will be generated.
+- Для каждого отдельного номера будет создана карточка.
 
-Because card generation functions differently for cloze deletion cards,
-{{cloze:…​}} tags can not be used with a regular note type - they
-will only function properly when used with a cloze note type.
+Поскольку создание карточек для карточек с пропусками функционирует иначе, теги {{cloze:…​}} нельзя использовать с обычным типом записей — они будут правильно функционировать только при использовании с типом записей с пропусками.
 
-Conditional generation provides a special field so you can check which
-card you are rendering. If you wanted to display the "hint1" field on
-the first cloze, and "hint2" field on the second cloze for example, you
-could use the following template:
+Условное создание предоставляет специальное поле, чтобы вы могли проверить, какую карточку вы отображаете. Например, если вы хотели отображать поле "hint1" на первом пропуске, а поле "hint2" — на втором пропуске, вы могли бы использовать следующий шаблон:
 
     {{cloze:Text}}
 
