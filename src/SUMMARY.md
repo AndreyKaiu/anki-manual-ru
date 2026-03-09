@@ -29,7 +29,7 @@
 - [+Изучение](studying.md)
 - [+Добавление/Редактирование](editing.md)
 - [Шаблоны карточек](templates/intro.md)
-  - [Замена полей](templates/fields.md)
+  - [+Замена полей](templates/fields.md)
   - [Генерация карточек](templates/generation.md)
   - [Стилизация и HTML](templates/styling.md)
   - [Проверки и ошибки](templates/errors.md)
