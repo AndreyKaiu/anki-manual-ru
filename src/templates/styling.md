@@ -1,52 +1,33 @@
-# Styling & HTML
+# Стилизация и HTML
 
 <!-- toc -->
 
-## Card Styling
+## Стилизация карточек
 
-You can watch [a video about styling cards](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) on YouTube.
-The video shows Anki 2.0’s interface, but the concepts are largely the
-same.
+Вы можете посмотреть [видео о стилизации карточек](http://www.youtube.com/watch?v=F1j1Zx0mXME&yt:cc=on) на YouTube. На видео показан интерфейс Anki 2.0, но концепции в основном те же.
 
-The styling section of the Cards screen can be accessed by clicking the
-"Styling" button next to the "Back Template" button. In that section,
-you can change the background color of the card, the default font, the
-text alignment, and so on.
+В раздел стилей экрана Карточки можно попасть, нажав переключатель "Таблица стилей" рядом с "Шаблон оборота". В этом разделе вы можете изменить цвет фона карточки, шрифт по умолчанию, выравнивание текста и так далее.
 
-The standard options available to you are:
+Доступные вам стандартные параметры:
 
 **font-family**\
-The name of the font to use on the card. If your font has spaces in it
-like "MS Unicode", then you need to surround the font name in double
-quotes, like `font-family: "MS Unicode";`. It is also possible to use multiple fonts on
-one card; for information on that, please see below.
+Название шрифта для использования на карточке. Если в названии шрифта есть пробелы, например "MS Unicode", то необходимо заключить название шрифта в двойные кавычки: `font-family: "MS Unicode";`. Также можно использовать несколько шрифтов на одной карточке; для получения информации об этом см. ниже.
 
 **font-size**\
-The size of the font in pixels. When changing it, make sure you leave px
-at the end.
+Размер шрифта в пикселях. При изменении не забудьте оставить px в конце.
 
 **text-align**\
-Whether the text should be aligned in the center, left, or right.
+Выравнивание текста: по центру (center), слева (left) или справа (right).
 
 **color**\
-The color of the text. Simple color names like "blue", "lightyellow",
-and so on will work, or you can use HTML color codes to select arbitrary
-colors. Please see [this webpage](https://htmlcolorcodes.com/) for more
-information.
+Цвет текста. Подойдут простые названия цветов, такие как "blue", "lightyellow" и т.д., или вы можете использовать HTML-коды цветов для выбора произвольных цветов. Дополнительную информацию см. на [этой странице](https://htmlcolorcodes.com/).
 
 **background-color**\
-The color of the card background.
+Цвет фона карточки.
 
-Any CSS can be placed in the styling section – advanced users may wish
-to do things like add a background image or gradient, for example. If
-you’re wondering how to get some particular formatting, please search
-the web for information about how to do it in CSS, as there is a great
-deal of documentation available.
+В раздел стилей можно поместить любой CSS — продвинутые пользователи могут, например, добавить фоновое изображение или градиент. Если вы хотите добиться какого-то конкретного форматирования, поищите в интернете информацию о том, как это сделать в CSS, так как доступно огромное количество документации.
 
-The styling is shared between all cards, which means that when you make
-an adjustment it will affect all cards for that note type. It is also
-possible to specify card-specific styling, however. The following
-example will use a yellow background on all cards except the first one:
+**Стили являются общими для всех карточек**, что означает, что когда вы вносите изменение, оно повлияет на все карточки для этого типа записи. Однако также можно указать стили для конкретной карточки. В следующем примере будет использоваться желтый фон для всех карточек, кроме первой:
 
 ```css
 .card {
@@ -57,11 +38,9 @@ example will use a yellow background on all cards except the first one:
 }
 ```
 
-## Image Resizing
+## Изменение размера изображений
 
-Anki shrinks images to fit the screen by default. You can change this by adding
-the following to the bottom of your styling section (outside of the default
-`.card { ... }`):
+По умолчанию Anki уменьшает изображения, чтобы они помещались на экране. Вы можете изменить это, добавив следующее в нижнюю часть вашего раздела стилей (за пределами стандартного `.card { ... }`):
 
 ```css
 img {
@@ -70,11 +49,7 @@ img {
 }
 ```
 
-AnkiDroid sometimes has [trouble scaling images to fit the
-screen](https://github.com/ankidroid/Anki-Android/issues/3612). Setting maximum
-image dimensions using css should fix this, but seems to be ignored as of
-AnkiDroid 2.9. A fix is to append `!important` to each style directive, for
-example:
+У AnkiDroid иногда возникают [проблемы с масштабированием изображений под размер экрана](https://github.com/ankidroid/Anki-Android/issues/3612). Установка максимальных размеров изображения с помощью css должна исправить это, но, похоже, игнорируется в AnkiDroid 2.9. Исправлением является добавление `!important` к каждой директиве стиля, например:
 
 ```css
 img {
@@ -83,9 +58,7 @@ img {
 }
 ```
 
-If you try to change the style for images and find that the star that
-appears on marked cards is affected (for instance, it becomes way too
-large), you can target it with the following:
+Если вы попытаетесь изменить стиль для изображений и обнаружите, что это влияет на звездочку, которая появляется на отмеченных карточках (например, она становится слишком большой), вы можете настроить ее с помощью следующего кода:
 
 ```css
 img#star {
@@ -93,56 +66,45 @@ img#star {
 }
 ```
 
-You can explore the styling of cards interactively by using Chrome:
+Вы можете интерактивно изучать стилизацию карточек с помощью Chrome:
 
 <https://addon-docs.ankiweb.net/porting2.0.html#webview-changes>
 
-Anki 2.1.50+ supports image resizing within the editor natively.
+Anki 2.1.50+ поддерживает изменение размера изображений непосредственно в редакторе.
 
-## Field Styling
+## Стилизация полей
 
-The default styling applies to the whole card. You can also make certain
-fields or part of the card use a different font, color, and so on. This
-is particularly important when studying foreign languages, as Anki will
-sometimes be unable to correctly display characters unless an
-appropriate font has been chosen.
+Стили по умолчанию применяются ко всей карточке. Вы также можете настроить для определенных полей или части карточки другой шрифт, цвет и так далее. Это особенно важно при изучении иностранных языков, так как Anki иногда не может правильно отображать символы, если не выбран подходящий шрифт.
 
-Say you have an “Expression” field, and you want to give it the macOS Thai
-font “Ayuthaya”. Imagine your template already reads:
+Допустим, у вас есть поле “Expression” , и вы хотите задать для него тайский шрифт macOS "Ayuthaya". Представьте, что ваш шаблон уже выглядит так:
 
     What is {{Expression}}?
 
     {{Notes}}
 
-What we need to do is wrap the text we want to style in some HTML. We
-will put the following in front of the text:
+Что нам нужно сделать, так это обернуть текст, который мы хотим стилизовать, в некоторый HTML. Мы поместим следующее перед текстом:
 
     <div class=mystyle1>
 
-And the following behind it:
+А следующее — после него:
 
     </div>
 
-By wrapping the text like the above, we tell Anki to style the wrapped
-text with a custom style called “mystyle1”, which we will create later.
+Обернув текст таким образом, мы указываем Anki стилизовать обернутый текст с помощью пользовательского стиля с именем “mystyle1”, который мы создадим позже.
 
-Thus if we wanted the entire “What is …​?” expression to use the Thai
-font, we would use:
+Таким образом, если бы мы хотели, чтобы вся фраза “What is …​?” использовала тайский шрифт, мы бы использовали:
 
     <div class=mystyle1>What is {{Expression}}?</div>
 
     {{Notes}}
 
-And if we wanted only the expression field itself to use the Thai font,
-we’d use:
+А если бы мы хотели, чтобы только само поле "Expression" использовало тайский шрифт, мы бы использовали:
 
     What is <div class=mystyle1>{{Expression}}</div>?
 
     {{Notes}}
 
-After we’ve edited the template, we now need to move to the Styling
-section between the templates. Before editing it, it should look
-something like:
+После того как мы отредактировали шаблон, нам нужно перейти в раздел "Таблица стилей". Перед редактированием он должен выглядеть примерно так:
 
 ```css
 .card {
@@ -154,7 +116,7 @@ something like:
 }
 ```
 
-Add your new style to the bottom, so it looks like:
+Добавьте ваш новый стиль внизу, чтобы он выглядел так:
 
 ```css
 .card {
@@ -170,9 +132,7 @@ Add your new style to the bottom, so it looks like:
 }
 ```
 
-You can include any styling you want in the style. If you wanted to
-increase the font size too, you’d change the mystyle1 section to look
-like:
+Вы можете включить в стиль любое нужное вам оформление. Если вы также хотите увеличить размер шрифта, измените раздел mystyle1 следующим образом:
 
 ```css
 .mystyle1 {
@@ -181,20 +141,15 @@ like:
 }
 ```
 
-It’s also possible to bundle custom fonts with your deck, so you don’t
-need to install them on your computer or mobile device. Please see the
-[installing fonts](#installing-fonts) section for more info.
+Также можно встраивать пользовательские шрифты в вашу колоду, чтобы их не нужно было устанавливать на ваш компьютер или мобильное устройство. Дополнительную информацию см. в разделе [установка шрифтов](#Установка-шрифтов).
 
-## Audio Replay Buttons
+## Кнопки повтора аудио
 
-When audio or text to speech is included on your cards, Anki will show
-buttons you can click on to replay the audio.
+Когда на ваших карточках есть аудио или озвучивание текста (TTS), Anki показывает кнопки, на которые можно нажать для повтора аудио.
 
-If you prefer not to see the buttons, you can hide them in the
-preferences screen.
+Если вы предпочитаете не видеть эти кнопки, вы можете скрыть их на экране настроек.
 
-You can customize their appearance in your card styling, for example, to
-make them smaller and colored, you could use the following:
+Вы можете настроить их внешний вид в стилях вашей карточки; например, чтобы сделать их меньше и цветными, вы можете использовать следующий код:
 
 ```css
 .replay-button svg {
@@ -212,8 +167,7 @@ make them smaller and colored, you could use the following:
 
 ## Направление текста
 
-If you use a language that is written right-to-left, such as Arabic or Hebrew,
-you can add the CSS `direction` property to the .card section for correct display during review:
+Если вы используете язык с письмом справа налево, такой как арабский или иврит, вы можете добавить CSS-свойство `direction` в раздел .card для корректного отображения во время повторения:
 
 ```css
 .card {
@@ -221,42 +175,27 @@ you can add the CSS `direction` property to the .card section for correct displa
 }
 ```
 
-This will change the direction of the entire card. You can change the direction
-of only certain fields by wrapping their references in some HTML:
+Это изменит направление всей карточки. Вы можете изменить направление только определенных полей, обернув их ссылки в HTML:
 
     <div dir="rtl">{{Front}}</div>
 
-To change the direction of fields in the editor, please see
-the [editing](../editing.md#customizing-fields) section.
+Чтобы изменить направление полей в редакторе, обратитесь к разделу [редактирование](../editing.md#Настройка-полей).
 
-## Other HTML
+## Другие возможности HTML
 
-Your templates can contain arbitrary HTML, which means that all the
-layout possibilities used on internet web pages can also be used on your
-cards. Things like tables, lists, images, links to external pages and so
-on are all supported. With tables for example, you could change the
-layout so that the front and back of a card appear on the left and right
-instead of the top and bottom.
+Ваши шаблоны могут содержать произвольный HTML, что означает, что все возможности верстки, используемые на веб-страницах, могут быть применены и к вашим карточкам. Поддерживаются такие вещи, как таблицы, списки, изображения, ссылки на внешние страницы и так далее. С помощью таблиц, например, вы можете изменить расположение так, чтобы передняя и задняя стороны карточки отображались слева и справа, а не сверху и снизу.
 
-Covering all of HTML’s features is outside the scope of this manual, but
-there are plenty of good introductory guides to HTML available on the
-web if you’d like to learn more.
+Освещение всех возможностей HTML выходит за рамки этого руководства, но в интернете есть множество хороших вводных руководств по HTML, если вы хотите узнать больше.
 
 ## Вид в окне "Просмотр"
 
-If your card templates are complex, it may be difficult to read the
-question and answer columns (called "Front" and "Back") in the [card list](../browsing.md#cardnote-table). The "browser appearance" option allows you to define a
-custom template to be used only in the browser, so you can include only
-the important fields and change the order if you desire. The syntax is
-the same as in standard card templates.
+Если ваши шаблоны карточек сложны, чтение колонок вопроса и ответа (называемых "Передняя сторона" и "Задняя сторона") в [таблице карточек](../browsing.md#Таблица-карточекзаписей) может быть затруднено. Опция «Вид в окне "Просмотр"» позволяет определить пользовательский шаблон, который будет использоваться только в Просмотре, так что вы можете включить только важные поля и изменить порядок по желанию. Синтаксис такой же, как в стандартных шаблонах карточек.
 
-When using this option, if the text in the question column is repeated at the beginning of the answer column, Anki will display the text only in the question column. For example, if the question column text is "People in Ladakh speak", and the answer is "People in Ladakh speak Ladakhi", the answer column will only display "Ladakhi", omitting the rest.
+При использовании этой опции, если текст в колонке вопроса повторяется в начале колонки ответа, Anki отобразит текст только в колонке вопроса. Например, если текст в колонке вопроса — "Люди в Ладакхе говорят на", а ответ — "Люди в Ладакхе говорят на ладакхи", в колонке ответа отобразится только "ладакхи", опуская остальное.
 
-## Platform-Specific CSS
+## CSS для конкретных платформ
 
-Anki defines some special CSS classes that allow you to define different
-styling for different platforms. The example below shows how to vary the
-font depending on where you’re reviewing:
+Anki определяет несколько специальных CSS-классов, которые позволяют задавать разное оформление для разных платформ. Пример ниже показывает, как изменить шрифт в зависимости от того, где вы изучаете:
 
 ```css
 /* Windows */
@@ -290,54 +229,39 @@ font depending on where you’re reviewing:
 }
 ```
 
-And in the template:
+и в шаблоне:
 
 ```html
 <div class="example">{{Field}}</div>
 ```
 
-You can also use properties like .gecko, .opera, and .ie to select
-particular browsers when using AnkiWeb. Please see
-<http://rafael.adm.br/css_browser_selector/> for a full list of options.
+Вы также можете использовать свойства, такие как .gecko, .opera и .ie, для выбора конкретных браузеров при использовании AnkiWeb. Полный список опций см. на <http://rafael.adm.br/css_browser_selector/>.
 
-## Installing Fonts
+## Установка шрифтов
 
-You can install fonts directly to Anki. This is useful if you’re using Anki on
-a work or school computer where you don’t have permission to install new fonts,
-or if you’re using Anki on a mobile device.
+Вы можете устанавливать шрифты непосредственно в Anki. Это полезно, если вы используете Anki на рабочем или школьном компьютере, где у вас нет прав на установку новых шрифтов, или если вы используете Anki на мобильном устройстве.
 
-Anki supports the most widely used font formats, such as TrueType (.ttf),
-OpenType (.otf), Web Open Font Format (.woff) and others.
+Anki поддерживает наиболее широко используемые форматы шрифтов, такие как TrueType (.ttf), OpenType (.otf), Web Open Font Format (.woff) и другие.
 
-### Add Font to Media Folder
+### Добавление шрифта в папку медиафайлов
 
-Once you have downloaded a supported font, such as "Arial.ttf", you have to add
-it to the media folder.
+После того как вы загрузили поддерживаемый шрифт, например "Arial.ttf", вы должны добавить его в папку медиафайлов.
 
-1. Rename the file, adding an underscore at the start, so it becomes
-   like "\_arial.ttf". Adding an underscore will tell Anki that this
-   file will be used on a template, and should not be deleted when
-   checking for unused media.
+1. Переименуйте файл, добавив подчеркивание в начале, чтобы он стал похож на "\_arial.ttf". Добавление подчеркивания укажет Anki, что этот файл будет использоваться в шаблоне и не должен удаляться при проверке неиспользуемых медиафайлов.
 
-2.  In your computer’s file browser, go to your Anki application data folder (see [File Locations](../files.md#file-locations) for details),
-    and then into your profile folder (e.g., "User 1").
+2. В файловом менеджере вашего компьютера перейдите в папку с данными приложения Anki (подробнее см. [расположение файлов](../files.md#Файлы-программы)), а затем в папку вашего профиля (например, "User 1").
 
-3. Inside the folder, you should see a folder called collection.media.
-   Drag the renamed file to that folder.
+3. Внутри папки вы должны увидеть папку с названием "collection.media". Перетащите переименованный файл в эту папку.
 
-### Update Template to Use That Font
+### Обновление шаблона для использования этого шрифта
 
-After the font has been added to the media folder, you need to update the
-template.
+После того как шрифт добавлен в папку медиафайлов, вам нужно обновить шаблон.
 
-1. Click **Add** at the top of the main screen, and then select the
-   note type you want to change with the top left button.
+1. Нажмите **Добавить** в верхней части главного экрана, затем выберите тип записи, который хотите изменить, с помощью левой верхней кнопки.
 
-2. Click **Cards**.
+2. Нажмите **Карточки**.
 
-3. In the styling section, add the following text to the bottom (after
-   the last "}" character), replacing "\_arial.ttf" with the name of
-   the file you copied into your media folder:
+3. В разделе стилей добавьте следующий текст внизу (после последнего символа "}"), заменив "\_arial.ttf" на имя файла, который вы скопировали в папку медиафайлов:
 
 ```css
 @font-face {
@@ -346,25 +270,17 @@ template.
 }
 ```
 
-Only change the "arial" part, not the "myfont" part.
+Меняйте только часть "arial", а не часть "myfont".
 
-After that, you can either change the font for the entire card, or for
-individual fields. To change the font for the entire card, simply locate
-the font-family: line in the .card section and change the font to
-"myfont". To change the font for only certain fields, please see the
-[Field Styling](#field-styling) instructions above.
+После этого вы можете изменить шрифт либо для всей карточки, либо для отдельных полей. Чтобы изменить шрифт для всей карточки, просто найдите строку font-family: в разделе .card и измените шрифт на "myfont". Чтобы изменить шрифт только для определенных полей, следуйте инструкциям по [Стилизации полей](#Стилизация-полей) выше.
 
-Please make sure the filenames match exactly. If the file is called
-arial.TTF and you write arial.ttf in your card templates, it will not
-work.
+Пожалуйста, убедитесь, что имена файлов совпадают точно. Если файл называется "arial.TTF", а вы напишете "arial.ttf" в шаблоне карточки, это не сработает.
 
 ## Ночной режим
 
-You can customize the way templates appear when night mode is enabled in
-the preferences screen.
+Вы можете настроить внешний вид шаблонов, когда ночной режим включен на экране настроек.
 
-If you wanted a lighter grey background, you could use
-something like:
+Если вы хотите получить более светлый серый фон, вы можете использовать что-то вроде:
 
 ```css
 .card.nightMode {
@@ -372,8 +288,7 @@ something like:
 }
 ```
 
-If you have a "myclass" style, the following would show the text in
-yellow when night mode is enabled:
+Если у вас есть стиль "myclass", следующее будет отображать текст желтым цветом, когда ночной режим включен:
 
 ```css
 .nightMode .myclass {
@@ -381,16 +296,11 @@ yellow when night mode is enabled:
 }
 ```
 
-## Fading and Scrolling
+## Затемнение и прокрутка
 
-Anki will automatically scroll to the answer by default. It looks for an
-HTML element with id=answer, and scrolls to that. You can place the id
-on a different element to adjust the scrolling position, or remove the
-id=answer to turn off scrolling.
+По умолчанию Anki автоматически прокручивает к ответу. Он ищет HTML-элемент с id=answer и прокручивает к нему. Вы можете разместить id на другом элементе, чтобы настроить позицию прокрутки, или удалить id=answer, чтобы отключить прокрутку.
 
-The question side of a card fades in by default. If you wish to adjust
-this delay, you can place the following at the top of your front card
-template:
+Сторона вопроса карточки по умолчанию появляется с эффектом затемнения. Если вы хотите настроить эту задержку, вы можете поместить следующее в начало шаблона передней стороны карточки:
 
 ```html
 <script>
@@ -399,32 +309,14 @@ template:
 </script>
 ```
 
-100 (milliseconds) is the default; set to 0 to disable fading.
+100 (миллисекунд) — значение по умолчанию; установите 0, чтобы отключить затемнение.
 
-## Javascript
+## JavaScript
 
-As Anki cards are treated like web pages, it is possible to embed some
-Javascript on your cards via the card template. For a good reference
-please read [this post](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756)
-in the forums.
+Поскольку карточки Anki обрабатываются как веб-страницы, можно встроить немного JavaScript в ваши карточки через шаблон карточки. Для получения хорошего справочного материала прочитайте [этот пост](https://forums.ankiweb.net/t/card-templates-user-input-101-buttons-keyboard-shortcuts-etc-guide/13756) на форумах.
 
-Because Javascript is an advanced feature and so many things can go
-wrong, **Javascript functionality is provided without any support or
-warranty**. We can not provide any assistance with writing Javascript,
-and can not guarantee any code you have written will continue to work
-without modification in future Anki updates. If you are not comfortable
-addressing any issues you encounter on your own, then please avoid using
-Javascript.
+Поскольку JavaScript — это продвинутая функция, и может пойти многое не так, **функциональность JavaScript предоставляется без какой-либо поддержки или гарантий**. Мы не можем оказать помощь в написании JavaScript и не можем гарантировать, что любой написанный вами код будет продолжать работать без изменений в будущих обновлениях Anki. Если вы не готовы самостоятельно решать любые возникающие проблемы, пожалуйста, воздержитесь от использования JavaScript.
 
-Each Anki client may implement card display differently, so you will
-need to test the behaviour across platforms. A number of clients are
-implemented by keeping a long running webpage and dynamically updating
-parts of it as cards are reviewed, so your Javascript will need to
-update sections of the document using things like
-document.getElementById() rather than doing things like
-document.write().
+Каждый клиент Anki может по-разному реализовывать отображение карточек, поэтому вам нужно будет тестировать поведение на разных платформах. Некоторые клиенты реализованы путем поддержания долго работающей веб-страницы и динамического обновления ее частей по мере повторения карточек, поэтому ваш JavaScript должен будет обновлять разделы документа, используя такие вещи, как document.getElementById(), а не делать, например, document.write().
 
-Functions like window.alert may not be available. Anki will write
-javascript errors to the terminal, so you'll need to [view the console](https://addon-docs.ankiweb.net/console-output.html#console-output) to
-see them. To debug issues with JavaScript, you can use Chrome's
-[inspector](https://addon-docs.ankiweb.net/debugging.html#webviews).
+Такие функции, как window.alert, могут быть недоступны. Anki будет записывать ошибки JavaScript в терминал, поэтому вам нужно будет [посмотреть консоль](https://addon-docs.ankiweb.net/console-output.html#console-output), чтобы увидеть их. Для отладки проблем с JavaScript вы можете использовать [инспектор](https://addon-docs.ankiweb.net/debugging.html#webviews) Chrome.
