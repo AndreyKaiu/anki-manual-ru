@@ -7,6 +7,7 @@ title = "Руководство Anki"
 
 [build]
 create-missing = true
+build-dir = "docs"
 
 [preprocessor.toc]
 command = "mdbook-toc"
@@ -20,13 +21,14 @@ assets_version = "3.1.0" # do not edit: managed by `mdbook-admonish install`
 git-repository-url = "https://github.com/AndreyKaiu/anki-manual-ru/issues"
 cname = "docs.ankiweb.net"
 additional-css = ["css/misc.css", "css/mdbook-admonish.css", "./mdbook-admonish.css"]
+additional-js = ["assets/fzf.umd.js", "assets/elasticlunr.js"]
 smart-punctuation = true
 mathjax-support = true
 
 # [output.linkcheck]
 # optional = true
 # warning-policy = "warn"
-# follow-web-links = true
+# follow-web-links = false
 # exclude = [
 #   'microsoft.com',
 #   'twitter.com',
@@ -41,3 +43,6 @@ mathjax-support = true
 [output.html.fold]
 enable = true
 level = 0
+
+[output.html.search]
+enable = true

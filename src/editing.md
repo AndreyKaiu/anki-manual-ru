@@ -81,12 +81,9 @@ Anki проверяет уникальность первого поля, поэ
 
 ## Изменение колоды / типа записи
 
-While adding, you can click on the top left button to change note type,
-and the top right button to change deck. The window that opens up will
-not only allow you to select a deck or note type, but also to add new
-decks or manage your note types.
+При добавлении вы можете нажать на кнопку в верхнем левом углу, чтобы изменить тип записи, и на кнопку в верхнем правом углу, чтобы изменить колоду. В открывшемся окне вы сможете не только выбрать колоду или тип записи, но и добавить новые колоды или управлять уже имеющимися типами записей.
 
-## Organizing Content
+## Организация контента
 
 ### Правильное использование колод
 
